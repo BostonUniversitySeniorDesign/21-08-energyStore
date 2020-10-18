@@ -3,7 +3,7 @@ This GitHub repo is for the Boston University Senior Design team, EnergyStore.
 The goal of EnergyStore is to create an energy microgrid for small communities centered around a communal smart battery.
 
 ### Functionality
-#### Host (Battery Unit):
+#### Host (Battery Unit) - Jetson Nano Dev Kit:
 * NETWORKING
     * Maintain remote connection home unit
 * MEASURING
@@ -18,7 +18,7 @@ The goal of EnergyStore is to create an energy microgrid for small communities c
     * Cross compare the two ML models to charge battery in most cost efficient way
     * Send instructions to home unit for switching grid connections to use cheapest energy
 
-#### Client (Home Unit):
+#### Client (Home Unit) - Raspberry Pi Zero W:
 * NETWORKING
     * Maintain remote connection to Battey Unit (incase of no connection, use maingrid power)
 * MEASURING
