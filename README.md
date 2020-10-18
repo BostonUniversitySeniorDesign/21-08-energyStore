@@ -1,9 +1,9 @@
-# energyStore 
+## energyStore 
 The GitHub repo for the team energyStore
 
 
-Functionality
-Host (Battery Unit):
+### Functionality
+#### Host (Battery Unit):
 * NETWORKING
     * Maintain remote connection home unit
     * Send instructions to home unit for switching grid connections
@@ -16,7 +16,7 @@ Host (Battery Unit):
     * Run ML to forward project cost of maingrid power
 
 
-Client (Home Unit):
+#### Client (Home Unit):
 * NETWORKING
     * Maintain remote connection to Battey Unit (incase of no connection, use maingrid power)
 * MEASURING
