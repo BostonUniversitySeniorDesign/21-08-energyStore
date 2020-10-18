@@ -1,6 +1,6 @@
 ## energyStore 
-The GitHub repo for the team energyStore
-
+This GitHub repo is for the Boston University Senior Design team, EnergyStore. 
+The goal of EnergyStore is to create an energy microgrid for small communities centered around a communal smart battery.
 
 ### Functionality
 #### Host (Battery Unit):
@@ -14,7 +14,6 @@ The GitHub repo for the team energyStore
 * MODELING
     * Run ML model to predict charging and discharging efficieny of battery
     * Run ML to forward project cost of maingrid power
-
 
 #### Client (Home Unit):
 * NETWORKING
