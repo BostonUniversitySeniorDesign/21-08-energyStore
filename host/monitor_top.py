@@ -12,7 +12,7 @@ def monitor_top(empty):
     ##################################
     # set up logging
     log = logging.getLogger(defines.LOG_NAME)
-    log.info("monitor_top : monitor thread started")
+    log.info("monitor thread started")
 
 
 
