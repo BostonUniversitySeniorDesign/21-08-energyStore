@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 ############################
+
+
 # standard python libs
 import socket
 import logging
 import time
-import gpiozero
+#import gpiozero
 # locally defined libs
 import defines
 
@@ -12,6 +14,7 @@ import defines
 ####################################################################
 # connect_socket
 ####################################################################
+# This function returns a socket connected to a give host and port.
 def connect_socket(host, port):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     i = 0
@@ -31,15 +34,19 @@ def connect_socket(host, port):
 ####################################################################
 # set_switch_state
 ####################################################################
+# This function sets the state of the switch. DESCRIBE LATER
 def set_switch_state(state):
     print("TODO: define set_switch_state(state)")
     # this is where we will end up using gpiozero
     logging.getLogger(defines.LOG_NAME).info("switch set to state {}".format(state))
+    return 
 
 
 ####################################################################
 # get_switch_state
 ####################################################################
+# This function checks and returns the current state of the switch,
+# DESCRIBE LATER
 def get_switch_state():
     print("TODO: define get_switch_state()")
     # this is where we will end up using gpiozero
@@ -106,37 +113,46 @@ if __name__ == "__main__":
             client_socket, result = connect_socket(socket_host, socket_port)
             if result: # if connection successful
                 message_rx = client_socket.recv(1024)
-                log.info("{}".format(message_rx))
+                log.info("recieved: {}".format(message_rx))
                 print(message_rx.decode('utf-8'))
             
-                message_tx = "empty"
+                # test the server echo default
+                message_tx = "test echo"
                 client_socket.send(str.encode(message_tx))
-                log.info("{}".format(message_tx))
+                log.info("send: {}".format(message_tx))
                 message_rx = client_socket.recv(1024)
-                log.info("{}".format(message_rx))
+                log.info("recieved: {}".format(message_rx))
                 print(message_rx.decode('utf-8'))
                 time.sleep(1)
 
+                # query server for state
                 message_tx = "QUERY"
                 client_socket.send(str.encode(message_tx))
-                log.info("{}".format(message_tx))
+                log.info("send: {}".format(message_tx))
                 message_rx = client_socket.recv(1024)
-                log.info("{}".format(message_rx))
+                log.info("recieved: {}".format(message_rx))
                 set_switch_state(message_rx)
+                STATE = get_switch_state()
                 print(message_rx.decode('utf-8'))
                 time.sleep(1)
 
+                # inform server of state
                 message_tx = "STATUS {} {}".format(defines.UNIQUE_NAME, STATE) 
                 client_socket.send(str.encode(message_tx))
-                log.info("{}".format(message_tx))
+                log.info("send: {}".format(message_tx))
                 message_rx = client_socket.recv(1024)
-                log.info("{}".format(message_rx))
+                log.info("recieved: {}".format(message_rx))
                 print(message_rx.decode('utf-8'))
                 time.sleep(1)
 
                 # close socket connection
                 client_socket.close()
+            
+            else: # connection not successful, set switch to default
+                log.warning("setting switch to default {}".format(defines.SWITCH_DEFAULT))
+                set_switch_state(defines.SWITCH_DEFAULT)
+                STATE = get_switch_state()
 
-                # wait before looping again 
-                wait_time = defines.SWITCHING_FREQ#*60
-                time.sleep(wait_time)
+            # wait before looping again 
+            wait_time = defines.SWITCHING_FREQ#*60
+            time.sleep(wait_time)
