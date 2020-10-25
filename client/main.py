@@ -82,7 +82,7 @@ if __name__ == "__main__":
     
             # open socket connection
             client_socket, result = connect_socket(socket_host, socket_port)
-            if result:
+            if result: # if connection successful
                 Response = client_socket.recv(1024)
                 print(Response.decode('utf-8'))
             
@@ -101,7 +101,7 @@ if __name__ == "__main__":
         else:
             # open socket connection
             client_socket, result = connect_socket(socket_host, socket_port)
-            if result:
+            if result: # if connection successful
                 message_rx = client_socket.recv(1024)
                 log.info("{}".format(message_rx))
                 print(message_rx.decode('utf-8'))
@@ -129,6 +129,7 @@ if __name__ == "__main__":
                 message_rx = client_socket.recv(1024)
                 log.info("{}".format(message_rx))
                 print(message_rx.decode('utf-8'))
+                time.sleep(1)
 
                 # close socket connection
                 client_socket.close()

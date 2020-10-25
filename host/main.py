@@ -14,7 +14,9 @@ import socket_top  #thread dedicated to socket
 import monitor_top #thred dedicated to battery monitoring
 
 
-### MAIN ###
+####################################################################
+# MAIN
+####################################################################
 if __name__  == "__main__":
     print("starting host/main.py")
 
@@ -48,10 +50,6 @@ if __name__  == "__main__":
 
 
     ##################################
-    # pause then end
+    # run indefinitely
     while True:
         None
-    #time_sleep = 20
-    #print("pausing for {} seconds".format(time_sleep))
-    #time.sleep(time_sleep)
-    #print("DONE")
