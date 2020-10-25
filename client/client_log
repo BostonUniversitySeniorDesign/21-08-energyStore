@@ -1,0 +1,546 @@
+15:30:20 <module>: [INFO] logging started
+15:30:20 <module>: [INFO] socket defined laptop:51234
+15:30:20 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:30:20 <module>: [INFO] b'Welcome to the Server\n'
+15:30:20 <module>: [INFO] empty
+15:30:20 <module>: [INFO] b"Server echo: ['empty']"
+15:30:21 <module>: [INFO] QUERY
+15:30:21 <module>: [INFO] b'MAINGRID'
+15:30:21 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:30:22 <module>: [INFO] STATUS Mike MAINGRID
+15:30:22 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:30:23 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:30:23 <module>: [INFO] b'Welcome to the Server\n'
+15:30:23 <module>: [INFO] empty
+15:30:23 <module>: [INFO] b"Server echo: ['empty']"
+15:30:24 <module>: [INFO] QUERY
+15:30:24 <module>: [INFO] b'MAINGRID'
+15:30:24 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:30:25 <module>: [INFO] STATUS Mike MAINGRID
+15:30:25 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:30:26 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:30:26 <module>: [INFO] b'Welcome to the Server\n'
+15:30:26 <module>: [INFO] empty
+15:30:26 <module>: [INFO] b"Server echo: ['empty']"
+15:30:27 <module>: [INFO] QUERY
+15:30:27 <module>: [INFO] b'MAINGRID'
+15:30:27 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:30:28 <module>: [INFO] STATUS Mike MAINGRID
+15:30:28 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:30:29 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:30:29 <module>: [INFO] b'Welcome to the Server\n'
+15:30:29 <module>: [INFO] empty
+15:30:29 <module>: [INFO] b"Server echo: ['empty']"
+15:30:30 <module>: [INFO] QUERY
+15:30:30 <module>: [INFO] b'MAINGRID'
+15:30:30 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:30:31 <module>: [INFO] STATUS Mike MAINGRID
+15:30:31 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:30:32 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:30:32 <module>: [INFO] b'Welcome to the Server\n'
+15:30:32 <module>: [INFO] empty
+15:30:32 <module>: [INFO] b"Server echo: ['empty']"
+15:32:01 <module>: [INFO] logging started
+15:32:01 <module>: [INFO] socket defined laptop:51234
+15:32:11 connect_socket: [WARNING] failed to connect to laptop:51234 in 10 second(s)
+15:33:07 <module>: [INFO] logging started
+15:33:07 <module>: [INFO] socket defined laptop:51234
+15:33:17 connect_socket: [WARNING] failed to connect to laptop:51234 after 10 second(s)
+15:33:27 connect_socket: [WARNING] failed to connect to laptop:51234 after 10 second(s)
+15:33:37 connect_socket: [WARNING] failed to connect to laptop:51234 after 10 second(s)
+15:33:47 connect_socket: [WARNING] failed to connect to laptop:51234 after 10 second(s)
+15:36:25 <module>: [INFO] logging started
+15:36:25 <module>: [INFO] socket defined laptop:51234
+15:36:25 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:25 <module>: [INFO] b'Welcome to the Server\n'
+15:36:25 <module>: [INFO] empty
+15:36:25 <module>: [INFO] b"Server echo: ['empty']"
+15:36:26 <module>: [INFO] QUERY
+15:36:26 <module>: [INFO] b'MAINGRID'
+15:36:26 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:27 <module>: [INFO] STATUS Mike MAINGRID
+15:36:27 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:28 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:28 <module>: [INFO] b'Welcome to the Server\n'
+15:36:28 <module>: [INFO] empty
+15:36:28 <module>: [INFO] b"Server echo: ['empty']"
+15:36:29 <module>: [INFO] QUERY
+15:36:29 <module>: [INFO] b'MAINGRID'
+15:36:29 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:30 <module>: [INFO] STATUS Mike MAINGRID
+15:36:30 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:31 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:31 <module>: [INFO] b'Welcome to the Server\n'
+15:36:31 <module>: [INFO] empty
+15:36:31 <module>: [INFO] b"Server echo: ['empty']"
+15:36:32 <module>: [INFO] QUERY
+15:36:32 <module>: [INFO] b'MAINGRID'
+15:36:32 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:33 <module>: [INFO] STATUS Mike MAINGRID
+15:36:33 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:34 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:34 <module>: [INFO] b'Welcome to the Server\n'
+15:36:34 <module>: [INFO] empty
+15:36:34 <module>: [INFO] b"Server echo: ['empty']"
+15:36:35 <module>: [INFO] QUERY
+15:36:35 <module>: [INFO] b'MAINGRID'
+15:36:35 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:36 <module>: [INFO] STATUS Mike MAINGRID
+15:36:36 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:37 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:37 <module>: [INFO] b'Welcome to the Server\n'
+15:36:37 <module>: [INFO] empty
+15:36:37 <module>: [INFO] b"Server echo: ['empty']"
+15:36:38 <module>: [INFO] QUERY
+15:36:38 <module>: [INFO] b'MAINGRID'
+15:36:38 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:39 <module>: [INFO] STATUS Mike MAINGRID
+15:36:39 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:40 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:40 <module>: [INFO] b'Welcome to the Server\n'
+15:36:40 <module>: [INFO] empty
+15:36:40 <module>: [INFO] b"Server echo: ['empty']"
+15:36:41 <module>: [INFO] QUERY
+15:36:41 <module>: [INFO] b'MAINGRID'
+15:36:41 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:42 <module>: [INFO] STATUS Mike MAINGRID
+15:36:42 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:43 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:43 <module>: [INFO] b'Welcome to the Server\n'
+15:36:43 <module>: [INFO] empty
+15:36:43 <module>: [INFO] b"Server echo: ['empty']"
+15:36:44 <module>: [INFO] QUERY
+15:36:44 <module>: [INFO] b'MAINGRID'
+15:36:44 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:45 <module>: [INFO] STATUS Mike MAINGRID
+15:36:45 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:46 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:46 <module>: [INFO] b'Welcome to the Server\n'
+15:36:46 <module>: [INFO] empty
+15:36:46 <module>: [INFO] b"Server echo: ['empty']"
+15:36:47 <module>: [INFO] QUERY
+15:36:47 <module>: [INFO] b'MAINGRID'
+15:36:47 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:48 <module>: [INFO] STATUS Mike MAINGRID
+15:36:48 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:49 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:49 <module>: [INFO] b'Welcome to the Server\n'
+15:36:49 <module>: [INFO] empty
+15:36:49 <module>: [INFO] b"Server echo: ['empty']"
+15:36:50 <module>: [INFO] QUERY
+15:36:50 <module>: [INFO] b'MAINGRID'
+15:36:50 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:51 <module>: [INFO] STATUS Mike MAINGRID
+15:36:51 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:52 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:52 <module>: [INFO] b'Welcome to the Server\n'
+15:36:52 <module>: [INFO] empty
+15:36:52 <module>: [INFO] b"Server echo: ['empty']"
+15:36:53 <module>: [INFO] QUERY
+15:36:53 <module>: [INFO] b'MAINGRID'
+15:36:53 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:54 <module>: [INFO] STATUS Mike MAINGRID
+15:36:54 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:55 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:55 <module>: [INFO] b'Welcome to the Server\n'
+15:36:55 <module>: [INFO] empty
+15:36:55 <module>: [INFO] b"Server echo: ['empty']"
+15:36:56 <module>: [INFO] QUERY
+15:36:56 <module>: [INFO] b'MAINGRID'
+15:36:56 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:36:57 <module>: [INFO] STATUS Mike MAINGRID
+15:36:57 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:36:58 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:36:58 <module>: [INFO] b'Welcome to the Server\n'
+15:36:58 <module>: [INFO] empty
+15:36:58 <module>: [INFO] b"Server echo: ['empty']"
+15:36:59 <module>: [INFO] QUERY
+15:36:59 <module>: [INFO] b'MAINGRID'
+15:36:59 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:00 <module>: [INFO] STATUS Mike MAINGRID
+15:37:00 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:01 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:01 <module>: [INFO] b'Welcome to the Server\n'
+15:37:01 <module>: [INFO] empty
+15:37:01 <module>: [INFO] b"Server echo: ['empty']"
+15:37:02 <module>: [INFO] QUERY
+15:37:02 <module>: [INFO] b'MAINGRID'
+15:37:02 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:03 <module>: [INFO] STATUS Mike MAINGRID
+15:37:03 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:04 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:04 <module>: [INFO] b'Welcome to the Server\n'
+15:37:04 <module>: [INFO] empty
+15:37:04 <module>: [INFO] b"Server echo: ['empty']"
+15:37:05 <module>: [INFO] QUERY
+15:37:05 <module>: [INFO] b'MAINGRID'
+15:37:05 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:06 <module>: [INFO] STATUS Mike MAINGRID
+15:37:06 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:07 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:07 <module>: [INFO] b'Welcome to the Server\n'
+15:37:07 <module>: [INFO] empty
+15:37:07 <module>: [INFO] b"Server echo: ['empty']"
+15:37:08 <module>: [INFO] QUERY
+15:37:08 <module>: [INFO] b'MAINGRID'
+15:37:08 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:09 <module>: [INFO] STATUS Mike MAINGRID
+15:37:09 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:10 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:11 <module>: [INFO] b'Welcome to the Server\n'
+15:37:11 <module>: [INFO] empty
+15:37:11 <module>: [INFO] b"Server echo: ['empty']"
+15:37:12 <module>: [INFO] QUERY
+15:37:12 <module>: [INFO] b'MAINGRID'
+15:37:12 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:13 <module>: [INFO] STATUS Mike MAINGRID
+15:37:13 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:14 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:14 <module>: [INFO] b'Welcome to the Server\n'
+15:37:14 <module>: [INFO] empty
+15:37:14 <module>: [INFO] b"Server echo: ['empty']"
+15:37:15 <module>: [INFO] QUERY
+15:37:15 <module>: [INFO] b'MAINGRID'
+15:37:15 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:16 <module>: [INFO] STATUS Mike MAINGRID
+15:37:16 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:17 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:17 <module>: [INFO] b'Welcome to the Server\n'
+15:37:17 <module>: [INFO] empty
+15:37:17 <module>: [INFO] b"Server echo: ['empty']"
+15:37:18 <module>: [INFO] QUERY
+15:37:18 <module>: [INFO] b'MAINGRID'
+15:37:18 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:19 <module>: [INFO] STATUS Mike MAINGRID
+15:37:19 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:20 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:20 <module>: [INFO] b'Welcome to the Server\n'
+15:37:20 <module>: [INFO] empty
+15:37:20 <module>: [INFO] b"Server echo: ['empty']"
+15:37:21 <module>: [INFO] QUERY
+15:37:21 <module>: [INFO] b'MAINGRID'
+15:37:21 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:22 <module>: [INFO] STATUS Mike MAINGRID
+15:37:22 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:23 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:23 <module>: [INFO] b'Welcome to the Server\n'
+15:37:23 <module>: [INFO] empty
+15:37:23 <module>: [INFO] b"Server echo: ['empty']"
+15:37:24 <module>: [INFO] QUERY
+15:37:24 <module>: [INFO] b'MAINGRID'
+15:37:24 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:25 <module>: [INFO] STATUS Mike MAINGRID
+15:37:25 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:26 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:26 <module>: [INFO] b'Welcome to the Server\n'
+15:37:26 <module>: [INFO] empty
+15:37:26 <module>: [INFO] b"Server echo: ['empty']"
+15:37:27 <module>: [INFO] QUERY
+15:37:27 <module>: [INFO] b'MAINGRID'
+15:37:27 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:28 <module>: [INFO] STATUS Mike MAINGRID
+15:37:28 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:29 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:29 <module>: [INFO] b'Welcome to the Server\n'
+15:37:29 <module>: [INFO] empty
+15:37:29 <module>: [INFO] b"Server echo: ['empty']"
+15:37:30 <module>: [INFO] QUERY
+15:37:30 <module>: [INFO] b'MAINGRID'
+15:37:30 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:31 <module>: [INFO] STATUS Mike MAINGRID
+15:37:31 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:32 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:32 <module>: [INFO] b'Welcome to the Server\n'
+15:37:32 <module>: [INFO] empty
+15:37:32 <module>: [INFO] b"Server echo: ['empty']"
+15:37:33 <module>: [INFO] QUERY
+15:37:33 <module>: [INFO] b'MAINGRID'
+15:37:33 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:34 <module>: [INFO] STATUS Mike MAINGRID
+15:37:34 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:35 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:35 <module>: [INFO] b'Welcome to the Server\n'
+15:37:35 <module>: [INFO] empty
+15:37:35 <module>: [INFO] b"Server echo: ['empty']"
+15:37:36 <module>: [INFO] QUERY
+15:37:36 <module>: [INFO] b'MAINGRID'
+15:37:36 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:37 <module>: [INFO] STATUS Mike MAINGRID
+15:37:37 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:38 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:38 <module>: [INFO] b'Welcome to the Server\n'
+15:37:38 <module>: [INFO] empty
+15:37:38 <module>: [INFO] b"Server echo: ['empty']"
+15:37:39 <module>: [INFO] QUERY
+15:37:39 <module>: [INFO] b'MAINGRID'
+15:37:39 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:40 <module>: [INFO] STATUS Mike MAINGRID
+15:37:40 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:41 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:41 <module>: [INFO] b'Welcome to the Server\n'
+15:37:41 <module>: [INFO] empty
+15:37:41 <module>: [INFO] b"Server echo: ['empty']"
+15:37:42 <module>: [INFO] QUERY
+15:37:42 <module>: [INFO] b'MAINGRID'
+15:37:42 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:43 <module>: [INFO] STATUS Mike MAINGRID
+15:37:43 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:44 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:44 <module>: [INFO] b'Welcome to the Server\n'
+15:37:44 <module>: [INFO] empty
+15:37:44 <module>: [INFO] b"Server echo: ['empty']"
+15:37:45 <module>: [INFO] QUERY
+15:37:45 <module>: [INFO] b'MAINGRID'
+15:37:45 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:46 <module>: [INFO] STATUS Mike MAINGRID
+15:37:46 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:47 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:47 <module>: [INFO] b'Welcome to the Server\n'
+15:37:47 <module>: [INFO] empty
+15:37:47 <module>: [INFO] b"Server echo: ['empty']"
+15:37:48 <module>: [INFO] QUERY
+15:37:48 <module>: [INFO] b'MAINGRID'
+15:37:48 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:49 <module>: [INFO] STATUS Mike MAINGRID
+15:37:49 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:50 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:50 <module>: [INFO] b'Welcome to the Server\n'
+15:37:50 <module>: [INFO] empty
+15:37:50 <module>: [INFO] b"Server echo: ['empty']"
+15:37:51 <module>: [INFO] QUERY
+15:37:51 <module>: [INFO] b'MAINGRID'
+15:37:51 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:52 <module>: [INFO] STATUS Mike MAINGRID
+15:37:52 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:53 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:53 <module>: [INFO] b'Welcome to the Server\n'
+15:37:53 <module>: [INFO] empty
+15:37:53 <module>: [INFO] b"Server echo: ['empty']"
+15:37:54 <module>: [INFO] QUERY
+15:37:54 <module>: [INFO] b'MAINGRID'
+15:37:54 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:55 <module>: [INFO] STATUS Mike MAINGRID
+15:37:55 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:56 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:56 <module>: [INFO] b'Welcome to the Server\n'
+15:37:56 <module>: [INFO] empty
+15:37:56 <module>: [INFO] b"Server echo: ['empty']"
+15:37:57 <module>: [INFO] QUERY
+15:37:57 <module>: [INFO] b'MAINGRID'
+15:37:57 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:37:58 <module>: [INFO] STATUS Mike MAINGRID
+15:37:58 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:37:59 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:37:59 <module>: [INFO] b'Welcome to the Server\n'
+15:37:59 <module>: [INFO] empty
+15:37:59 <module>: [INFO] b"Server echo: ['empty']"
+15:38:00 <module>: [INFO] QUERY
+15:38:00 <module>: [INFO] b'MAINGRID'
+15:38:00 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:01 <module>: [INFO] STATUS Mike MAINGRID
+15:38:01 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:02 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:02 <module>: [INFO] b'Welcome to the Server\n'
+15:38:02 <module>: [INFO] empty
+15:38:02 <module>: [INFO] b"Server echo: ['empty']"
+15:38:03 <module>: [INFO] QUERY
+15:38:03 <module>: [INFO] b'MAINGRID'
+15:38:03 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:04 <module>: [INFO] STATUS Mike MAINGRID
+15:38:04 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:05 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:05 <module>: [INFO] b'Welcome to the Server\n'
+15:38:05 <module>: [INFO] empty
+15:38:05 <module>: [INFO] b"Server echo: ['empty']"
+15:38:06 <module>: [INFO] QUERY
+15:38:06 <module>: [INFO] b'MAINGRID'
+15:38:06 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:07 <module>: [INFO] STATUS Mike MAINGRID
+15:38:07 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:08 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:08 <module>: [INFO] b'Welcome to the Server\n'
+15:38:08 <module>: [INFO] empty
+15:38:08 <module>: [INFO] b"Server echo: ['empty']"
+15:38:09 <module>: [INFO] QUERY
+15:38:09 <module>: [INFO] b'MAINGRID'
+15:38:09 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:10 <module>: [INFO] STATUS Mike MAINGRID
+15:38:10 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:11 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:11 <module>: [INFO] b'Welcome to the Server\n'
+15:38:11 <module>: [INFO] empty
+15:38:11 <module>: [INFO] b"Server echo: ['empty']"
+15:38:12 <module>: [INFO] QUERY
+15:38:12 <module>: [INFO] b'MAINGRID'
+15:38:12 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:13 <module>: [INFO] STATUS Mike MAINGRID
+15:38:13 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:14 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:14 <module>: [INFO] b'Welcome to the Server\n'
+15:38:14 <module>: [INFO] empty
+15:38:14 <module>: [INFO] b"Server echo: ['empty']"
+15:38:15 <module>: [INFO] QUERY
+15:38:15 <module>: [INFO] b'MAINGRID'
+15:38:15 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:16 <module>: [INFO] STATUS Mike MAINGRID
+15:38:16 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:17 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:17 <module>: [INFO] b'Welcome to the Server\n'
+15:38:17 <module>: [INFO] empty
+15:38:17 <module>: [INFO] b"Server echo: ['empty']"
+15:38:18 <module>: [INFO] QUERY
+15:38:18 <module>: [INFO] b'MAINGRID'
+15:38:18 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:19 <module>: [INFO] STATUS Mike MAINGRID
+15:38:19 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:20 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:20 <module>: [INFO] b'Welcome to the Server\n'
+15:38:20 <module>: [INFO] empty
+15:38:20 <module>: [INFO] b"Server echo: ['empty']"
+15:38:21 <module>: [INFO] QUERY
+15:38:21 <module>: [INFO] b'MAINGRID'
+15:38:21 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:22 <module>: [INFO] STATUS Mike MAINGRID
+15:38:22 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:23 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:23 <module>: [INFO] b'Welcome to the Server\n'
+15:38:23 <module>: [INFO] empty
+15:38:23 <module>: [INFO] b"Server echo: ['empty']"
+15:38:25 <module>: [INFO] QUERY
+15:38:25 <module>: [INFO] b'MAINGRID'
+15:38:25 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:26 <module>: [INFO] STATUS Mike MAINGRID
+15:38:26 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:27 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:27 <module>: [INFO] b'Welcome to the Server\n'
+15:38:27 <module>: [INFO] empty
+15:38:27 <module>: [INFO] b"Server echo: ['empty']"
+15:38:28 <module>: [INFO] QUERY
+15:38:28 <module>: [INFO] b'MAINGRID'
+15:38:28 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:29 <module>: [INFO] STATUS Mike MAINGRID
+15:38:29 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:30 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:30 <module>: [INFO] b'Welcome to the Server\n'
+15:38:30 <module>: [INFO] empty
+15:38:30 <module>: [INFO] b"Server echo: ['empty']"
+15:38:31 <module>: [INFO] QUERY
+15:38:31 <module>: [INFO] b'MAINGRID'
+15:38:31 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:32 <module>: [INFO] STATUS Mike MAINGRID
+15:38:32 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:33 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:33 <module>: [INFO] b'Welcome to the Server\n'
+15:38:33 <module>: [INFO] empty
+15:38:33 <module>: [INFO] b"Server echo: ['empty']"
+15:38:34 <module>: [INFO] QUERY
+15:38:34 <module>: [INFO] b'MAINGRID'
+15:38:34 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:35 <module>: [INFO] STATUS Mike MAINGRID
+15:38:35 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:36 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:36 <module>: [INFO] b'Welcome to the Server\n'
+15:38:36 <module>: [INFO] empty
+15:38:36 <module>: [INFO] b"Server echo: ['empty']"
+15:38:37 <module>: [INFO] QUERY
+15:38:37 <module>: [INFO] b'MAINGRID'
+15:38:37 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:38 <module>: [INFO] STATUS Mike MAINGRID
+15:38:38 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:39 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:39 <module>: [INFO] b'Welcome to the Server\n'
+15:38:39 <module>: [INFO] empty
+15:38:39 <module>: [INFO] b"Server echo: ['empty']"
+15:38:40 <module>: [INFO] QUERY
+15:38:40 <module>: [INFO] b'MAINGRID'
+15:38:40 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:41 <module>: [INFO] STATUS Mike MAINGRID
+15:38:41 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:42 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:42 <module>: [INFO] b'Welcome to the Server\n'
+15:38:42 <module>: [INFO] empty
+15:38:42 <module>: [INFO] b"Server echo: ['empty']"
+15:38:43 <module>: [INFO] QUERY
+15:38:43 <module>: [INFO] b'MAINGRID'
+15:38:43 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:44 <module>: [INFO] STATUS Mike MAINGRID
+15:38:44 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:45 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:45 <module>: [INFO] b'Welcome to the Server\n'
+15:38:45 <module>: [INFO] empty
+15:38:45 <module>: [INFO] b"Server echo: ['empty']"
+15:38:46 <module>: [INFO] QUERY
+15:38:46 <module>: [INFO] b'MAINGRID'
+15:38:46 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:47 <module>: [INFO] STATUS Mike MAINGRID
+15:38:47 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:48 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:48 <module>: [INFO] b'Welcome to the Server\n'
+15:38:48 <module>: [INFO] empty
+15:38:48 <module>: [INFO] b"Server echo: ['empty']"
+15:38:49 <module>: [INFO] QUERY
+15:38:49 <module>: [INFO] b'MAINGRID'
+15:38:49 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:50 <module>: [INFO] STATUS Mike MAINGRID
+15:38:50 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:51 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:51 <module>: [INFO] b'Welcome to the Server\n'
+15:38:51 <module>: [INFO] empty
+15:38:51 <module>: [INFO] b"Server echo: ['empty']"
+15:38:52 <module>: [INFO] QUERY
+15:38:52 <module>: [INFO] b'MAINGRID'
+15:38:52 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:53 <module>: [INFO] STATUS Mike MAINGRID
+15:38:53 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:54 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:54 <module>: [INFO] b'Welcome to the Server\n'
+15:38:54 <module>: [INFO] empty
+15:38:54 <module>: [INFO] b"Server echo: ['empty']"
+15:38:55 <module>: [INFO] QUERY
+15:38:55 <module>: [INFO] b'MAINGRID'
+15:38:55 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:56 <module>: [INFO] STATUS Mike MAINGRID
+15:38:56 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:38:57 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:38:57 <module>: [INFO] b'Welcome to the Server\n'
+15:38:57 <module>: [INFO] empty
+15:38:57 <module>: [INFO] b"Server echo: ['empty']"
+15:38:58 <module>: [INFO] QUERY
+15:38:58 <module>: [INFO] b'MAINGRID'
+15:38:58 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:38:59 <module>: [INFO] STATUS Mike MAINGRID
+15:38:59 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:39:00 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:39:00 <module>: [INFO] b'Welcome to the Server\n'
+15:39:00 <module>: [INFO] empty
+15:39:00 <module>: [INFO] b"Server echo: ['empty']"
+15:39:01 <module>: [INFO] QUERY
+15:39:01 <module>: [INFO] b'MAINGRID'
+15:39:01 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:39:02 <module>: [INFO] STATUS Mike MAINGRID
+15:39:02 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:39:03 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:39:03 <module>: [INFO] b'Welcome to the Server\n'
+15:39:03 <module>: [INFO] empty
+15:39:03 <module>: [INFO] b"Server echo: ['empty']"
+15:39:04 <module>: [INFO] QUERY
+15:39:04 <module>: [INFO] b'MAINGRID'
+15:39:04 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:39:05 <module>: [INFO] STATUS Mike MAINGRID
+15:39:05 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:39:06 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:39:06 <module>: [INFO] b'Welcome to the Server\n'
+15:39:06 <module>: [INFO] empty
+15:39:06 <module>: [INFO] b"Server echo: ['empty']"
+15:39:07 <module>: [INFO] QUERY
+15:39:07 <module>: [INFO] b'MAINGRID'
+15:39:07 set_switch_state: [INFO] switch set to state b'MAINGRID'
+15:39:08 <module>: [INFO] STATUS Mike MAINGRID
+15:39:08 <module>: [INFO] b'Confirmed: client Mike in state MAINGRID'
+15:39:09 connect_socket: [INFO] connected to laptop:51234 in 1 second(s)
+15:39:09 <module>: [INFO] b'Welcome to the Server\n'
+15:39:09 <module>: [INFO] empty
+15:39:09 <module>: [INFO] b"Server echo: ['empty']"
+15:39:10 <module>: [INFO] QUERY
+15:39:10 <module>: [INFO] b'MAINGRID'
+15:39:10 set_switch_state: [INFO] switch set to state b'MAINGRID'

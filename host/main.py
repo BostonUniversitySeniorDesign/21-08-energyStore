@@ -21,11 +21,11 @@ if __name__  == "__main__":
 
     ##################################
     # set up logging
-    log_filename = (defines.LOG_NAME + ".log")
     format = "%(asctime)s %(funcName)s: [%(levelname)s] %(message)s"
-    logging.basicConfig(filename=log_filename, format=format, level=logging.DEBUG, datefmt="%H:%M:%S")
+    logging.basicConfig(filename=defines.LOG_NAME, format=format, level=logging.DEBUG, datefmt="%H:%M:%S")
     log = logging.getLogger(defines.LOG_NAME)
     log.info("logging start")
+    print("logging to {}".format(defines.LOG_NAME))
 
 
     ##################################

@@ -69,7 +69,6 @@ def connection_handler(connection):
         if message[0] == "QUERY":
             reply = "MAINGRID" #define this later
         elif message[0] == "STATUS":
-            print(message)
             reply = "Confirmed: client {} in state {}".format(message[1],message[2]) 
         else:
             reply = 'Server echo: {}'.format(message)
