@@ -8,8 +8,7 @@ daemon_file=empty
 
 
 ### make everything ###
-all:
-	echo need to fill this out
+all: python daemon
 
 ### print a list ###
 list:
