@@ -49,7 +49,9 @@ if __name__  == "__main__":
 
     ##################################
     # pause then end
-    time_sleep = 20
-    print("pausing for {} seconds".format(time_sleep))
-    time.sleep(time_sleep)
-    print("DONE")
+    while True:
+        None
+    #time_sleep = 20
+    #print("pausing for {} seconds".format(time_sleep))
+    #time.sleep(time_sleep)
+    #print("DONE")

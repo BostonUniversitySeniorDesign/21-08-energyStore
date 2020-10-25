@@ -8,6 +8,8 @@ import logging
 import defines
 
 def monitor_top(empty):
+    print("starting host/main.py")
+
 
     ##################################
     # set up logging

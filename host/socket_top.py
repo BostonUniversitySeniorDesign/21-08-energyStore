@@ -1,71 +1,102 @@
 #!/usr/bin/env python3
 ############################
-
-
-### IMPORTS ###
 # standard python libs
 import socket
 import logging
+import threading
 # locally defined imports
 import defines
 
-#
-class host_socket:
+
+#######################################################################
+# This class is mostly used to leverage destructors, both sockets and
+# logging can cause issues when not properly destructed. By holding
+# these objects inside of this defined class, we can ensure the objects
+# are properly destructed incase of any runtime errors
+class host_obj:
     # predefines to make our destructor behave
-    _sock = None
+    _sockect = None
 
     # construct with hostname and port
-    def __init__(self, socket_hostname, socket_port):
-        logging.getLogger(defines.LOG_NAME).info("host_socket intialized")
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.bind((socket_hostname, socket_port))
+    def __init__(self):
+        self.hostname = socket.gethostname()
+        self.port = defines.SOCKET_PORT
+        self.log = logging.getLogger(defines.LOG_NAME)
+        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.socket.bind((self.hostname, self.port))
 
     # destructor to make sure the socket is closed after program termination
     def __del__(self):
-        logging.getLogger(defines.LOG_NAME).info("shutting down host_socket")
-        if getattr(self, '_sock', None):
-            self.sock.shutdown()
-            self.sock.close()
-        logging.getLogger(defines.LOG_NAME).info("host_socket destroyed")
+        print("destructor called")
+        if getattr(self, '_socket', None):
+            print("getattr")
+            self.socket.shutdown()
+            self.socket.close()
+        print("end getattr")
+
+    ####################################################################
+    # enter and exit are used to make sure our destructor is called even
+    # in the special case of a keyboard interupt. It's eseential that
+    # the destructor is always called so our socket isn't left open
+    def __enter__(self):
+        print("enter called")
+
+    def __exit__(self, Type, value, traceback):
+        print("exit called")
+        if getattr(self, '_socket', None):
+            print("getattr")
+            self.socket.shutdown()
+            self.socket.close()
+
+
+##################################################################
+# This function is responsible for handling any socket connections
+# it is spawned as a daemon everytime socket_top recieves a new 
+# connection
+def connection_handler(connection):
+    
+    connection.send(str.encode('Welcome to the Server\n'))
+    reply = ""
+    
+    while True:
+        # get message from client
+        message_rx = connection.recv(2048)
+        if not message_rx:
+            break
+        message = message_rx.decode('utf-8')
+        message = message.split(' ')
+
+        if message[0] == "QUERY":
+            reply = "MAINGRID" #define this later
+        elif message[0] == "STATUS":
+            print(message)
+            reply = "Confirmed: client {} in state {}".format(message[1],message[2]) 
+        else:
+            reply = 'Server echo: {}'.format(message)
+
+        connection.sendall(str.encode(reply))
+    connection.close()
+
+
+
 
 def socket_top(socket_hostname, socket_port):
-   
-    ##################################
-    # set up logging
-    log = logging.getLogger(defines.LOG_NAME)
-    log.info("socket thread started")
+    print("starting host/socket_top.py")
 
-    ##################################
-    # set up socket
-    host = host_socket(socket_hostname, socket_port)
+    host = host_obj()
 
+    with host:
 
-    while True:
-        host.sock.listen()
-        connection, address = host.sock.accept()
-        with connection:
-            print('connected by', address)
-            while True:
-                data = connection.recv(1024)
-                if not data:
-                    break
-                rx_handler(data, connection)
-            #connection.close()
+        host.socket.listen(defines.CLIENT_COUNT)
+        host.log.info("Host socket listening for {} clients".format(defines.CLIENT_COUNT))
+    
+        threads = list()
 
-# This function is responsible for handling all data recieved from socket connections
-def rx_handler(message_rx, connection):
+        while True:
+            Client, address = host.socket.accept()
+            host.log.info("Connected to: {}:{}".format(Client,address))
+            thread = threading.Thread(target=connection_handler, args=(Client,), daemon=True)
+            threads.append(thread)
+            thread.start()
+        host.socket.close()
 
-    # message handling
-    message = message_rx.decode() #convert message from type(bytes) to type(string)
-    logging.getLogger(defines.LOG_NAME).info("rx_handler : message recieved = {}".format(message))
-
-    # handling a QUERY request
-    if message == "QUERY":
-        # find out which state the client switch should be in - currently hardcoded
-        state = "MAINGRID" #two states are MAINGRID and MICROGRID
-        # state in final form needs to be grabbed from a global variable managed by another thread
-        message_tx = state.encode('utf-8')
-
-    connection.sendall(message_tx)
-
-    return
