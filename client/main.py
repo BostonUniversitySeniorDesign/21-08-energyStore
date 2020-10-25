@@ -4,6 +4,7 @@
 import socket
 import logging
 import time
+import gpiozero
 # locally defined libs
 import defines
 
@@ -32,6 +33,7 @@ def connect_socket(host, port):
 ####################################################################
 def set_switch_state(state):
     print("TODO: define set_switch_state(state)")
+    # this is where we will end up using gpiozero
     logging.getLogger(defines.LOG_NAME).info("switch set to state {}".format(state))
 
 
@@ -40,6 +42,7 @@ def set_switch_state(state):
 ####################################################################
 def get_switch_state():
     print("TODO: define get_switch_state()")
+    # this is where we will end up using gpiozero
     state = "MAINGRID"
     return state
 
