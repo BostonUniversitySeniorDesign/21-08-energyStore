@@ -20,9 +20,17 @@ import monitor_top #thred dedicated to battery monitoring
 if __name__  == "__main__":
     print("starting host/main.py")
 
+    
+    ##################################
+    # set global variables for sharing
+    # across threads
+    global MAINGRID_COST
+    global MICROGRID_COST 
+
 
     ##################################
     # set up logging
+    #TODO move log into logs/
     format = "%(asctime)s %(funcName)s: [%(levelname)s] %(message)s"
     logging.basicConfig(filename=defines.LOG_NAME, format=format, level=logging.DEBUG, datefmt="%H:%M:%S")
     log = logging.getLogger(defines.LOG_NAME)

@@ -19,3 +19,4 @@ TEMP_DEVIATION = 5 #(Farenheight?)
 #############################
 CLIENT_COUNT = 2
 SOCKET_PORT = 51234
+STATES_CSV = "states.csv"

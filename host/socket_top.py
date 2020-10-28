@@ -6,9 +6,20 @@
 import socket
 import logging
 import threading
+import datetime
+import os
 # locally defined imports
 import defines
 
+#######################################################################
+# set csv file for logging 
+#######################################################################
+csv_path = os.path.join(os.getcwd(), "logs/", str(defines.STATES_CSV))
+if not os.path.exists(csv_path):
+    file_tmp = open(csv_path, "w")
+    file_tmp.write("date,time,unit,state\n")
+    file_tmp.close()
+    
 
 #######################################################################
 # host_obj
@@ -27,7 +38,20 @@ class host_obj: # should probably make this a singleton!!!!
         self.port = defines.SOCKET_PORT
         self.log = logging.getLogger(defines.LOG_NAME)
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.socket.bind((self.hostname, self.port))
+        try:
+            self.socket.bind((self.hostname, self.port))
+        except: #this exception only handles the is the port is already in use
+            #throw in lots of prints and logging here
+            stream = os.popen("lsof | head -n 1").read()
+            keys = " ".join(stream.split())
+            pid_index = keys.split().index("PID")
+
+            stream = os.popen("lsof | grep {}:{}".format(self.hostname, self.port)).read()
+            keys = " ".join(stream.split())
+            pid = keys.split()[pid_index]
+
+            stream = os.popen("kill {}".format(pid)).read()
+            self.socket.bind((self.hostname, self.port))
 
     # destructor to make sure the socket is closed after program termination
     def __del__(self):
@@ -49,7 +73,6 @@ class host_obj: # should probably make this a singleton!!!!
             self.socket.shutdown()
             self.socket.close()
 
-
 ##################################################################
 # connection_handler
 ##################################################################
@@ -69,15 +92,28 @@ def connection_handler(connection):
         message = message.split(' ') #split message into list
         # 
         if message[0] == "QUERY":
-            reply = "MAINGRID" #define this later
-        elif message[0] == "STATUS":
-            reply = "Confirmed: client {} in state {}".format(message[1],message[2]) 
+            #TODO get maingrid and microgrid
+            MICROGRID_COST = 4
+            MAINGRID_COST = 5
+            #print("maincost {}, microgridcost {}".format(MAINGRID_COST,MICROGRID_COST))
+            if MICROGRID_COST < MAINGRID_COST:
+                reply = "MICROGRID" 
+            else:
+                reply = "MAINGRID"
+
+        elif message[0] == "STATUS": #write status of home unit to csv
+            reply = "Confirmed: client {} in state {}".format(message[1],message[2])
+            write_line = "{},{},{},{}\n".format(datetime.date.today(), datetime.datetime.now().strftime("%H:%M:%S"), message[1], message[2])
+            with open(csv_path, "a") as tmp_file:
+                tmp_file.write(write_line)
+                tmp_file.close()
+
         else:
             reply = 'Server echo: {}'.format(message)
+
         # send reply
         connection.sendall(str.encode(reply))
     connection.close()
-
 
 ##################################################################
 # socket_top

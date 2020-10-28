@@ -224,3 +224,356 @@
 19:16:49 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33110)>:('127.0.0.1', 33110)
 19:16:53 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33112)>:('127.0.0.1', 33112)
 19:16:57 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33114)>:('127.0.0.1', 33114)
+19:24:37 <module>: [INFO] logging start
+19:24:37 <module>: [INFO] defining host socket
+19:24:37 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:24:37 <module>: [INFO] starting socket thread
+19:24:37 socket_top: [INFO] socket thread started
+19:24:37 <module>: [INFO] starting monitor thread
+19:24:37 monitor_top: [INFO] monitor thread started
+19:24:37 __enter__: [INFO] host_obj entered
+19:24:37 socket_top: [INFO] Host socket listening for 2 clients
+19:24:43 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33118)>:('127.0.0.1', 33118)
+19:24:47 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33120)>:('127.0.0.1', 33120)
+19:24:49 <module>: [INFO] logging start
+19:24:49 <module>: [INFO] defining host socket
+19:24:49 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:24:49 <module>: [INFO] starting socket thread
+19:24:49 <module>: [INFO] starting monitor thread
+19:24:49 socket_top: [INFO] socket thread started
+19:24:49 monitor_top: [INFO] monitor thread started
+19:24:49 __del__: [INFO] host_obj destructor called
+19:24:51 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33122)>:('127.0.0.1', 33122)
+19:24:55 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33124)>:('127.0.0.1', 33124)
+19:24:59 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33126)>:('127.0.0.1', 33126)
+19:25:00 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33128)>:('127.0.0.1', 33128)
+19:25:03 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33130)>:('127.0.0.1', 33130)
+19:25:04 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33132)>:('127.0.0.1', 33132)
+19:25:07 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33134)>:('127.0.0.1', 33134)
+19:25:08 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33136)>:('127.0.0.1', 33136)
+19:25:12 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33138)>:('127.0.0.1', 33138)
+19:25:16 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33140)>:('127.0.0.1', 33140)
+19:25:20 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33142)>:('127.0.0.1', 33142)
+19:25:24 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33144)>:('127.0.0.1', 33144)
+19:25:28 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33146)>:('127.0.0.1', 33146)
+19:25:33 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33148)>:('127.0.0.1', 33148)
+19:25:37 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33150)>:('127.0.0.1', 33150)
+19:25:41 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33152)>:('127.0.0.1', 33152)
+19:25:45 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33154)>:('127.0.0.1', 33154)
+19:25:49 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33156)>:('127.0.0.1', 33156)
+19:25:53 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33158)>:('127.0.0.1', 33158)
+19:25:57 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33160)>:('127.0.0.1', 33160)
+19:26:01 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33162)>:('127.0.0.1', 33162)
+19:26:05 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33164)>:('127.0.0.1', 33164)
+19:26:09 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33166)>:('127.0.0.1', 33166)
+19:26:13 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33168)>:('127.0.0.1', 33168)
+19:26:17 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33170)>:('127.0.0.1', 33170)
+19:26:21 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33172)>:('127.0.0.1', 33172)
+19:26:25 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33174)>:('127.0.0.1', 33174)
+19:26:29 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33176)>:('127.0.0.1', 33176)
+19:26:33 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33178)>:('127.0.0.1', 33178)
+19:26:37 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33180)>:('127.0.0.1', 33180)
+19:26:41 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33182)>:('127.0.0.1', 33182)
+19:26:45 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33184)>:('127.0.0.1', 33184)
+19:26:49 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33186)>:('127.0.0.1', 33186)
+19:26:53 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33188)>:('127.0.0.1', 33188)
+19:26:57 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33190)>:('127.0.0.1', 33190)
+19:27:01 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33192)>:('127.0.0.1', 33192)
+19:27:06 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33194)>:('127.0.0.1', 33194)
+19:27:10 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33196)>:('127.0.0.1', 33196)
+19:27:14 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33198)>:('127.0.0.1', 33198)
+19:27:18 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33200)>:('127.0.0.1', 33200)
+19:27:22 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33202)>:('127.0.0.1', 33202)
+19:27:26 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33204)>:('127.0.0.1', 33204)
+19:27:30 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33206)>:('127.0.0.1', 33206)
+19:27:34 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33208)>:('127.0.0.1', 33208)
+19:27:38 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33210)>:('127.0.0.1', 33210)
+19:27:42 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33212)>:('127.0.0.1', 33212)
+19:27:46 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33214)>:('127.0.0.1', 33214)
+19:27:50 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33216)>:('127.0.0.1', 33216)
+19:27:54 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33218)>:('127.0.0.1', 33218)
+19:27:59 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33220)>:('127.0.0.1', 33220)
+19:28:01 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33222)>:('127.0.0.1', 33222)
+19:28:06 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33224)>:('127.0.0.1', 33224)
+19:28:13 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 33226)>:('127.0.0.1', 33226)
+19:34:28 <module>: [INFO] logging start
+19:34:28 <module>: [INFO] defining host socket
+19:34:28 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:34:28 <module>: [INFO] starting socket thread
+19:34:28 <module>: [INFO] starting monitor thread
+19:34:28 socket_top: [INFO] socket thread started
+19:34:28 monitor_top: [INFO] monitor thread started
+19:34:28 __enter__: [INFO] host_obj entered
+19:34:28 socket_top: [INFO] Host socket listening for 2 clients
+19:35:27 <module>: [INFO] logging start
+19:35:27 <module>: [INFO] defining host socket
+19:35:27 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:35:27 <module>: [INFO] starting socket thread
+19:35:27 <module>: [INFO] starting monitor thread
+19:35:27 socket_top: [INFO] socket thread started
+19:35:27 monitor_top: [INFO] monitor thread started
+19:35:27 __enter__: [INFO] host_obj entered
+19:35:27 socket_top: [INFO] Host socket listening for 2 clients
+19:41:16 <module>: [INFO] logging start
+19:41:16 <module>: [INFO] defining host socket
+19:41:16 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:41:16 <module>: [INFO] starting socket thread
+19:41:16 <module>: [INFO] starting monitor thread
+19:41:16 socket_top: [INFO] socket thread started
+19:41:16 monitor_top: [INFO] monitor thread started
+19:41:16 __enter__: [INFO] host_obj entered
+19:41:16 socket_top: [INFO] Host socket listening for 2 clients
+19:47:34 <module>: [INFO] logging start
+19:47:34 <module>: [INFO] defining host socket
+19:47:34 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:47:34 <module>: [INFO] starting socket thread
+19:47:34 <module>: [INFO] starting monitor thread
+19:47:34 socket_top: [INFO] socket thread started
+19:47:34 monitor_top: [INFO] monitor thread started
+19:47:34 __enter__: [INFO] host_obj entered
+19:47:34 socket_top: [INFO] Host socket listening for 2 clients
+19:47:47 <module>: [INFO] logging start
+19:47:47 <module>: [INFO] defining host socket
+19:47:47 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:47:47 <module>: [INFO] starting socket thread
+19:47:47 <module>: [INFO] starting monitor thread
+19:47:47 socket_top: [INFO] socket thread started
+19:47:47 monitor_top: [INFO] monitor thread started
+19:47:47 __enter__: [INFO] host_obj entered
+19:47:47 socket_top: [INFO] Host socket listening for 2 clients
+19:47:53 <module>: [INFO] logging start
+19:47:53 <module>: [INFO] defining host socket
+19:47:53 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:47:53 <module>: [INFO] starting socket thread
+19:47:53 <module>: [INFO] starting monitor thread
+19:47:53 socket_top: [INFO] socket thread started
+19:47:53 monitor_top: [INFO] monitor thread started
+19:47:53 __enter__: [INFO] host_obj entered
+19:47:53 socket_top: [INFO] Host socket listening for 2 clients
+19:49:21 <module>: [INFO] logging start
+19:49:21 <module>: [INFO] defining host socket
+19:49:21 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:49:21 <module>: [INFO] starting socket thread
+19:49:21 <module>: [INFO] starting monitor thread
+19:49:21 socket_top: [INFO] socket thread started
+19:49:21 monitor_top: [INFO] monitor thread started
+19:49:21 __enter__: [INFO] host_obj entered
+19:49:21 socket_top: [INFO] Host socket listening for 2 clients
+19:49:30 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52340)>:('127.0.0.1', 52340)
+19:49:45 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52342)>:('127.0.0.1', 52342)
+19:49:49 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52344)>:('127.0.0.1', 52344)
+19:49:53 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52346)>:('127.0.0.1', 52346)
+19:49:57 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52348)>:('127.0.0.1', 52348)
+19:50:01 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52350)>:('127.0.0.1', 52350)
+19:50:05 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52352)>:('127.0.0.1', 52352)
+19:50:09 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52354)>:('127.0.0.1', 52354)
+19:50:13 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52356)>:('127.0.0.1', 52356)
+19:50:17 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52358)>:('127.0.0.1', 52358)
+19:50:21 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52360)>:('127.0.0.1', 52360)
+19:51:16 <module>: [INFO] logging start
+19:51:16 <module>: [INFO] defining host socket
+19:51:16 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:51:16 <module>: [INFO] starting socket thread
+19:51:16 <module>: [INFO] starting monitor thread
+19:51:16 socket_top: [INFO] socket thread started
+19:51:16 monitor_top: [INFO] monitor thread started
+19:51:16 __enter__: [INFO] host_obj entered
+19:51:16 socket_top: [INFO] Host socket listening for 2 clients
+19:51:18 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52362)>:('127.0.0.1', 52362)
+19:51:23 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52364)>:('127.0.0.1', 52364)
+19:51:27 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52366)>:('127.0.0.1', 52366)
+19:51:31 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52368)>:('127.0.0.1', 52368)
+19:52:29 <module>: [INFO] logging start
+19:52:29 <module>: [INFO] defining host socket
+19:52:29 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:52:29 <module>: [INFO] starting socket thread
+19:52:29 <module>: [INFO] starting monitor thread
+19:52:29 socket_top: [INFO] socket thread started
+19:52:29 monitor_top: [INFO] monitor thread started
+19:52:29 __del__: [INFO] host_obj destructor called
+19:52:40 <module>: [INFO] logging start
+19:52:40 <module>: [INFO] defining host socket
+19:52:40 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:52:40 <module>: [INFO] starting socket thread
+19:52:40 socket_top: [INFO] socket thread started
+19:52:40 <module>: [INFO] starting monitor thread
+19:52:40 monitor_top: [INFO] monitor thread started
+19:52:40 __enter__: [INFO] host_obj entered
+19:52:40 socket_top: [INFO] Host socket listening for 2 clients
+19:52:45 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52478)>:('127.0.0.1', 52478)
+19:52:49 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52480)>:('127.0.0.1', 52480)
+19:52:54 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52482)>:('127.0.0.1', 52482)
+19:54:25 <module>: [INFO] logging start
+19:54:25 <module>: [INFO] defining host socket
+19:54:25 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+19:54:25 <module>: [INFO] starting socket thread
+19:54:25 socket_top: [INFO] socket thread started
+19:54:25 <module>: [INFO] starting monitor thread
+19:54:25 monitor_top: [INFO] monitor thread started
+19:54:25 __enter__: [INFO] host_obj entered
+19:54:25 socket_top: [INFO] Host socket listening for 2 clients
+19:54:27 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52486)>:('127.0.0.1', 52486)
+19:54:31 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52488)>:('127.0.0.1', 52488)
+19:54:36 socket_top: [INFO] Connected to: <socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52490)>:('127.0.0.1', 52490)
+19:54:40 socket_top: [INFO] Connected to: <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52492)>:('127.0.0.1', 52492)
+20:04:38 <module>: [INFO] logging start
+20:04:38 <module>: [INFO] defining host socket
+20:04:38 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:04:38 <module>: [INFO] starting socket thread
+20:04:38 <module>: [INFO] starting monitor thread
+20:04:38 socket_top: [INFO] socket thread started
+20:04:38 monitor_top: [INFO] monitor thread started
+20:04:38 __enter__: [INFO] host_obj entered
+20:04:38 socket_top: [INFO] Host socket listening for 2 clients
+20:04:40 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 52570)>:('127.0.0.1', 52570)
+20:05:39 <module>: [INFO] logging start
+20:05:39 <module>: [INFO] defining host socket
+20:05:39 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:05:39 <module>: [INFO] starting socket thread
+20:05:39 <module>: [INFO] starting monitor thread
+20:05:39 socket_top: [INFO] socket thread started
+20:05:39 monitor_top: [INFO] monitor thread started
+20:05:39 __del__: [INFO] host_obj destructor called
+20:05:43 <module>: [INFO] logging start
+20:05:43 <module>: [INFO] defining host socket
+20:05:43 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:05:43 <module>: [INFO] starting socket thread
+20:05:43 <module>: [INFO] starting monitor thread
+20:05:43 socket_top: [INFO] socket thread started
+20:05:43 monitor_top: [INFO] monitor thread started
+20:05:44 __del__: [INFO] host_obj destructor called
+20:16:41 <module>: [INFO] logging start
+20:16:41 <module>: [INFO] defining host socket
+20:16:41 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:16:41 <module>: [INFO] starting socket thread
+20:16:41 <module>: [INFO] starting monitor thread
+20:16:41 socket_top: [INFO] socket thread started
+20:16:41 monitor_top: [INFO] monitor thread started
+20:16:41 __enter__: [INFO] host_obj entered
+20:16:41 socket_top: [INFO] Host socket listening for 2 clients
+20:17:56 <module>: [INFO] logging start
+20:17:56 <module>: [INFO] defining host socket
+20:17:56 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:17:56 <module>: [INFO] starting socket thread
+20:17:56 <module>: [INFO] starting monitor thread
+20:17:56 socket_top: [INFO] socket thread started
+20:17:56 monitor_top: [INFO] monitor thread started
+20:17:56 __enter__: [INFO] host_obj entered
+20:17:56 socket_top: [INFO] Host socket listening for 2 clients
+20:22:50 <module>: [INFO] logging start
+20:22:50 <module>: [INFO] defining host socket
+20:22:50 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:22:50 <module>: [INFO] starting socket thread
+20:22:50 <module>: [INFO] starting monitor thread
+20:22:50 socket_top: [INFO] socket thread started
+20:22:50 monitor_top: [INFO] monitor thread started
+20:22:50 __enter__: [INFO] host_obj entered
+20:22:50 socket_top: [INFO] Host socket listening for 2 clients
+20:33:25 <module>: [INFO] logging start
+20:33:25 <module>: [INFO] defining host socket
+20:33:25 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:33:25 <module>: [INFO] starting socket thread
+20:33:25 <module>: [INFO] starting monitor thread
+20:33:25 socket_top: [INFO] socket thread started
+20:33:25 monitor_top: [INFO] monitor thread started
+20:33:25 __enter__: [INFO] host_obj entered
+20:33:25 socket_top: [INFO] Host socket listening for 2 clients
+20:35:39 <module>: [INFO] logging start
+20:35:39 <module>: [INFO] defining host socket
+20:35:39 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:35:39 <module>: [INFO] starting socket thread
+20:35:39 <module>: [INFO] starting monitor thread
+20:35:39 socket_top: [INFO] socket thread started
+20:35:39 monitor_top: [INFO] monitor thread started
+20:35:40 __enter__: [INFO] host_obj entered
+20:35:40 socket_top: [INFO] Host socket listening for 2 clients
+20:36:11 <module>: [INFO] logging start
+20:36:11 <module>: [INFO] defining host socket
+20:36:11 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:36:11 <module>: [INFO] starting socket thread
+20:36:11 <module>: [INFO] starting monitor thread
+20:36:11 socket_top: [INFO] socket thread started
+20:36:11 monitor_top: [INFO] monitor thread started
+20:36:11 __del__: [INFO] host_obj destructor called
+20:39:25 <module>: [INFO] logging start
+20:39:25 <module>: [INFO] defining host socket
+20:39:25 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:39:25 <module>: [INFO] starting socket thread
+20:39:25 <module>: [INFO] starting monitor thread
+20:39:25 socket_top: [INFO] socket thread started
+20:39:25 monitor_top: [INFO] monitor thread started
+20:39:25 __enter__: [INFO] host_obj entered
+20:39:25 socket_top: [INFO] Host socket listening for 2 clients
+20:39:55 <module>: [INFO] logging start
+20:39:55 <module>: [INFO] defining host socket
+20:39:55 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:39:55 <module>: [INFO] starting socket thread
+20:39:55 <module>: [INFO] starting monitor thread
+20:39:55 socket_top: [INFO] socket thread started
+20:39:55 monitor_top: [INFO] monitor thread started
+20:39:55 __enter__: [INFO] host_obj entered
+20:39:55 socket_top: [INFO] Host socket listening for 2 clients
+20:41:11 <module>: [INFO] logging start
+20:41:11 <module>: [INFO] defining host socket
+20:41:11 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:41:11 <module>: [INFO] starting socket thread
+20:41:11 <module>: [INFO] starting monitor thread
+20:41:11 socket_top: [INFO] socket thread started
+20:41:11 monitor_top: [INFO] monitor thread started
+20:41:11 __enter__: [INFO] host_obj entered
+20:41:11 socket_top: [INFO] Host socket listening for 2 clients
+20:45:00 <module>: [INFO] logging start
+20:45:00 <module>: [INFO] defining host socket
+20:45:00 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:45:00 <module>: [INFO] starting socket thread
+20:45:00 <module>: [INFO] starting monitor thread
+20:45:00 socket_top: [INFO] socket thread started
+20:45:00 monitor_top: [INFO] monitor thread started
+20:45:00 __enter__: [INFO] host_obj entered
+20:45:00 socket_top: [INFO] Host socket listening for 2 clients
+20:45:51 <module>: [INFO] logging start
+20:45:51 <module>: [INFO] defining host socket
+20:45:51 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:45:51 <module>: [INFO] starting socket thread
+20:45:51 socket_top: [INFO] socket thread started
+20:45:51 <module>: [INFO] starting monitor thread
+20:45:51 monitor_top: [INFO] monitor thread started
+20:45:51 __enter__: [INFO] host_obj entered
+20:45:51 socket_top: [INFO] Host socket listening for 2 clients
+20:45:56 <module>: [INFO] logging start
+20:45:56 <module>: [INFO] defining host socket
+20:45:56 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:45:56 <module>: [INFO] starting socket thread
+20:45:56 <module>: [INFO] starting monitor thread
+20:45:56 socket_top: [INFO] socket thread started
+20:45:56 monitor_top: [INFO] monitor thread started
+20:45:59 __enter__: [INFO] host_obj entered
+20:45:59 socket_top: [INFO] Host socket listening for 2 clients
+20:56:11 <module>: [INFO] logging start
+20:56:11 <module>: [INFO] defining host socket
+20:56:11 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:56:11 <module>: [INFO] starting socket thread
+20:56:11 <module>: [INFO] starting monitor thread
+20:56:11 socket_top: [INFO] socket thread started
+20:56:11 monitor_top: [INFO] monitor thread started
+20:56:11 __enter__: [INFO] host_obj entered
+20:56:11 socket_top: [INFO] Host socket listening for 2 clients
+20:56:41 <module>: [INFO] logging start
+20:56:41 <module>: [INFO] defining host socket
+20:56:41 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:56:41 <module>: [INFO] starting socket thread
+20:56:41 <module>: [INFO] starting monitor thread
+20:56:41 socket_top: [INFO] socket thread started
+20:56:41 monitor_top: [INFO] monitor thread started
+20:56:41 __enter__: [INFO] host_obj entered
+20:56:41 socket_top: [INFO] Host socket listening for 2 clients
+20:57:45 <module>: [INFO] logging start
+20:57:45 <module>: [INFO] defining host socket
+20:57:45 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+20:57:45 <module>: [INFO] starting socket thread
+20:57:45 <module>: [INFO] starting monitor thread
+20:57:45 socket_top: [INFO] socket thread started
+20:57:45 monitor_top: [INFO] monitor thread started
+20:57:45 __enter__: [INFO] host_obj entered
+20:57:45 socket_top: [INFO] Host socket listening for 2 clients
+20:57:52 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 38976)>:('127.0.0.1', 38976)

@@ -4,6 +4,7 @@
 import logging
 import time
 import random
+import threading
 # locally defined imports
 import defines
 
@@ -38,7 +39,12 @@ def monitor_top(empty):
     ##################################
     # MAIN LOOP
     while True:
-        
+
+        global MAINGRID_COST
+        global MICROGRID_COST
+        MAINGRID_COST = 4
+        MICORGRID_COST = 7
+
 
         ##################################
         # MODEL BRANCH
@@ -54,6 +60,7 @@ def monitor_top(empty):
             temperature = monitor_temp()
             charge = monitor_charge()
             print("")
+
 
         # wait then run again
         wait_time = defines.MONITOR_FREQ #* 60
