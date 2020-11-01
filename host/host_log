@@ -577,3 +577,12 @@
 20:57:45 __enter__: [INFO] host_obj entered
 20:57:45 socket_top: [INFO] Host socket listening for 2 clients
 20:57:52 socket_top: [INFO] Connected to: <socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.1.1', 51234), raddr=('127.0.0.1', 38976)>:('127.0.0.1', 38976)
+16:23:56 <module>: [INFO] logging start
+16:23:56 <module>: [INFO] defining host socket
+16:23:56 <module>: [INFO] socket_hostname = laptop, socket_port = 51234
+16:23:56 <module>: [INFO] starting socket thread
+16:23:56 <module>: [INFO] starting monitor thread
+16:23:56 socket_top: [INFO] socket thread started
+16:23:56 monitor_top: [INFO] monitor thread started
+16:23:56 __enter__: [INFO] host_obj entered
+16:23:56 socket_top: [INFO] Host socket listening for 2 clients

@@ -24,8 +24,6 @@ if __name__  == "__main__":
     ##################################
     # set global variables for sharing
     # across threads
-    global MAINGRID_COST
-    global MICROGRID_COST 
 
 
     ##################################

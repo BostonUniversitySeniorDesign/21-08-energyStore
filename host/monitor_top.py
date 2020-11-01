@@ -21,8 +21,19 @@ def monitor_temp():
 # get_charge
 ####################################################################
 def monitor_charge():
-    ### FILL THIS OUT ###
+    #TODO: fill this out
+    charge = 4
     return charge
+
+####################################################################
+# battery_available 
+####################################################################
+def battery_available():
+    charge = monitor_charge()
+    if charge > defines.MINIMUM_CHARGE:
+        return True
+    else:
+        return False
 
 ####################################################################
 # monitor_top 

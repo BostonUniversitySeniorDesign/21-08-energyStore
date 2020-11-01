@@ -20,3 +20,11 @@ TEMP_DEVIATION = 5 #(Farenheight?)
 CLIENT_COUNT = 2
 SOCKET_PORT = 51234
 STATES_CSV = "states.csv"
+
+
+#############################
+# constants for battery
+#############################
+BATTERY_NAME = "model_battery"
+BATTERY_MAX_CAPACITY = 2 #fix later
+

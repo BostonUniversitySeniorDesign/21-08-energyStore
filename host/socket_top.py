@@ -10,7 +10,7 @@ import datetime
 import os
 # locally defined imports
 import defines
-
+import battery
 #######################################################################
 # set csv file for logging 
 #######################################################################
@@ -19,6 +19,7 @@ if not os.path.exists(csv_path):
     file_tmp = open(csv_path, "w")
     file_tmp.write("date,time,unit,state\n")
     file_tmp.close()
+
     
 
 #######################################################################
@@ -82,7 +83,10 @@ class host_obj: # should probably make this a singleton!!!!
 def connection_handler(connection):
     # inital message 
     connection.send(str.encode('connected'))
-    # main loop    
+
+    ##################################
+    # Main loop for handling 
+    # connections
     while True:
         # get message from client
         message_rx = connection.recv(2048)
@@ -90,13 +94,13 @@ def connection_handler(connection):
             break
         message = message_rx.decode('utf-8')
         message = message.split(' ') #split message into list
-        # 
-        if message[0] == "QUERY":
-            #TODO get maingrid and microgrid
-            MICROGRID_COST = 4
-            MAINGRID_COST = 5
+         
+
+        if message[0] == "QUERY": #Tell home unit which state to be in
+            maingrid_cost = get_maingrid_cost()
+            microgrid_cost = get_microgrid_cost()
             #print("maincost {}, microgridcost {}".format(MAINGRID_COST,MICROGRID_COST))
-            if MICROGRID_COST < MAINGRID_COST:
+            if (MICROGRID_COST < MAINGRID_COST) and battery.battery_available():
                 reply = "MICROGRID" 
             else:
                 reply = "MAINGRID"
@@ -108,12 +112,60 @@ def connection_handler(connection):
                 tmp_file.write(write_line)
                 tmp_file.close()
 
-        else:
+        else: #home unit sent bad message, echo it
             reply = 'Server echo: {}'.format(message)
 
         # send reply
         connection.sendall(str.encode(reply))
     connection.close()
+
+
+#######################################################################
+# get_maingrid_cost
+#######################################################################
+# return the cost of power from the maingrid (dollars/kWh)
+# using this as refrence https://www.sce.com/residential/rates/Time-Of-Use-Residential-Rate-Plans
+# for now this is using the TOU-D-4-9PM plan, TODO: add other plans
+def get_maingrid_cost():
+
+    month = datetime.datetime.today().month
+    if (month >= june) and (month <= 9):
+        summer = True
+    else:
+        summer = False
+
+    day_num = datetime.datetime.today().weekday()
+    if day_num > 4:
+        weekend = True
+    else:
+        weekend = False
+    
+    hour = datetime.datetime.now().hour
+    
+    if summer:
+        if (hour >= 16) and (hour <= 21): #4pm-9pm
+            if weekend: #summer, weekend, peak
+                return 0.34
+            else: #summer, weekday, peak
+                return 0.41
+        else:#summer, weekend and weekday, off-peak
+            return 0.26
+    else:
+        if hour >= 21: #winter, weekend and weekday, off-peak
+            return 0.27
+        elif hour >= 16: #winter, weekend and weekday, peak 
+            return 0.36
+        else: #winter, weekend and weekday, super off-peak
+            return 0.25
+
+
+#######################################################################
+# get_microgrid_cost
+#######################################################################
+# return the cost of power from the microgrid (dollars/kWh)
+def get_microgrid_cost():
+    return 0.1
+
 
 ##################################################################
 # socket_top
