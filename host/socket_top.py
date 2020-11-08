@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 ############################
 
-
 # standard python libs
 import socket
 import logging
