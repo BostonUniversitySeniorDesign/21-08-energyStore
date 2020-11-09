@@ -15,7 +15,7 @@ dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=2020)
 
 interval_length = 5 #(minutes)
-interval_count = 105120
+interval_count = 288
 # given interval_length == 5
 #1 hour 60/interval_length = 12
 #1 day 1440/interval_length = 288
@@ -30,23 +30,23 @@ class Battery_obj:
 
     def __init__(self):
         #TODO figure out some guestimates for this
-        self.name = "SIM_BATTERY"
-        self.charge_rate = 0.0 #(units?)
-        self.discharge_rate = 0.0 #(units?)
-        self.current_charge = 0.0 #(kWh)
-        self.max_capacity = 0.0 #(kWh)
+        #TODO ?? charging rates and such
+        #Dynamic
+        self.charge = 0.0 #(kWh)
         self.average_cost = 0.0 #(USD/kWh)
+        #Static
+        self.CHARGE_EFF = 0.0 #(units?)
+        self.DISCHARGE_EFF = 0.0 #(units?)
+        self.MAX_CAPACITY = 0.0 #(kWh)
+        self.MIN_CHARGE = 0.0 #(kWh)
 
     # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
     def charge(self, amount, cost):
-        # TODO
-        # Here when charge is added, also need to update the avgCost of the Battery
-        # - how often do we do this?
-        # also update avg charge
-        pass
+        #TODO update average charge
+        self.charge += (amount * self.CHARGE_EFF)
 
     def discharge(self, amount):
-        self.curr_charge -= amount
+        self.charge -= amount
         return amount * self.average_cost #return cost of this charge
 
 ####################################################################
@@ -100,6 +100,7 @@ interval_count_historic = interval_count
 number_of_houses = 4 #do not change, this is hardcoded for our data 
 house_running_cost_main_grid = [0] * number_of_houses
 house_running_cost_micro_grid = [0] * number_of_houses
+num_panels = [1, 1, 1, 1]
 
 #load csv data into pandas dataframes
 print("loading data for household energy usage")
@@ -124,7 +125,6 @@ for df in df_list:
                 date_new = date_list[1] + '/' + date_list[0]
                 dates_new[i] = date_new
                 i+=1
-            print(dates_new)
     df = df.drop(['Date'], axis=1)
     df['Date'] = dates_new
     df_list[x] = df
@@ -138,17 +138,10 @@ while interval_count != 0:
 
     ##################################
     #decrement interval
-    #print(interval_count)
+    print(interval_count)
     interval_count -= 1
-    
 
-    #TODO charge battery: for now we can ignore this probably
-    #battery.charge(amount?, 0) #charge from solar for increment
-    #TODO add some sort of logic for this
-    amount = 4
-    battery.charge(amount, get_maingrid_cost()) #charge from main grid
-
-    #TODO get demand for energy
+    #Get demand for energy
     house_demand = [0] * number_of_houses
     for i_interval in range(interval_length): #iterate through interval length
         #get date & time
@@ -161,18 +154,39 @@ while interval_count != 0:
             house_demand[i_num_houses] += energy 
         dt += datetime.timedelta(minutes=1) #increment date time
     
-    #TODO discharge battery per 4 houses
+    #Get solar production per-household
+    solar_energy = [0] * number_of_houses
+    for i_solar in range(number_of_houses):
+        if num_panels[i_solar] > 0:
+            solar_energy[i_solar] = #TODO get solar produced by house
+            #power house w/ solar
+            if solar_energy[i_solar] > house_demand[i_solar]:
+                excess_energy = solar_energy[i_solar] - house_demand[i_solar]
+                house_demand[i_solar] = 0
+            else:
+                house_demand[i_solar] = house_demand[i_solar] - solar_energy[i_solar]
+                excess_energy = 0
+            #charge battery
+            battery.charge(excess_energy, 0)
+
+    #TODO charge battery from maingrid
+    if battery.charge < battery.MIN_CHARGE:
+        #charge battery to min_charge / TODO charge rates have to get important here
+        pass
+
     for j_num_houses in range(number_of_houses):
-        #energy_used == house_demand
-        if (battery.average_cost < get_maingrid_cost()) and (battery.current_charge > house_demand[j_num_houses]):
-            house_running_cost_micro_grid[j_num_houses] += battery.discharge(house_demand[j_num_houses])
+        # battery is cheaper, has enough charge, and is above min charge
+        if (battery.average_cost < get_maingrid_cost()) and (battery.charge > (house_demand[j_num_houses] * (1+battery.DISCHARGE_EFF))) and (battery.charge > battery.MIN_CHARGE):
+            house_running_cost_micro_grid[j_num_houses] += battery.discharge(house_demand[j_num_houses] * (1+battery.DISCHARGE_EFF))
         else:
             house_running_cost_main_grid[j_num_houses] += house_demand[j_num_houses] * get_maingrid_cost()
+
     print("maingird: {}".format(house_running_cost_main_grid))
     print("microgird: {}".format(house_running_cost_micro_grid))
 
-##################################
+####################################################################
 # END
+####################################################################
 timer_end = time.time()
 print('finished in {} seconds'.format(timer_end-timer_start))
 for x in range(number_of_houses):
