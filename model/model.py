@@ -32,7 +32,7 @@ class Battery_obj:
         #TODO figure out some guestimates for this
         #TODO ?? charging rates and such
         #Dynamic
-        self.charge = 0.0 #(kWh)
+        self.current_charge = 0.0 #(kWh)
         self.average_cost = 0.0 #(USD/kWh)
         #Static
         self.CHARGE_EFF = 0.0 #(units?)
@@ -43,10 +43,10 @@ class Battery_obj:
     # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
     def charge(self, amount, cost):
         #TODO update average charge
-        self.charge += (amount * self.CHARGE_EFF)
+        self.current_charge += (amount * self.CHARGE_EFF)
 
     def discharge(self, amount):
-        self.charge -= amount
+        self.current_charge -= amount
         return amount * self.average_cost #return cost of this charge
 
 ####################################################################
@@ -158,7 +158,7 @@ while interval_count != 0:
     solar_energy = [0] * number_of_houses
     for i_solar in range(number_of_houses):
         if num_panels[i_solar] > 0:
-            solar_energy[i_solar] = #TODO get solar produced by house
+            solar_energy[i_solar] = 0#TODO get solar produced by house
             #power house w/ solar
             if solar_energy[i_solar] > house_demand[i_solar]:
                 excess_energy = solar_energy[i_solar] - house_demand[i_solar]
@@ -170,13 +170,13 @@ while interval_count != 0:
             battery.charge(excess_energy, 0)
 
     #TODO charge battery from maingrid
-    if battery.charge < battery.MIN_CHARGE:
+    if battery.current_charge < battery.MIN_CHARGE:
         #charge battery to min_charge / TODO charge rates have to get important here
         pass
 
     for j_num_houses in range(number_of_houses):
         # battery is cheaper, has enough charge, and is above min charge
-        if (battery.average_cost < get_maingrid_cost()) and (battery.charge > (house_demand[j_num_houses] * (1+battery.DISCHARGE_EFF))) and (battery.charge > battery.MIN_CHARGE):
+        if (battery.average_cost < get_maingrid_cost()) and (battery.current_charge > (house_demand[j_num_houses] * (1+battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
             house_running_cost_micro_grid[j_num_houses] += battery.discharge(house_demand[j_num_houses] * (1+battery.DISCHARGE_EFF))
         else:
             house_running_cost_main_grid[j_num_houses] += house_demand[j_num_houses] * get_maingrid_cost()
