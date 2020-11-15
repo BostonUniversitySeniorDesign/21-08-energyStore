@@ -17,11 +17,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-<<<<<<< HEAD
-interval_count = 12
-=======
 interval_count = 5
->>>>>>> 8f40f9a06da22dcc58d045f8e8b766146efbeb50
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -30,15 +26,15 @@ interval_count = 5
 # 365 days 525600/interval_length = 105120
 
 # set solar parameters
-solar_area = [1, 1, 1, 1] #solar panel area (m2)
-solar_efficiency = [1, 1, 1, 1] #solare panel efficiency (decimal)
+solar_area = [1, 1, 1, 1]  # solar panel area (m2)
+solar_efficiency = [1, 1, 1, 1]  # solare panel efficiency (decimal)
 
 
 ####################################################################
 # CLASSES
 ####################################################################
 
-#Assuming this is a tesla powerwall
+# Assuming this is a tesla powerwall
 class Battery_obj:
 
     def __init__(self):
@@ -47,13 +43,13 @@ class Battery_obj:
         # Dynamic
         self.current_charge = 0.0  # (kWh)
         self.average_cost = 0.0  # (USD/kWh)
-        self.interval_continuous_power = 0.0 # (kW)
+        self.interval_continuous_power = 0.0  # (kW)
         # Static
         self.CHARGE_EFF = 0.95  # (percentage expressed as a decimal)
-        self.DISCHARGE_EFF = 0.95 # (percentage expressed as a decimal)
+        self.DISCHARGE_EFF = 0.95  # (percentage expressed as a decimal)
         self.MAX_CAPACITY = 13.5  # (kWh)
         self.MIN_CHARGE = 3.0  # (kWh)
-        self.MAX_CONTINUOUS_POWER = 5.8 # (kW)
+        self.MAX_CONTINUOUS_POWER = 5.8  # (kW)
 
     # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
     def charge(self, amount, cost):
@@ -139,9 +135,10 @@ timer_start = time.time()
 
 # set up battery object
 battery = Battery_obj()
-MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * (interval_length / 60) #kWh 
+MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * \
+    (interval_length / 60)  # kWh
 
-#store this info for use later
+# store this info for use later
 total_minutes = interval_count * interval_length
 
 # All of these arrays are used to store information
@@ -191,11 +188,9 @@ solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
 print("Starting main loop")
 while interval_count != 0:
 
-    
     ##################################
     # For tracking battery charging & discharging
     battery.interval_continuous_power = 0
-
 
     ##################################
     # decrement interval
@@ -213,25 +208,22 @@ while interval_count != 0:
         for i_num_houses in range(number_of_houses):
             df_tmp = df_list[i]
             energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (
-                df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
+                df_tmp['Time'] == time_)]['Global_active_power'].item())/60  # energy is in kWh
             house_demand[i] += energy
-            house_running_demand[i] += house_demand[i] #kWh
+            house_running_demand[i] += house_demand[i]  # kWh
         dt += datetime.timedelta(minutes=1)  # increment date time
 
-<<<<<<< HEAD
     # TODO: Add in TOU pricing for summer and winter
     #   Keep track of energy usage MONTHY to see if any house goes over 130% energy usage for the month
     #   If they go over, they move from tier 1 pricing to tier 2 pricing
     #   Back to tier 1 at the start of a new month
 
-=======
     ##################################
->>>>>>> 8f40f9a06da22dcc58d045f8e8b766146efbeb50
     # Get solar production per-household
     solar_energy = [0] * number_of_houses
-    GHI = #TODO get ghi from solar_df
+    GHI =  # TODO get ghi from solar_df
     for i in range(number_of_houses):
-        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI 
+        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI
         house_running_solar_produced[i] += solar_energy[i]
         # power house w/ solar
         if solar_energy[i] > house_demand[i]:
@@ -268,13 +260,7 @@ while interval_count != 0:
 # END
 ####################################################################
 timer_end = time.time()
-<<<<<<< HEAD
-print('finished in {} seconds'.format(timer_end-timer_start))
-for x in range(number_of_houses):
-    print('house {} paid {} dollars for their energy consumed in {} minutes'.format(
-        x, house_running_cost_main_grid[x], interval_count_historic * interval_length))
-=======
-screen_len = 60 #for printing pretty stuff
+screen_len = 60  # for printing pretty stuff
 
 
 # Print a fancy border
@@ -284,15 +270,18 @@ for i in range(screen_len):
 print()
 
 # Print simulation time
-print('Simulated {} minutes in {} seconds\n'.format(total_minutes, timer_end-timer_start))
+print('Simulated {} minutes in {} seconds\n'.format(
+    total_minutes, timer_end-timer_start))
 
 # Print statistics per household
 for i in range(number_of_houses):
     for j in range(int(screen_len/2)):
         print('-', end='')
     print("\nHOUSE {}".format(i))
-    print("total energy used: {}kWh".format(round(house_running_demand[i],2)))
-    print("maingrid cost: ${}".format(round(house_running_cost_main_grid[i],2)))
-    print("microgrid cost: ${}".format(round(house_running_cost_micro_grid[i],2)))
-    print("solar produced: {}kWh".format(round(house_running_solar_produced[i],2)))
->>>>>>> 8f40f9a06da22dcc58d045f8e8b766146efbeb50
+    print("total energy used: {}kWh".format(round(house_running_demand[i], 2)))
+    print("maingrid cost: ${}".format(
+        round(house_running_cost_main_grid[i], 2)))
+    print("microgrid cost: ${}".format(
+        round(house_running_cost_micro_grid[i], 2)))
+    print("solar produced: {}kWh".format(
+        round(house_running_solar_produced[i], 2)))
