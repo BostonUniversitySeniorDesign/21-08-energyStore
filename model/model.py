@@ -156,6 +156,7 @@ house_running_main_grid_usage = [0] * number_of_houses #(kWh)
 house_running_micro_grid_usage = [0] * number_of_houses #(kWh)
 house_running_solar_usage = [0] * number_of_houses #(kWh)
 
+
 ######################################
 # load csv data into pandas dataframes (houshold demand)
 house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
@@ -211,9 +212,14 @@ while interval_count != 0:
     ##################################
     # Get demand for energy and GHI while
     # stepping date&time
+<<<<<<< HEAD
     print("Calculating energy usage and GHI")
     house_demand_total = [0] * number_of_houses
     GHI = 0 #(wh/m2)
+=======
+    house_demand = [0] * number_of_houses
+    GHI = 0  # (wh/m2)
+>>>>>>> de3efa1b2a252869f7fb02ec8a6d471e536cc985
     for i in range(interval_length):  # iterate through interval length
         # string manipluation for date and time indexing
         date_ = str(dt.month) + '/' + str(dt.day)
@@ -222,10 +228,20 @@ while interval_count != 0:
         # get home demand
         for j in range(number_of_houses):
             df_tmp = df_list[j]
+<<<<<<< HEAD
             energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
             house_demand_total[j] = energy
         # get GHI
         GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60 #TODO check that strings are hitting for all hours
+=======
+            energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (
+                df_tmp['Time'] == time_)]['Global_active_power'].item())/60  # energy is in kWh
+            house_demand[j] += energy
+            house_running_demand[j] += house_demand[j]  # kWh
+        # get GHI
+        GHI += float(solar_df.loc[(solar_df['Date'] == date_)
+                                  & (solar_df['Time'] == hour_)]['GHI'].item())/60
+>>>>>>> de3efa1b2a252869f7fb02ec8a6d471e536cc985
         dt += datetime.timedelta(minutes=1)  # increment date time
     print("GHI: {}Wh/m2".format(round(GHI,2)))
     
@@ -242,7 +258,8 @@ while interval_count != 0:
     solar_energy_used_house = [0] * number_of_houses
     house_demand = [0] * number_of_house
     for i in range(number_of_houses):
-        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000 #(kWh)
+        solar_energy[i] = solar_area[i] * \
+            solar_efficiency[i] * GHI / 1000  # (kWh)
         house_running_solar_produced[i] += solar_energy[i]
         # power house w/ solar
         #TODO, also charge for solar
