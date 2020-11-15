@@ -179,34 +179,39 @@ while interval_count != 0:
     interval_count -= 1
 
     ##################################
-    # Get demand for energy
+    # Get demand for energy and GHI while
+    # stepping date&time
     house_demand = [0] * number_of_houses
+    GHI = 0 #(wh/m2)
     for i in range(interval_length):  # iterate through interval length
-        # get date & time
+        # string manipluation for date and time indexing
         date_ = str(dt.month) + '/' + str(dt.day)
         time_ = str(dt.time()).split('.')[0]
+        hour_ = dt.hour
         print('date {} time {}'.format(date_, time_))
-        for i_num_houses in range(number_of_houses):
-            df_tmp = df_list[i]
+        # get home demand
+        for j in range(number_of_houses):
+            df_tmp = df_list[j]
             energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (
                 df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
-            house_demand[i] += energy
-            house_running_demand[i] += house_demand[i] #kWh
+            house_demand[j] += energy
+            house_running_demand[j] += house_demand[j] #kWh
+        # get GHI
+        GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60
         dt += datetime.timedelta(minutes=1)  # increment date time
 
     ##################################
     # Get solar production per-household
     solar_energy = [0] * number_of_houses
-    GHI = #TODO get ghi from solar_df
     for i in range(number_of_houses):
-        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI 
+        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000 #(kWh)
         house_running_solar_produced[i] += solar_energy[i]
         # power house w/ solar
         if solar_energy[i] > house_demand[i]:
             excess_energy = solar_energy[i] - house_demand[i]
             house_demand[i] = 0
         else:
-            house_demand[i_solar] = house_demand[i] - \
+            house_demand[i] = house_demand[i] - \
                 solar_energy[i]
             excess_energy = 0
         # charge battery
