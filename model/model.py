@@ -26,15 +26,15 @@ interval_count = 5
 # 365 days 525600/interval_length = 105120
 
 # set solar parameters
-solar_area = [1, 1, 1, 1] #solar panel area (m2)
-solar_efficiency = [1, 1, 1, 1] #solare panel efficiency (decimal)
+solar_area = [1, 1, 1, 1]  # solar panel area (m2)
+solar_efficiency = [1, 1, 1, 1]  # solare panel efficiency (decimal)
 
 
 ####################################################################
 # CLASSES
 ####################################################################
 
-#Assuming this is a tesla powerwall
+# Assuming this is a tesla powerwall
 class Battery_obj:
 
     def __init__(self):
@@ -43,13 +43,13 @@ class Battery_obj:
         # Dynamic
         self.current_charge = 0.0  # (kWh)
         self.average_cost = 0.0  # (USD/kWh)
-        self.interval_continuous_power = 0.0 # (kW)
+        self.interval_continuous_power = 0.0  # (kW)
         # Static
         self.CHARGE_EFF = 0.95  # (percentage expressed as a decimal)
-        self.DISCHARGE_EFF = 0.95 # (percentage expressed as a decimal)
+        self.DISCHARGE_EFF = 0.95  # (percentage expressed as a decimal)
         self.MAX_CAPACITY = 13.5  # (kWh)
         self.MIN_CHARGE = 3.0  # (kWh)
-        self.MAX_CONTINUOUS_POWER = 5.8 # (kW)
+        self.MAX_CONTINUOUS_POWER = 5.8  # (kW)
 
     # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
     def charge(self, amount, cost):
@@ -70,41 +70,61 @@ class Battery_obj:
 # FUNCTIONS
 ####################################################################
 # return the cost of power from the maingrid (dollars/kWh)
-# using this as refrence https://www.sce.com/residential/rates/Time-Of-Use-Residential-Rate-Plans
-# for now this is using the TOU-D-4-9PM plan, TODO: add other plans
+# using this as refrence https://www.sdge.com/whenmatters
+
+# takes the current date as a datetime object,
+# along with the usage so far for the current month
+# to determine the tier: tier 1 under 130%
 
 
 def get_maingrid_cost(dt):
 
+    # TODO: add Tier 1 and tier 2 pricing based on their monthy usage so far:
+    #   Coastal, summer (June 1 - Oct 31), all electric
+    #       130% of Baseline is 234 kWh monthly
+    #   Coastal, winter (Nov 1 - May 31), all electric
+    #       130% of Baseline is 343 kWh monthly
+
+    # get current month and day
     month = dt.month
-    if (month >= 6) and (month <= 9):
-        summer = True
-    else:
-        summer = False
-    day_num = dt.weekday()
-
-    if day_num > 4:
-        weekend = True
-    else:
-        weekend = False
-
     hour = dt.hour
 
-    if summer:
-        if (hour >= 16) and (hour <= 21):  # 4pm-9pm
-            if weekend:  # summer, weekend, peak
-                return 0.34
-            else:  # summer, weekday, peak
-                return 0.41
-        else:  # summer, weekend and weekday, off-peak
-            return 0.26
+    # Peak hours defined as 4PM to 9PM
+    if (hour >= 4) and (hour <= 9):
+        peak = True
     else:
-        if hour >= 21:  # winter, weekend and weekday, off-peak
-            return 0.27
-        elif hour >= 16:  # winter, weekend and weekday, peak
-            return 0.36
-        else:  # winter, weekend and weekday, super off-peak
-            return 0.25
+        peak = False
+
+    # Pricing differs per month
+    if (month == 1) or (month == 2):    # january and february
+        if peak:
+            return .21262
+        else:
+            return .20864
+
+    elif (month == 3) or (month == 4):  # march and april
+        if peak:
+            return .20775
+        else:
+            return .20376
+
+    elif (month == 5):                  # may
+        if peak:
+            return .22034
+        else:
+            return .21522
+
+    elif (month >= 6) and (month <= 10):  # june to october
+        if peak:
+            return .34163
+        else:
+            return .27906
+
+    elif (month >= 11):                  # november and december
+        if peak:
+            return .23040
+        else:
+            return .22528
 
 
 ####################################################################
@@ -115,9 +135,10 @@ timer_start = time.time()
 
 # set up battery object
 battery = Battery_obj()
-MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * (interval_length / 60) #kWh 
+MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * \
+    (interval_length / 60)  # kWh
 
-#store this info for use later
+# store this info for use later
 total_minutes = interval_count * interval_length
 
 # All of these arrays are used to store information
@@ -167,11 +188,9 @@ solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
 print("Starting main loop")
 while interval_count != 0:
 
-    
     ##################################
     # For tracking battery charging & discharging
     battery.interval_continuous_power = 0
-
 
     ##################################
     # decrement interval
@@ -192,13 +211,17 @@ while interval_count != 0:
         # get home demand
         for j in range(number_of_houses):
             df_tmp = df_list[j]
-            energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (
-                df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
+            energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
             house_demand[j] += energy
             house_running_demand[j] += house_demand[j] #kWh
         # get GHI
         GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60
         dt += datetime.timedelta(minutes=1)  # increment date time
+
+    # TODO: Add in TOU pricing for summer and winter
+    #   Keep track of energy usage MONTHY to see if any house goes over 130% energy usage for the month
+    #   If they go over, they move from tier 1 pricing to tier 2 pricing
+    #   Back to tier 1 at the start of a new month
 
     ##################################
     # Get solar production per-household
@@ -241,7 +264,7 @@ while interval_count != 0:
 # END
 ####################################################################
 timer_end = time.time()
-screen_len = 60 #for printing pretty stuff
+screen_len = 60  # for printing pretty stuff
 
 
 # Print a fancy border
@@ -251,14 +274,18 @@ for i in range(screen_len):
 print()
 
 # Print simulation time
-print('Simulated {} minutes in {} seconds\n'.format(total_minutes, timer_end-timer_start))
+print('Simulated {} minutes in {} seconds\n'.format(
+    total_minutes, timer_end-timer_start))
 
 # Print statistics per household
 for i in range(number_of_houses):
     for j in range(int(screen_len/2)):
         print('-', end='')
     print("\nHOUSE {}".format(i))
-    print("total energy used: {}kWh".format(round(house_running_demand[i],2)))
-    print("maingrid cost: ${}".format(round(house_running_cost_main_grid[i],2)))
-    print("microgrid cost: ${}".format(round(house_running_cost_micro_grid[i],2)))
-    print("solar produced: {}kWh".format(round(house_running_solar_produced[i],2)))
+    print("total energy used: {}kWh".format(round(house_running_demand[i], 2)))
+    print("maingrid cost: ${}".format(
+        round(house_running_cost_main_grid[i], 2)))
+    print("microgrid cost: ${}".format(
+        round(house_running_cost_micro_grid[i], 2)))
+    print("solar produced: {}kWh".format(
+        round(house_running_solar_produced[i], 2)))
