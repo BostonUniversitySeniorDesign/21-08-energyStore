@@ -149,6 +149,7 @@ house_running_solar_produced = [0] * number_of_houses
 house_running_demand = [0] * number_of_houses
 solar_panel_area = [1, 1, 1, 1]
 
+
 ######################################
 # load csv data into pandas dataframes (houshold demand)
 house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
@@ -201,7 +202,7 @@ while interval_count != 0:
     # Get demand for energy and GHI while
     # stepping date&time
     house_demand = [0] * number_of_houses
-    GHI = 0 #(wh/m2)
+    GHI = 0  # (wh/m2)
     for i in range(interval_length):  # iterate through interval length
         # string manipluation for date and time indexing
         date_ = str(dt.month) + '/' + str(dt.day)
@@ -211,11 +212,13 @@ while interval_count != 0:
         # get home demand
         for j in range(number_of_houses):
             df_tmp = df_list[j]
-            energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
+            energy = float(df_tmp.loc[(df_tmp['Date'] == date_) & (
+                df_tmp['Time'] == time_)]['Global_active_power'].item())/60  # energy is in kWh
             house_demand[j] += energy
-            house_running_demand[j] += house_demand[j] #kWh
+            house_running_demand[j] += house_demand[j]  # kWh
         # get GHI
-        GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60
+        GHI += float(solar_df.loc[(solar_df['Date'] == date_)
+                                  & (solar_df['Time'] == hour_)]['GHI'].item())/60
         dt += datetime.timedelta(minutes=1)  # increment date time
 
     # TODO: Add in TOU pricing for summer and winter
@@ -227,7 +230,8 @@ while interval_count != 0:
     # Get solar production per-household
     solar_energy = [0] * number_of_houses
     for i in range(number_of_houses):
-        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000 #(kWh)
+        solar_energy[i] = solar_area[i] * \
+            solar_efficiency[i] * GHI / 1000  # (kWh)
         house_running_solar_produced[i] += solar_energy[i]
         # power house w/ solar
         if solar_energy[i] > house_demand[i]:
