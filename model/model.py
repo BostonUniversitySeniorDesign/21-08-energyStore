@@ -15,6 +15,7 @@ dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0,
                 hour=0, day=1, month=1, year=2020)
 
+# set interval parameters
 interval_length = 5  # (minutes)
 interval_count = 5
 # given interval_length == 5
@@ -23,6 +24,11 @@ interval_count = 5
 # 30 days 43200/interval_length = 8640
 # 180 days 259200/interval_length = 51840
 # 365 days 525600/interval_length = 105120
+
+# set solar parameters
+solar_area = [1, 1, 1, 1] #solar panel area (m2)
+solar_efficiency = [1, 1, 1, 1] #solare panel efficiency (decimal)
+
 
 ####################################################################
 # CLASSES
@@ -123,7 +129,7 @@ house_running_demand = [0] * number_of_houses
 solar_panel_area = [1, 1, 1, 1]
 
 ######################################
-# load csv data into pandas dataframes
+# load csv data into pandas dataframes (houshold demand)
 house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
 house2_df = pandas.read_csv(os.path.join(os.getcwd(), "year2.txt"))
 house3_df = pandas.read_csv(os.path.join(os.getcwd(), "year3.txt"))
@@ -149,6 +155,11 @@ for df in df_list:
     df['Date'] = dates_new
     df_list[x] = df
     x += 1
+
+######################################
+# load csv data into pandas dataframes (solar)
+solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
+
 
 ####################################################################
 # MAIN LOOP
@@ -186,20 +197,20 @@ while interval_count != 0:
     ##################################
     # Get solar production per-household
     solar_energy = [0] * number_of_houses
+    GHI = #TODO get ghi from solar_df
     for i in range(number_of_houses):
-        if num_panels[i] > 0:
-            solar_energy[i] = 0  # TODO get solar produced by house
-            house_running_solar_produced[i] += solar_energy[i]
-            # power house w/ solar
-            if solar_energy[i] > house_demand[i]:
-                excess_energy = solar_energy[i] - house_demand[i]
-                house_demand[i] = 0
-            else:
-                house_demand[i_solar] = house_demand[i] - \
-                    solar_energy[i]
-                excess_energy = 0
-            # charge battery
-            battery.charge(excess_energy, 0)
+        solar_energy[i] = solar_area[i] * solar_efficiency[i] * GHI 
+        house_running_solar_produced[i] += solar_energy[i]
+        # power house w/ solar
+        if solar_energy[i] > house_demand[i]:
+            excess_energy = solar_energy[i] - house_demand[i]
+            house_demand[i] = 0
+        else:
+            house_demand[i_solar] = house_demand[i] - \
+                solar_energy[i]
+            excess_energy = 0
+        # charge battery
+        battery.charge(excess_energy, 0)
 
     ##################################
     # TODO charge battery from maingrid
