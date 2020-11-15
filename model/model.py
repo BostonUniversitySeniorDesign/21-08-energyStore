@@ -16,7 +16,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
                 hour=0, day=1, month=1, year=2020)
 
 interval_length = 5  # (minutes)
-interval_count = 288
+interval_count = 12
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -56,41 +56,61 @@ class Battery_obj:
 # FUNCTIONS
 ####################################################################
 # return the cost of power from the maingrid (dollars/kWh)
-# using this as refrence https://www.sce.com/residential/rates/Time-Of-Use-Residential-Rate-Plans
-# for now this is using the TOU-D-4-9PM plan, TODO: add other plans
+# using this as refrence https://www.sdge.com/whenmatters
+
+# takes the current date as a datetime object,
+# along with the usage so far for the current month
+# to determine the tier: tier 1 under 130%
 
 
 def get_maingrid_cost(dt):
 
+    # TODO: add Tier 1 and tier 2 pricing based on their monthy usage so far:
+    #   Coastal, summer (June 1 - Oct 31), all electric
+    #       130% of Baseline is 234 kWh monthly
+    #   Coastal, winter (Nov 1 - May 31), all electric
+    #       130% of Baseline is 343 kWh monthly
+
+    # get current month and day
     month = dt.month
-    if (month >= 6) and (month <= 9):
-        summer = True
-    else:
-        summer = False
-    day_num = dt.weekday()
-
-    if day_num > 4:
-        weekend = True
-    else:
-        weekend = False
-
     hour = dt.hour
 
-    if summer:
-        if (hour >= 16) and (hour <= 21):  # 4pm-9pm
-            if weekend:  # summer, weekend, peak
-                return 0.34
-            else:  # summer, weekday, peak
-                return 0.41
-        else:  # summer, weekend and weekday, off-peak
-            return 0.26
+    # Peak hours defined as 4PM to 9PM
+    if (hour >= 4) and (hour <= 9):
+        peak = True
     else:
-        if hour >= 21:  # winter, weekend and weekday, off-peak
-            return 0.27
-        elif hour >= 16:  # winter, weekend and weekday, peak
-            return 0.36
-        else:  # winter, weekend and weekday, super off-peak
-            return 0.25
+        peak = False
+
+    # Pricing differs per month
+    if (month == 1) or (month == 2):    # january and february
+        if peak:
+            return .21262
+        else:
+            return .20864
+
+    elif (month == 3) or (month == 4):  # march and april
+        if peak:
+            return .20775
+        else:
+            return .20376
+
+    elif (month == 5):                  # may
+        if peak:
+            return .22034
+        else:
+            return .21522
+
+    elif (month >= 6) and (month <= 10):  # june to october
+        if peak:
+            return .34163
+        else:
+            return .27906
+
+    elif (month >= 11):                  # november and december
+        if peak:
+            return .23040
+        else:
+            return .22528
 
 
 ####################################################################
@@ -162,6 +182,11 @@ while interval_count != 0:
             house_demand[i_num_houses] += energy
         dt += datetime.timedelta(minutes=1)  # increment date time
 
+    # TODO: Add in TOU pricing for summer and winter
+    #   Keep track of energy usage MONTHY to see if any house goes over 130% energy usage for the month
+    #   If they go over, they move from tier 1 pricing to tier 2 pricing
+    #   Back to tier 1 at the start of a new month
+
     # Get solar production per-household
     solar_energy = [0] * number_of_houses
     for i_solar in range(number_of_houses):
@@ -202,4 +227,4 @@ timer_end = time.time()
 print('finished in {} seconds'.format(timer_end-timer_start))
 for x in range(number_of_houses):
     print('house {} paid {} dollars for their energy consumed in {} minutes'.format(
-        x, house_running_cost[x], interval_count_historic * interval_length))
+        x, house_running_cost_main_grid[x], interval_count_historic * interval_length))
