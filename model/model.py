@@ -4,7 +4,7 @@
 import datetime
 import time
 import csv
-import pandas
+import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
@@ -18,7 +18,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 12
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -75,14 +75,34 @@ class Battery_obj:
 ####################################################################
 # FUNCTIONS
 ####################################################################
-# return the cost of power from the maingrid (dollars/kWh)
+# Utility function for getting the index for the pandas df
+def get_Date_Time_solarTime(dt):
+    day_t = dt.day
+    month_t = dt.month
+
+    if month_t < 10:
+        month_t = '0' + str(dt.month)
+    else:
+        month_t = str(dt.month)
+
+    if day_t < 10:
+        day_t = '0' + str(dt.day)
+    else:
+        day_t = str(dt.day)
+
+    date = month_t + '/' + day_t
+    # dataframes store time two different ways so we need both of these
+    time = str(dt.time()).split()[0]
+    solar_time = dt.time()
+    return (date, time, solar_time)
+
+
+# Returns the cost of power from the maingrid (dollars/kWh)
 # using this as refrence https://www.sdge.com/whenmatters
 
 # takes the current date as a datetime object,
 # along with the usage so far for the current month
 # to determine the tier: tier 1 under 130%
-
-
 def get_maingrid_cost(dt, monthly_usage):
 
     # get current month and day
@@ -200,40 +220,74 @@ solar_produced_running = [0] * number_of_houses
 
 #  used for determining curret energy usage tier
 house_running_demand_monthly = [0] * number_of_houses #(kWh)   
-current_month = dt.month
 
 ######################################
-# load csv data into pandas dataframes (houshold demand)
-house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
-house2_df = pandas.read_csv(os.path.join(os.getcwd(), "year2.txt"))
-house3_df = pandas.read_csv(os.path.join(os.getcwd(), "year3.txt"))
-house4_df = pandas.read_csv(os.path.join(os.getcwd(), "year4.txt"))
-df_list = [house1_df, house2_df, house3_df, house4_df]
-x = 0
-for df in df_list:
-    # drop un-needed data
-    df = df.drop(['Global_reactive_power', 'Voltage', 'Global_intensity',
-                  'Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'], axis=1)
-    # string manipulation, this can probably be done better but it's okay for now
-    for (columnName, columnData) in df.iteritems():
-        if columnName == "Date":
-            i = 0
-            dates_new = ['']*len(columnData)
-            for date in columnData:
-                dates_new
+# load csv data into pandas dataframes (houshold demand and solar production)
+loc_weather = os.path.join(os.getcwd(), "Weather Data.xlsx")
+loc_house1 = os.path.join(os.getcwd(), "house_usage_data/Andrea_house.csv")
+loc_house2 = os.path.join(os.getcwd(), "house_usage_data/angiesParents_house.csv")
+loc_house3 = os.path.join(os.getcwd(), "house_usage_data/Cynthia_house.csv")
+loc_house4 = os.path.join(os.getcwd(), "house_usage_data/Justo_house.csv")
+
+df_house1 = pd.read_csv(loc_house1)
+df_house2 = pd.read_csv(loc_house2)
+df_house3 = pd.read_csv(loc_house3)
+df_house4 = pd.read_csv(loc_house4)
+
+house_usage_dfs = [df_house1, df_house2, df_house3, df_house4]
+
+df_weatherdata = pd.read_excel(loc_weather, sheet_name="All Weather",usecols=['Date', 'Conditions'])
+df_weather_fine = pd.read_excel(loc_weather, sheet_name="Fine",usecols=['Time', '5 Minute Energy (kWh)'])
+df_weather_partly_cloudy = pd.read_excel(loc_weather, sheet_name="Partly Cloudy",usecols=['Time', '5 Minute Energy (kWh)'])
+df_weather_mostly_cloudy = pd.read_excel(loc_weather, sheet_name="Mostly Cloudy",usecols=['Time', '5 Minute Energy (kWh)'])
+df_weather_cloudy = pd.read_excel(loc_weather, sheet_name="Cloudy",usecols=['Time', '5 Minute Energy (kWh)'])
+df_weather_showers = pd.read_excel(loc_weather, sheet_name="Showers",usecols=['Time', '5 Minute Energy (kWh)'])
+
+weather_condition_dfs = [df_weather_fine, df_weather_cloudy, df_weather_mostly_cloudy, df_weather_partly_cloudy, df_weather_showers]
+
+# keeps track of solar profit
+solar_profit = [0] * number_of_houses
+
+# iterate through Dates in df_weatherdata and flip the dates to be strings
+for (columnName, columnData) in df_weatherdata.iteritems():
+    if columnName == "Date":
+        i = 0
+        dates_new = ['']*len(columnData)
+        for date in columnData:
+            if (isinstance(date, datetime.datetime)):
+                day_ = date.month
+                month_ = date.day
+
+                if month_ < 10:
+                    month_ = '0' + str(date.day)
+                else:
+                    month_ = str(date.day)
+
+                if day_ < 10:
+                    day_ = '0' + str(date.month)
+                else:
+                    day_ = str(date.month)
+
+                date_new = month_ + '/' + day_
+                dates_new[i] = date_new
+                i += 1
+                # print("datetime: {} \t {}".format(date, date_new))
+            elif (isinstance(date, str)):
                 date_list = date.split('/')
                 date_new = date_list[1] + '/' + date_list[0]
                 dates_new[i] = date_new
                 i += 1
-    df = df.drop(['Date'], axis=1)
-    df['Date'] = dates_new
-    df_list[x] = df
-    x += 1
+                # print("string: {}\t new: {}".format(date, date_new))
+df_weatherdata = df_weatherdata.drop(['Date'], axis=1)
+df_weatherdata['Date'] = dates_new
 
-######################################
-# load csv data into pandas dataframes (solar)
-solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
-solar_profit = [0] * number_of_houses
+
+# get current date time and solar time to index into pandas df with
+(date, time_i, solar_time) = get_Date_Time_solarTime(dt)
+
+# need to get current day weather before any other iteration
+daily_weather = df_weatherdata.loc[(
+    df_weatherdata['Date'] == date)]['Conditions'].item()
 
 ####################################################################
 # MAIN LOOP
@@ -255,36 +309,18 @@ while interval_count != 0:
     interval_count -= 1
 
     ##################################
-    # Get demand for energy and GHI while
-    # stepping date&time
-    print("Calculating energy usage and GHI")
+    # Get demand for energy and solar production
+    # step datetime 5 minutes for every interval 
+    print("Calculating energy usage")
     house_demand_total = [0] * number_of_houses
-    GHI = 0 #(wh/m2)
-    for i in range(interval_length):  # iterate through interval length
-        # string manipluation for date and time indexing
-        date_ = str(dt.month) + '/' + str(dt.day)
-        time_ = str(dt.time()).split('.')[0]
-        hour_ = dt.hour
-        # get home demand
-        for j in range(number_of_houses):
-            df_tmp = df_list[j]
-            house_demand_total[j] += float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
-            #print("indx {}".format((df_tmp['Date'] == date_) & (df_tmp['Time'])))
-            # for checking energy tier
-            house_running_demand_monthly[j] += float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
-        current_month = dt.month
-        # get GHI
-        GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60 #TODO check that strings are hitting for all hours
-        dt += datetime.timedelta(minutes=1)  # increment date time
-
-        # reset monthly sum of energy when month changes
-        if (current_month != dt.month):
-            for j in range(number_of_houses):
-                house_running_demand_monthly[j] = 0.0
 
 
-    print("GHI: {}Wh/m2".format(round(GHI,2)))
-    
+    # Every hour we do something with house energy
+    if (dt.minute % 60) == 0:
+        for i in range(number_of_houses):
+            curr_house = house_usage_dfs[i]
+            house_demand_total[i] += float(curr_house.loc[(curr_house['Date'] == date) & (curr_house['Time'] == time_i)]['Usage'].item()) #kWh
+            house_running_demand_monthly[i] += float(curr_house.loc[(curr_house['Date'] == date) & (curr_house['Time'] == time_i)]['Usage'].item()) #kWh
 
     ##################################
     # Get solar production per-household
@@ -295,10 +331,35 @@ while interval_count != 0:
     solar_used = [0] * number_of_houses
     house_demand = [0] * number_of_houses
 
+
+    # use current weather to index into solar to get every 5 minutes
+    if daily_weather == "Fine":
+        solarProduced = df_weather_fine[(
+            df_weather_fine['Time'] == solar_time)]['5 Minute Energy (kWh)'].item()
+
+    elif daily_weather == "Partly Cloudy":
+        solarProduced = df_weather_partly_cloudy[(
+            df_weather_partly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item()
+
+    elif daily_weather == "Mostly Cloudy":
+        solarProduced = df_weather_mostly_cloudy[(
+            df_weather_mostly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item()
+
+    elif daily_weather == "Cloudy":
+        solarProduced = df_weather_cloudy[(
+            df_weather_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item()
+
+    elif daily_weather == "Showers":
+        solarProduced = df_weather_showers[(
+            df_weather_showers['Time'] == solar_time)]['5 Minute Energy (kWh)'].item()
+
     # Get solar produced per house
     for i in range(number_of_houses):
-        solar_produced[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000  # (kWh)
+        solar_produced[i] = solarProduced # (kWh)
         solar_produced_running[i] += solar_produced[i]
+
+        # solar_produced[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000  # (kWh)
+        # solar_produced_running[i] += solar_produced[i]
         
         # have excess solar
         if solar_produced[i] > house_demand_total[i]:
@@ -319,6 +380,29 @@ while interval_count != 0:
         # charge battery
         battery.charge(excess_energy, 0)
         solar_energy_battery[i] = excess_energy
+
+    curr_day = dt.day
+    current_month = dt.month
+
+    # increment date time every 5 minutes
+    dt += datetime.timedelta(minutes=5)
+
+    # get current date time and solar time to index into pandas df with
+    (date, time_i, solar_time) = get_Date_Time_solarTime(dt)
+
+    # reset monthly sum of energy when month changes
+    if (current_month != dt.month):
+        for j in range(number_of_houses):
+            house_running_demand_monthly[j] = 0.0
+
+    if (curr_day != dt.day):
+        # every 24 hours we get the new weather condition
+        daily_weather = df_weatherdata.loc[(
+            df_weatherdata['Date'] == date)]['Conditions'].item()
+
+    
+
+ 
 
     ##################################
     # TODO charge battery from maingrid
@@ -416,6 +500,7 @@ for i in range(number_of_houses):
     print("solar produced: {}kWh".format(round(house_running_solar_produced[i], 2)))
 
 # Making pie charts
+'''
 pie_labels = 'Solar', 'Maingrid', 'Microgrid'
 fig, axs = plt.subplots(2,2)
 pie_data = [0] * number_of_houses
@@ -426,3 +511,4 @@ axs[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
 axs[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
 axs[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
 plt.show() 
+'''
