@@ -7,6 +7,9 @@ import csv
 import pandas
 import os
 import matplotlib.pyplot as plt
+### user defined
+import battery
+import pricing
 
 ####################################################################
 # GENERICS FOR SIMMULATION
@@ -18,7 +21,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 12
+interval_count = 1
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -35,150 +38,14 @@ PRINTS=True
 
 screen_len = 60  # for printing pretty stuff
 
-
 ####################################################################
-# CLASSES
-####################################################################
-
-# Assuming this is a tesla powerwall
-class Battery_obj:
-
-    def __init__(self):
-        # TODO figure out some guestimates for this
-        # TODO ?? charging rates and such
-        # Dynamic
-        self.current_charge = 0.0  # (kWh)
-        self.average_cost = 0.0  # (USD/kWh)
-        self.interval_continuous_power = 0.0  # (kW)
-        # Static
-        self.CHARGE_EFF = 0.95  # (percentage expressed as a decimal)
-        self.DISCHARGE_EFF = 0.95  # (percentage expressed as a decimal)
-        self.MAX_CAPACITY = 13.5  # (kWh)
-        self.MIN_CHARGE = 3.0  # (kWh)
-        self.MAX_CONTINUOUS_POWER = 5.8  # (kW)
-
-    # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
-    def charge(self, amount, cost):
-        current_total_cost = self.current_charge * self.average_cost
-        new_charge_cost = amount * cost
-        self.current_charge += (amount * self.CHARGE_EFF)
-        new_total_cost = current_total_cost + new_charge_cost
-        if self.current_charge != 0:
-            self.average_cost = new_total_cost / self.current_charge
-        else:
-            self.average_cost = 0.0
-
-    def discharge(self, amount):
-        self.current_charge -= amount
-        return amount * self.average_cost  # return cost of this charge
-
-####################################################################
-# FUNCTIONS
-####################################################################
-# return the cost of power from the maingrid (dollars/kWh)
-# using this as refrence https://www.sdge.com/whenmatters
-
-# takes the current date as a datetime object,
-# along with the usage so far for the current month
-# to determine the tier: tier 1 under 130%
-
-
-def get_maingrid_cost(dt, monthly_usage):
-
-    # get current month and day
-    month = dt.month
-    hour = dt.hour
-
-    # determine energy tier 
-    if (month >= 6) and (month <= 10): # Coastal, summer (June 1 - Oct 31), all electric
-        # 130% of Baseline is 234 kWh monthly
-        if monthly_usage > 234:
-            tier = 2
-        else:
-            tier = 1
-    else:                             #   Coastal, winter (Nov 1 - May 31), all electric
-        # 130% of Baseline is 343 kWh monthly
-        if monthly_usage > 343:
-            tier = 2
-        else:
-            tier = 1
-
-    # Peak hours defined as 4PM to 9PM
-    if (hour >= 4) and (hour <= 9):
-        peak = True
-    else:
-        peak = False
-
-    # Pricing differs per month
-    if (month == 1) or (month == 2):    # january and february
-        if peak:                            # peak
-            if tier == 1:
-                return .21262               
-            else:
-                return .37274
-        else:                               # off peak
-            if tier == 1:
-                return .20864
-            else:
-                return .36576
-
-    elif (month == 3) or (month == 4):  # march and april
-        if peak:                            # peak
-            if tier == 1:
-                return .20775
-            else:
-                return .36419
-        else:
-            if tier == 1:                   # off peak
-                return .20376
-            else:
-                return .35721
-        
-    elif (month == 5):                  # may
-        if peak:
-            if tier == 1:
-                return .22034
-            else:
-                return .29994
-        else:
-            if tier == 1:
-                return .21522
-            else:
-                return .29296
-
-    elif (month >= 6) and (month <= 10):  # june to october
-        if peak:
-            if tier == 1:
-                return .34163
-            else:
-                return .46503
-        else:
-            if tier == 1:
-                return .27906
-            else:
-                return .37986
-
-    elif (month >= 11):                  # november and december
-        if peak:
-            if tier == 1:
-                return .23040
-            else:
-                return .31363
-        else:
-            if tier == 1:
-                return .22528
-            else:
-                return .30666
-
-
-####################################################################
-# MAIN
+# SIMMULATION SETUP
 ####################################################################
 # set up timer
 timer_start = time.time()
 
 # set up battery object
-battery = Battery_obj()
+battery = battery.Battery_obj()
 MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * (interval_length / 60)  # kWh
 
 # store this info for use later
@@ -194,15 +61,14 @@ house_running_solar_produced = [0] * number_of_houses #($)
 house_running_demand = [0] * number_of_houses #(kWh)
 house_running_main_grid_usage = [0] * number_of_houses #(kWh)
 house_running_micro_grid_usage = [0] * number_of_houses #(kWh)
-solar_used_running = [0] * number_of_houses #(kWh)
-
-solar_produced_running = [0] * number_of_houses 
 
 #  used for determining curret energy usage tier
 house_running_demand_monthly = [0] * number_of_houses #(kWh)   
 current_month = dt.month
 
-######################################
+####################################################################
+# LOADING DATA
+####################################################################
 # load csv data into pandas dataframes (houshold demand)
 house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
 house2_df = pandas.read_csv(os.path.join(os.getcwd(), "year2.txt"))
@@ -231,12 +97,28 @@ for df in df_list:
     x += 1
 
 ######################################
-# load csv data into pandas dataframes (solar)
+# load csv data into pandas dataframes (solar production)
 solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
 solar_profit = [0] * number_of_houses
 
 ####################################################################
-# MAIN LOOP
+# LIST FOR STORING SIMMULATION DATA
+####################################################################
+# For creating long running graphs
+i_running = 0
+date_historical = [0] * interval_count
+# solar price and usage
+solar_produced_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
+solar_used_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
+solar_profit_historical = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #$
+# battery price and usage
+battery_charge_historical = [0] * interval_count
+battery_avg_historical = [0] * interval_count
+# grid price and history
+
+
+####################################################################
+# SIMMULATION LOOP
 ####################################################################
 print("Starting main loop")
 while interval_count != 0:
@@ -257,7 +139,6 @@ while interval_count != 0:
     ##################################
     # Get demand for energy and GHI while
     # stepping date&time
-    print("Calculating energy usage and GHI")
     house_demand_total = [0] * number_of_houses
     GHI = 0 #(wh/m2)
     for i in range(interval_length):  # iterate through interval length
@@ -283,13 +164,8 @@ while interval_count != 0:
                 house_running_demand_monthly[j] = 0.0
 
 
-    print("GHI: {}Wh/m2".format(round(GHI,2)))
-    
-
     ##################################
     # Get solar production per-household
-    print("Calculating solar energy production")
-    # Set up
     solar_produced = [0] * number_of_houses
     solar_energy_battery = [0] * number_of_houses
     solar_used = [0] * number_of_houses
@@ -298,19 +174,29 @@ while interval_count != 0:
     # Get solar produced per house
     for i in range(number_of_houses):
         solar_produced[i] = solar_area[i] * solar_efficiency[i] * GHI / 1000  # (kWh)
-        solar_produced_running[i] += solar_produced[i]
+        if i_running != 0:
+            solar_produced_running[i][i_running] = solar_produced_running[i][(i_running - 1)] + solar_produced[i]
+        else:
+            solar_produced_running[i][i_running] = solar_produced[i]
         
         # have excess solar
         if solar_produced[i] > house_demand_total[i]:
             excess_energy = solar_produced[i] - house_demand_total[i]
-            solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
             solar_used[i] = house_demand_total[i]
-            solar_used_running[i] += solar_used[i]
+            if i_running != 0:
+                solar_used_running[i][i_running] = solar_used_running[i][(i_running -1)] + solar_used[i]
+            else:
+                solar_used_running[i][i_running] = solar_used[i]
             house_demand[i] = 0
 
         # No excess solar
         else:
-            solar_profit[i] += solar_produced[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            solar_profit[i] += solar_produced[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            if i_running != 0:
+                solar_used_running[i][i_running] = solar_used_running[i][(i_running -1)] + solar_produced[i]
+            else:
+                solar_used_running[i][i_running] = solar_produced[i]
             solar_used_running[i] += solar_produced[i]
             solar_used[i] = solar_produced[i]
             house_demand[i] = house_demand_total[i] - solar_produced[i]
@@ -332,70 +218,81 @@ while interval_count != 0:
     micro_grid_used = [0] * number_of_houses
     for i in range(number_of_houses):
         # battery is cheaper, has enough charge, and is above min charge
-        if (battery.average_cost < get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
+        if (battery.average_cost < pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
             house_running_cost_micro_grid[i] += battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF))
             micro_grid_used[i] = (house_demand[i] * (1/battery.DISCHARGE_EFF))
             house_running_micro_grid_usage[i] += micro_grid_used[i]
         else:
-            house_running_cost_main_grid[i] += house_demand[i] * get_maingrid_cost(dt, house_running_demand_monthly[i])
+            house_running_cost_main_grid[i] += house_demand[i] * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])
             main_grid_used[i] = house_demand[i]
             house_running_main_grid_usage[i] += main_grid_used[i]
 
-
+    
     ##################################
     # Printing for this interval
+    tmp_list = [0] * number_of_houses
     if PRINTS:
         print("\nINTERVAL TOTALS:")
 
         solar_print = [round(num,2) for num in solar_produced]
-        print("Solar Produced: {}kWh".format(solar_print)) 
+        print("GHI: {} Wh/m2".format(round(GHI,2)))
+        print("Solar Produced: {} kWh".format(solar_print)) 
     
         house_print = [round(num,2) for num in house_demand_total]
-        print("Household demand: {}kWh".format(house_print))
+        print("Household demand: {} kWh".format(house_print))
     
         solar_print = [round(num,2) for num in solar_used]
-        print("Solar used by house: {}kWh".format(solar_print))
+        print("Solar used by house: {} kWh".format(solar_print))
     
         solar_print = [round(num,2) for num in solar_energy_battery]
-        print("Solar stored in battery: {}kWh".format(solar_print))
+        print("Solar stored in battery: {} kWh".format(solar_print))
 
         micro_print = [round(num,2) for num in micro_grid_used]
-        print("Microgrid energy used: {}kWh".format(micro_print))
+        print("Microgrid energy used: {} kWh".format(micro_print))
 
         main_print = [round(num,2) for num in main_grid_used]
-        print("Maingrid energy used: {}kWh".format(main_print))
+        print("Maingrid energy used: {} kWh".format(main_print))
 
         ##################################
         # Printing running totals
         print("\nRUNNING TOTALS:")
     
-        print("Battery charge: {}kWh".format(round(battery.current_charge,2)))
-        print("Battery average cost: {}$/kWh".format(round(battery.average_cost,2)))
+        print("Battery charge: {} kWh".format(round(battery.current_charge,2)))
+        print("Battery average cost: {} $/kWh".format(round(battery.average_cost,2)))
     
         main_print = [round(num,2) for num in house_running_main_grid_usage]
-        print("maingird running usage: {}kWh".format(main_print))
+        print("maingird running usage: {} kWh".format(main_print))
     
         main_print = [round(num,2) for num in house_running_cost_main_grid]
         print("maingird running cost: ${}".format(main_print))
     
         micro_print = [round(num,2) for num in house_running_micro_grid_usage]
-        print("microgird running usage: {}kWh".format(micro_print))
+        print("microgird running usage: {} kWh".format(micro_print))
     
         micro_print = [round(num,2) for num in house_running_cost_micro_grid]
         print("microgird running cost: ${}".format(micro_print))
     
-        solar_print = [round(num,2) for num in solar_used_running]
-        print("Solar running usage: {}kWh".format(solar_print))
+        for i in range(number_of_houses):
+            tmp_list[i] = solar_used_running[i][i_running]
+        solar_print = [round(num,2) for num in tmp_list]
+        print("Solar running usage: {} kWh".format(solar_print))
     
         solar_profit_print = [round(num,2) for num in solar_profit]
         print("solar running profit: ${}".format(solar_profit_print))
 
+    ##################################
+    # Recording some historical values
+    # record date
+    date_historical[i_running] = dt
+    # record battery state
+    battery_charge_historical[i_running] = battery.current_charge
+    battery_avg_historical[i_running] = battery.average_cost
+    i_running += 1
+
 ####################################################################
 # END
-####################################################################
 timer_end = time.time()
-
-
+####################################################################
 # Print a fancy border
 print('\n\n')
 for i in range(screen_len):
@@ -415,14 +312,37 @@ for i in range(number_of_houses):
     print("microgrid cost: ${}".format(round(house_running_cost_micro_grid[i], 2)))
     print("solar produced: {}kWh".format(round(house_running_solar_produced[i], 2)))
 
+####################################################################
+# CHARTS, GRAPHS, & PLOTS
+####################################################################
 # Making pie charts
 pie_labels = 'Solar', 'Maingrid', 'Microgrid'
-fig, axs = plt.subplots(2,2)
+fig_pie, axs_pie = plt.subplots(2,2)
 pie_data = [0] * number_of_houses
 for i in range(number_of_houses):
     pie_data[i] = [solar_profit[i], house_running_cost_main_grid[i], house_running_cost_micro_grid[i]] # TODO make this a percent
-axs[0,0].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
-axs[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
-axs[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
-axs[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
-plt.show() 
+axs_pie[0,0].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
+axs_pie[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
+axs_pie[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
+axs_pie[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
+
+######################################
+# Plotting battery charge & avg cost 
+fig_bat, axs_bat = plt.subplots()
+axs_bat2 = axs_bat.twinx()
+axs_bat.plot(date_historical, battery_avg_historical, 'g-')
+axs_bat2.plot(date_historical, battery_charge_historical, 'b-')
+axs_bat.set_xlabel('Date Time')
+axs_bat.set_ylabel('Cost of energy $/kWh')
+axs_bat2.set_ylabel('Charge kWh')
+
+######################################
+# Plotting home energy usage
+fig_eng, axs_bat = plt.subplots(2,2)
+
+######################################
+# Plotting home energy cost 
+fig_cost, axs_cost = plt.subplots(2,2)
+
+# Plot
+plt.show()
