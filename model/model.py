@@ -6,6 +6,7 @@ import time
 import csv
 import pandas
 import os
+import matplotlib.pyplot as plt
 
 ####################################################################
 # GENERICS FOR SIMMULATION
@@ -402,8 +403,7 @@ for i in range(screen_len):
 print()
 
 # Print simulation time
-print('Simulated {} minutes in {} seconds\n'.format(
-    total_minutes, timer_end-timer_start))
+print('Simulated {} minutes in {} seconds\n'.format(total_minutes, timer_end-timer_start))
 
 # Print statistics per household
 for i in range(number_of_houses):
@@ -414,3 +414,15 @@ for i in range(number_of_houses):
     print("maingrid cost: ${}".format(round(house_running_cost_main_grid[i], 2)))
     print("microgrid cost: ${}".format(round(house_running_cost_micro_grid[i], 2)))
     print("solar produced: {}kWh".format(round(house_running_solar_produced[i], 2)))
+
+# Making pie charts
+pie_labels = 'Solar', 'Maingrid', 'Microgrid'
+fig, axs = plt.subplots(2,2)
+pie_data = [0] * number_of_houses
+for i in range(number_of_houses):
+    pie_data[i] = [solar_profit[i], house_running_cost_main_grid[i], house_running_cost_micro_grid[i]] # TODO make this a percent
+axs[0,0].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
+axs[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
+axs[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
+axs[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
+plt.show() 
