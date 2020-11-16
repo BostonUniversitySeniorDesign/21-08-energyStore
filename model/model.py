@@ -21,7 +21,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 8640
+interval_count = 288
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -388,7 +388,7 @@ while interval_count != 0:
                 solar_used_running[i][i_running] = solar_used_running[i][(i_running -1)] + solar_produced[i]
             else:
                 solar_used_running[i][i_running] = solar_produced[i]
-            solar_used_running[i] += solar_produced[i]
+            # solar_used_running[i] += solar_produced[i]
             solar_used[i] = solar_produced[i]
             house_demand[i] = house_demand_total[i] - solar_produced[i]
             excess_energy = 0
@@ -416,9 +416,6 @@ while interval_count != 0:
         daily_weather = df_weatherdata.loc[(
             df_weatherdata['Date'] == date)]['Conditions'].item()
 
-    
-
- 
 
     ##################################
     # TODO charge battery from maingrid
@@ -449,7 +446,7 @@ while interval_count != 0:
         print("\nINTERVAL TOTALS:")
 
         solar_print = [round(num,2) for num in solar_produced]
-        print("GHI: {} Wh/m2".format(round(GHI,2)))
+        # print("GHI: {} Wh/m2".format(round(GHI,2)))
         print("Solar Produced: {} kWh".format(solar_print)) 
     
         house_print = [round(num,2) for num in house_demand_total]
@@ -530,7 +527,7 @@ for i in range(number_of_houses):
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################
 # Making pie charts
-
+'''
 pie_labels = 'Solar', 'Maingrid', 'Microgrid'
 fig_pie, axs_pie = plt.subplots(2,2)
 pie_data = [0] * number_of_houses
@@ -561,3 +558,4 @@ fig_cost, axs_cost = plt.subplots(2,2)
 
 # Plot
 plt.show()
+'''
