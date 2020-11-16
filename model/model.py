@@ -70,10 +70,10 @@ current_month = dt.month
 # LOADING DATA
 ####################################################################
 # load csv data into pandas dataframes (houshold demand)
-house1_df = pandas.read_csv(os.path.join(os.getcwd(), "year1.txt"))
-house2_df = pandas.read_csv(os.path.join(os.getcwd(), "year2.txt"))
-house3_df = pandas.read_csv(os.path.join(os.getcwd(), "year3.txt"))
-house4_df = pandas.read_csv(os.path.join(os.getcwd(), "year4.txt"))
+house1_df = pandas.read_csv(os.path.join(os.getcwd(), "data/year1.txt"))
+house2_df = pandas.read_csv(os.path.join(os.getcwd(), "data/year2.txt"))
+house3_df = pandas.read_csv(os.path.join(os.getcwd(), "data/year3.txt"))
+house4_df = pandas.read_csv(os.path.join(os.getcwd(), "data/year4.txt"))
 df_list = [house1_df, house2_df, house3_df, house4_df]
 x = 0
 for df in df_list:
