@@ -17,7 +17,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 288
+interval_count = 12
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -29,6 +29,8 @@ interval_count = 288
 solar_area = [36, 36, 36, 36]  # solar panel area (m2)
 solar_efficiency = [.85, .85, .85, .85]  # solar panel efficiency (decimal)
 SOLAR_COST_COEFFICIENT = .85 #  (percentage expressed as a decimal)
+
+PRINTS=True
 
 screen_len = 60  # for printing pretty stuff
 
@@ -224,6 +226,7 @@ while interval_count != 0:
         for j in range(number_of_houses):
             df_tmp = df_list[j]
             house_demand_total[j] += float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
+            #print("indx {}".format((df_tmp['Date'] == date_) & (df_tmp['Time'])))
         # get GHI
         GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60 #TODO check that strings are hitting for all hours
         dt += datetime.timedelta(minutes=1)  # increment date time
@@ -292,50 +295,51 @@ while interval_count != 0:
 
     ##################################
     # Printing for this interval
-    print("\nINTERVAL TOTALS:")
+    if PRINTS:
+        print("\nINTERVAL TOTALS:")
 
-    solar_print = [round(num,2) for num in solar_produced]
-    print("Solar Produced: {}kWh".format(solar_print)) 
+        solar_print = [round(num,2) for num in solar_produced]
+        print("Solar Produced: {}kWh".format(solar_print)) 
     
-    house_print = [round(num,2) for num in house_demand_total]
-    print("Household demand: {}kWh".format(house_print))
+        house_print = [round(num,2) for num in house_demand_total]
+        print("Household demand: {}kWh".format(house_print))
     
-    solar_print = [round(num,2) for num in solar_used]
-    print("Solar used by house: {}kWh".format(solar_print))
+        solar_print = [round(num,2) for num in solar_used]
+        print("Solar used by house: {}kWh".format(solar_print))
     
-    solar_print = [round(num,2) for num in solar_energy_battery]
-    print("Solar stored in battery: {}kWh".format(solar_print))
+        solar_print = [round(num,2) for num in solar_energy_battery]
+        print("Solar stored in battery: {}kWh".format(solar_print))
 
-    micro_print = [round(num,2) for num in micro_grid_used]
-    print("Microgrid energy used: {}kWh".format(micro_print))
+        micro_print = [round(num,2) for num in micro_grid_used]
+        print("Microgrid energy used: {}kWh".format(micro_print))
 
-    main_print = [round(num,2) for num in main_grid_used]
-    print("Maingrid energy used: {}kWh".format(main_print))
+        main_print = [round(num,2) for num in main_grid_used]
+        print("Maingrid energy used: {}kWh".format(main_print))
 
-    ##################################
-    # Printing running totals
-    print("\nRUNNING TOTALS:")
+        ##################################
+        # Printing running totals
+        print("\nRUNNING TOTALS:")
     
-    print("Battery charge: {}kWh".format(round(battery.current_charge,2)))
-    print("Battery average cost: {}$/kWh".format(round(battery.average_cost,2)))
+        print("Battery charge: {}kWh".format(round(battery.current_charge,2)))
+        print("Battery average cost: {}$/kWh".format(round(battery.average_cost,2)))
     
-    main_print = [round(num,2) for num in house_running_main_grid_usage]
-    print("maingird running usage: {}kWh".format(main_print))
+        main_print = [round(num,2) for num in house_running_main_grid_usage]
+        print("maingird running usage: {}kWh".format(main_print))
     
-    main_print = [round(num,2) for num in house_running_cost_main_grid]
-    print("maingird running cost: ${}".format(main_print))
+        main_print = [round(num,2) for num in house_running_cost_main_grid]
+        print("maingird running cost: ${}".format(main_print))
     
-    micro_print = [round(num,2) for num in house_running_micro_grid_usage]
-    print("microgird running usage: {}kWh".format(micro_print))
+        micro_print = [round(num,2) for num in house_running_micro_grid_usage]
+        print("microgird running usage: {}kWh".format(micro_print))
     
-    micro_print = [round(num,2) for num in house_running_cost_micro_grid]
-    print("microgird running cost: ${}".format(micro_print))
+        micro_print = [round(num,2) for num in house_running_cost_micro_grid]
+        print("microgird running cost: ${}".format(micro_print))
     
-    solar_print = [round(num,2) for num in solar_used_running]
-    print("Solar running usage: {}kWh".format(solar_print))
+        solar_print = [round(num,2) for num in solar_used_running]
+        print("Solar running usage: {}kWh".format(solar_print))
     
-    solar_profit_print = [round(num,2) for num in solar_profit]
-    print("solar running profit: ${}".format(solar_profit_print))
+        solar_profit_print = [round(num,2) for num in solar_profit]
+        print("solar running profit: ${}".format(solar_profit_print))
 
 ####################################################################
 # END
