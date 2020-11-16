@@ -98,7 +98,7 @@ for df in df_list:
 
 ######################################
 # load csv data into pandas dataframes (solar production)
-solar_df = pandas.read_csv(os.path.join(os.getcwd(), "2018_solar_LA.csv"))
+solar_df = pandas.read_csv(os.path.join(os.getcwd(), "data/2018_solar_LA.csv"))
 solar_profit = [0] * number_of_houses
 
 ####################################################################
