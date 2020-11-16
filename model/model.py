@@ -104,17 +104,19 @@ solar_profit = [0] * number_of_houses
 ####################################################################
 # LIST FOR STORING SIMMULATION DATA
 ####################################################################
-# For creating long running graphs
 i_running = 0
+# For time
 date_historical = [0] * interval_count
-# solar price and usage
-solar_produced_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
-solar_used_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
+# For running cost
 solar_profit_historical = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #$
-# battery price and usage
+#house_running_cost_micro micro_cost_historical = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #$
+#house_running_cost_main main_cost_historical = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #$
+# For running usage
+solar_used_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
+# For other
+solar_produced_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
 battery_charge_historical = [0] * interval_count
 battery_avg_historical = [0] * interval_count
-# grid price and history
 
 
 ####################################################################
