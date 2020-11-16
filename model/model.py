@@ -82,17 +82,25 @@ class Battery_obj:
 # to determine the tier: tier 1 under 130%
 
 
-def get_maingrid_cost(dt):
-
-    # TODO: add Tier 1 and tier 2 pricing based on their monthy usage so far:
-    #   Coastal, summer (June 1 - Oct 31), all electric
-    #       130% of Baseline is 234 kWh monthly
-    #   Coastal, winter (Nov 1 - May 31), all electric
-    #       130% of Baseline is 343 kWh monthly
+def get_maingrid_cost(dt, monthly_usage):
 
     # get current month and day
     month = dt.month
     hour = dt.hour
+
+    # determine energy tier 
+    if (month >= 6) and (month <= 10): # Coastal, summer (June 1 - Oct 31), all electric
+        # 130% of Baseline is 234 kWh monthly
+        if monthly_usage > 234:
+            tier = 2
+        else:
+            tier = 1
+    else:                             #   Coastal, winter (Nov 1 - May 31), all electric
+        # 130% of Baseline is 343 kWh monthly
+        if monthly_usage > 343:
+            tier = 2
+        else:
+            tier = 1
 
     # Peak hours defined as 4PM to 9PM
     if (hour >= 4) and (hour <= 9):
@@ -102,34 +110,64 @@ def get_maingrid_cost(dt):
 
     # Pricing differs per month
     if (month == 1) or (month == 2):    # january and february
-        if peak:
-            return .21262
-        else:
-            return .20864
+        if peak:                            # peak
+            if tier == 1:
+                return .21262               
+            else:
+                return .37274
+        else:                               # off peak
+            if tier == 1:
+                return .20864
+            else:
+                return .36576
 
     elif (month == 3) or (month == 4):  # march and april
-        if peak:
-            return .20775
+        if peak:                            # peak
+            if tier == 1:
+                return .20775
+            else:
+                return .36419
         else:
-            return .20376
-
+            if tier == 1:                   # off peak
+                return .20376
+            else:
+                return .35721
+        
     elif (month == 5):                  # may
         if peak:
-            return .22034
+            if tier == 1:
+                return .22034
+            else:
+                return .29994
         else:
-            return .21522
+            if tier == 1:
+                return .21522
+            else:
+                return .29296
 
     elif (month >= 6) and (month <= 10):  # june to october
         if peak:
-            return .34163
+            if tier == 1:
+                return .34163
+            else:
+                return .46503
         else:
-            return .27906
+            if tier == 1:
+                return .27906
+            else:
+                return .37986
 
     elif (month >= 11):                  # november and december
         if peak:
-            return .23040
+            if tier == 1:
+                return .23040
+            else:
+                return .31363
         else:
-            return .22528
+            if tier == 1:
+                return .22528
+            else:
+                return .30666
 
 
 ####################################################################
@@ -158,6 +196,10 @@ house_running_micro_grid_usage = [0] * number_of_houses #(kWh)
 solar_used_running = [0] * number_of_houses #(kWh)
 
 solar_produced_running = [0] * number_of_houses 
+
+#  used for determining curret energy usage tier
+house_running_demand_monthly = [0] * number_of_houses #(kWh)   
+current_month = dt.month
 
 ######################################
 # load csv data into pandas dataframes (houshold demand)
@@ -227,15 +269,21 @@ while interval_count != 0:
             df_tmp = df_list[j]
             house_demand_total[j] += float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
             #print("indx {}".format((df_tmp['Date'] == date_) & (df_tmp['Time'])))
+            # for checking energy tier
+            house_running_demand_monthly[j] += float(df_tmp.loc[(df_tmp['Date'] == date_) & (df_tmp['Time'] == time_)]['Global_active_power'].item())/60 #energy is in kWh
+        current_month = dt.month
         # get GHI
         GHI += float(solar_df.loc[(solar_df['Date'] == date_) & (solar_df['Time'] == hour_)]['GHI'].item())/60 #TODO check that strings are hitting for all hours
         dt += datetime.timedelta(minutes=1)  # increment date time
+
+        # reset monthly sum of energy when month changes
+        if (current_month != dt.month):
+            for j in range(number_of_houses):
+                house_running_demand_monthly[j] = 0.0
+
+
     print("GHI: {}Wh/m2".format(round(GHI,2)))
     
-    # TODO: Add in TOU pricing for summer and winter
-    #   Keep track of energy usage MONTHY to see if any house goes over 130% energy usage for the month
-    #   If they go over, they move from tier 1 pricing to tier 2 pricing
-    #   Back to tier 1 at the start of a new month
 
     ##################################
     # Get solar production per-household
@@ -254,14 +302,14 @@ while interval_count != 0:
         # have excess solar
         if solar_produced[i] > house_demand_total[i]:
             excess_energy = solar_produced[i] - house_demand_total[i]
-            solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt))
+            solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt, house_running_demand_monthly[i]))
             solar_used[i] = house_demand_total[i]
             solar_used_running[i] += solar_used[i]
             house_demand[i] = 0
 
         # No excess solar
         else:
-            solar_profit[i] += solar_produced[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt))
+            solar_profit[i] += solar_produced[i] * (SOLAR_COST_COEFFICIENT * get_maingrid_cost(dt, house_running_demand_monthly[i]))
             solar_used_running[i] += solar_produced[i]
             solar_used[i] = solar_produced[i]
             house_demand[i] = house_demand_total[i] - solar_produced[i]
@@ -283,12 +331,12 @@ while interval_count != 0:
     micro_grid_used = [0] * number_of_houses
     for i in range(number_of_houses):
         # battery is cheaper, has enough charge, and is above min charge
-        if (battery.average_cost < get_maingrid_cost(dt)) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
+        if (battery.average_cost < get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
             house_running_cost_micro_grid[i] += battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF))
             micro_grid_used[i] = (house_demand[i] * (1/battery.DISCHARGE_EFF))
             house_running_micro_grid_usage[i] += micro_grid_used[i]
         else:
-            house_running_cost_main_grid[i] += house_demand[i] * get_maingrid_cost(dt)
+            house_running_cost_main_grid[i] += house_demand[i] * get_maingrid_cost(dt, house_running_demand_monthly[i])
             main_grid_used[i] = house_demand[i]
             house_running_main_grid_usage[i] += main_grid_used[i]
 
