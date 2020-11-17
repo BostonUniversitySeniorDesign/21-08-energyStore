@@ -22,7 +22,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 105120
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -141,6 +141,7 @@ micro_used_running = [([0] * interval_count), ([0] * interval_count), ([0] * int
 main_used_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
 # For solar production
 solar_produced_running = [([0] * interval_count), ([0] * interval_count), ([0] * interval_count), ([0] * interval_count)] #kWh
+solar_dumped = [0] * NUM_HOUSES
 # For battery
 battery_charge_historical = [0] * interval_count
 battery_avg_historical = [0] * interval_count
@@ -242,6 +243,7 @@ while interval_count != 0:
 
         # case of over charging
         if (battery.interval_continuous_power + excess_energy) > MAX_INTERVAL_POWER:
+            solar_dumped[i] += excess_energy
             excess_energy = 0
             #TODO sell back to grid?
         # charge battery
@@ -323,7 +325,7 @@ while interval_count != 0:
  
         tmp_print = [round(num,2) for num in solar_used]
         print("Solar     used: {} kWh".format(tmp_print))
-    
+
         tmp_print = [round(num,2) for num in solar_energy_battery]
         print("Solar     stored in battery: {} kWh".format(tmp_print))
 
@@ -364,6 +366,9 @@ while interval_count != 0:
             tmp_list[i] = solar_used_running[i][i_run]
         tmp_print = [round(num,2) for num in tmp_list]
         print("Solar     running used:  {} kWh".format(tmp_print))
+
+        tmp_print = [round(num,2) for num in solar_dumped]
+        print("Solar     running dump: {} kWh".format(tmp_print))
     
         for i in range(NUM_HOUSES):
             tmp_list[i] = solar_cost_running[i][i_run]
@@ -404,6 +409,7 @@ for i in range(NUM_HOUSES):
     print("microgrid energy cost: ${}".format(round(micro_cost_running[i][i_run-1], 2)))
     print("solar     energy made:  {}kWh".format(round(solar_produced_running[i][i_run-1], 2)))
     print("solar     energy used:  {}kWh".format(round(solar_used_running[i][i_run-1], 2)))
+    print("Solar     energy dump:  {}kWh".format(round(solar_dumped[i],2)))
     print("solar     energy cost: ${}".format(round(solar_cost_running[i][i_run-1], 2)))
 
 ####################################################################
