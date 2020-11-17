@@ -20,7 +20,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 8640
+interval_count = 288
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -31,7 +31,7 @@ interval_count = 8640
 # set solar parameters
 SOLAR_COST_COEFFICIENT = .85 #(percentage expressed as a decimal)
 
-PRINTS=False
+PRINTS=True
 GRAPHS=True
 
 screen_len = 60  # for printing pretty stuff
@@ -44,7 +44,7 @@ timer_start = time.time()
 
 # set up battery object
 battery = battery.Battery_obj()
-#TODO MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * (interval_length / 60)  # kWh
+MAX_INTERVAL_POWER = battery.MAX_CONTINUOUS_POWER * (interval_length / 60)  # kWh
 
 # store this info for use later
 total_minutes = interval_count * interval_length
@@ -54,7 +54,7 @@ NUM_HOUSES = 4  # do not change, this is hardcoded for our data
 house_running_demand = [0] * NUM_HOUSES #(kWh)
 
 #  used for determining curret energy usage tier
-house_running_demand_monthly = [0] * NUM_HOUSES #(kWh)   
+house_running_demand_monthly = [0] * (NUM_HOUSES + 1) #(kWh)   
 
 ######################################
 # load csv data into pandas dataframes (houshold demand and solar production)
@@ -216,8 +216,10 @@ while interval_count != 0:
             solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
             solar_used[i] = house_demand_total[i]
             if i_run != 0:
+                #solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
                 solar_used_running[i][i_run] = solar_used_running[i][(i_run -1)] + solar_used[i]
             else:
+                #solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solar_used[i]
             house_demand[i] = 0
 
@@ -232,6 +234,10 @@ while interval_count != 0:
             house_demand[i] = house_demand_total[i] - solarProduced
             excess_energy = 0
 
+        # case of over charging
+        if (battery.interval_continuous_power + excess_energy) > MAX_INTERVAL_POWER:
+            excess_energy = 0
+            #TODO sell back to grid?
         # charge battery
         battery.charge(excess_energy, 0)
         solar_energy_battery[i] = excess_energy
@@ -247,7 +253,7 @@ while interval_count != 0:
 
     # reset monthly sum of energy when month changes
     if (current_month != dt.month):
-        for j in range(NUM_HOUSES):
+        for j in range(NUM_HOUSES + 1):
             house_running_demand_monthly[j] = 0.0
 
     if (curr_day != dt.day):
@@ -255,19 +261,14 @@ while interval_count != 0:
         daily_weather = df_weatherdata.loc[(df_weatherdata['Date'] == date)]['Conditions'].item()
 
 
-    ##################################
-    # TODO charge battery from maingrid
-    if battery.current_charge < battery.MIN_CHARGE:
-        # charge battery to min_charge / TODO charge rates have to get important here
-        pass
 
     ##################################
     # Power houses
     main_grid_used = [0] * NUM_HOUSES
     micro_grid_used = [0] * NUM_HOUSES
     for i in range(NUM_HOUSES):
-        # battery is cheaper, has enough charge, and is above min charge
-        if (battery.average_cost < pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE):
+        # battery is cheaper, has enough charge, and is above min charge, and no risk of undercharge
+        if (battery.average_cost < pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE) and (abs(battery.interval_continuous_power - (house_demand[i]/battery.DISCHARGE_EFF)) < MAX_INTERVAL_POWER):
             if i_run != 0:
                 micro_cost_running[i][i_run] = micro_cost_running[i][(i_run-1)] + (battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF)))
                 main_cost_running[i][i_run] = main_cost_running[i][(i_run-1)]
@@ -283,6 +284,12 @@ while interval_count != 0:
                 micro_cost_running[i][i_run] = 0
                 main_cost_running[i][i_run] = house_demand[i] * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])
             main_grid_used[i] = house_demand[i]
+
+    # if battery less than min charge or (between 12am-5am and charge less than desired charge
+    if (battery.current_charge < battery.MIN_CHARGE) or ((dt.hour < 5) & (battery.current_charge < battery.DESIRED_CHARGE)):
+        amount = MAX_INTERVAL_POWER - battery.interval_continuous_power #respect max interval power
+        house_running_demand_monthly[4] += amount
+        battery.charge(amount, pricing.get_maingrid_cost(dt, house_running_demand_monthly[4]))  
 
     # get total running cost
     for i in range(NUM_HOUSES):
@@ -393,9 +400,14 @@ if GRAPHS:
     for i in range(NUM_HOUSES):
         pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
     axs_pie[0,0].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
+    axs_pie[0,0].set_title('House 1')
     axs_pie[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
+    axs_pie[0,1].set_title('House 2')
     axs_pie[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
+    axs_pie[1,0].set_title('House 3')
     axs_pie[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
+    axs_pie[1,1].set_title('House 4')
+    #axs_pie.set_title("MAIN TEST")
 
     ######################################
     # Plotting battery charge & avg cost 
@@ -411,65 +423,81 @@ if GRAPHS:
     # Plotting home energy usage
     fig_eng, axs_eng = plt.subplots(2,2)
     #House1
-    axs_eng[0,0].plot(date_historical, total_used_running[0])
-    axs_eng[0,0].plot(date_historical, solar_used_running[0])
-    axs_eng[0,0].plot(date_historical, micro_used_running[0])
-    axs_eng[0,0].plot(date_historical, main_used_running[0]) 
+    e1 = axs_eng[0,0].plot(date_historical, total_used_running[0], label="total")
+    e2 = axs_eng[0,0].plot(date_historical, solar_used_running[0], label="solar")
+    e3 = axs_eng[0,0].plot(date_historical, micro_used_running[0], label="micro")
+    e4 = axs_eng[0,0].plot(date_historical, main_used_running[0], label="main") 
     axs_eng[0,0].set_xlabel('Date Time')
     axs_eng[0,0].set_ylabel('Energy Used kWh')
+    axs_eng[0,0].set_title('House 1')
+    axs_eng[0,0].legend()
     #House2
-    axs_eng[0,1].plot(date_historical, total_used_running[1])
-    axs_eng[0,1].plot(date_historical, solar_used_running[1])
-    axs_eng[0,1].plot(date_historical, micro_used_running[1])
-    axs_eng[0,1].plot(date_historical, main_used_running[1]) 
+    axs_eng[0,1].plot(date_historical, total_used_running[1], label="total")
+    axs_eng[0,1].plot(date_historical, solar_used_running[1], label="solar")
+    axs_eng[0,1].plot(date_historical, micro_used_running[1], label="micro")
+    axs_eng[0,1].plot(date_historical, main_used_running[1], label="main") 
     axs_eng[0,1].set_xlabel('Date Time')
     axs_eng[0,1].set_ylabel('Energy Used kWh')
+    axs_eng[0,1].set_title('House 2')
+    axs_eng[0,1].legend()
     #House3
-    axs_eng[1,0].plot(date_historical, total_used_running[2])
-    axs_eng[1,0].plot(date_historical, solar_used_running[2])
-    axs_eng[1,0].plot(date_historical, micro_used_running[2])
-    axs_eng[1,0].plot(date_historical, main_used_running[2]) 
+    axs_eng[1,0].plot(date_historical, total_used_running[2], label="total")
+    axs_eng[1,0].plot(date_historical, solar_used_running[2], label="solar")
+    axs_eng[1,0].plot(date_historical, micro_used_running[2], label="micro")
+    axs_eng[1,0].plot(date_historical, main_used_running[2], label="main") 
     axs_eng[1,0].set_xlabel('Date Time')
     axs_eng[1,0].set_ylabel('Energy Used kWh')
+    axs_eng[1,0].set_title('House 3')
+    axs_eng[1,0].legend()
     #House4
-    axs_eng[1,1].plot(date_historical, total_used_running[3])
-    axs_eng[1,1].plot(date_historical, solar_used_running[3])
-    axs_eng[1,1].plot(date_historical, micro_used_running[3])
-    axs_eng[1,1].plot(date_historical, main_used_running[3]) 
+    axs_eng[1,1].plot(date_historical, total_used_running[3], label="total")
+    axs_eng[1,1].plot(date_historical, solar_used_running[3], label="solar")
+    axs_eng[1,1].plot(date_historical, micro_used_running[3], label="micro")
+    axs_eng[1,1].plot(date_historical, main_used_running[3], label="main") 
     axs_eng[1,1].set_xlabel('Date Time')
     axs_eng[1,1].set_ylabel('Energy Used kWh')
+    axs_eng[1,1].set_title('House 4')
+    axs_eng[1,1].legend()
 
     ######################################
     # Plotting home energy cost 
     fig_cost, axs_cost = plt.subplots(2,2)
     #House1
-    axs_cost[0,0].plot(date_historical, total_cost_running[0])
-    axs_cost[0,0].plot(date_historical, solar_cost_running[0])
-    axs_cost[0,0].plot(date_historical, micro_cost_running[0])
-    axs_cost[0,0].plot(date_historical, main_cost_running[0]) 
+    axs_cost[0,0].plot(date_historical, total_cost_running[0], label="total")
+    axs_cost[0,0].plot(date_historical, solar_cost_running[0], label="solar")
+    axs_cost[0,0].plot(date_historical, micro_cost_running[0], label="micro")
+    axs_cost[0,0].plot(date_historical, main_cost_running[0], label="main") 
     axs_cost[0,0].set_xlabel('Date Time')
     axs_cost[0,0].set_ylabel('Energy Cost $')
+    axs_cost[0,0].set_title('House 1')
+    axs_cost[0,0].legend()
     #House2
-    axs_cost[0,1].plot(date_historical, total_cost_running[1])
-    axs_cost[0,1].plot(date_historical, solar_cost_running[1])
-    axs_cost[0,1].plot(date_historical, micro_cost_running[1])
-    axs_cost[0,1].plot(date_historical, main_cost_running[1]) 
+    axs_cost[0,1].plot(date_historical, total_cost_running[1], label="total")
+    axs_cost[0,1].plot(date_historical, solar_cost_running[1], label="solar")
+    axs_cost[0,1].plot(date_historical, micro_cost_running[1], label="micro")
+    axs_cost[0,1].plot(date_historical, main_cost_running[1], label="main") 
     axs_cost[0,1].set_xlabel('Date Time')
     axs_cost[0,1].set_ylabel('Energy Cost $')
+    axs_cost[0,1].set_title('House 2')
+    axs_cost[0,1].legend()
     #House3
-    axs_cost[1,0].plot(date_historical, total_cost_running[2])
-    axs_cost[1,0].plot(date_historical, solar_cost_running[2])
-    axs_cost[1,0].plot(date_historical, micro_cost_running[2])
-    axs_cost[1,0].plot(date_historical, main_cost_running[2]) 
+    axs_cost[1,0].plot(date_historical, total_cost_running[2], label="total")
+    axs_cost[1,0].plot(date_historical, solar_cost_running[2], label="solar")
+    axs_cost[1,0].plot(date_historical, micro_cost_running[2], label="micro")
+    axs_cost[1,0].plot(date_historical, main_cost_running[2], label="main") 
     axs_cost[1,0].set_xlabel('Date Time')
     axs_cost[1,0].set_ylabel('Energy Cost $')
+    axs_cost[1,0].set_title('House 3')
+    axs_cost[1,0].legend()
     #House4
-    axs_cost[1,1].plot(date_historical, total_cost_running[3])
-    axs_cost[1,1].plot(date_historical, solar_cost_running[3])
-    axs_cost[1,1].plot(date_historical, micro_cost_running[3])
-    axs_cost[1,1].plot(date_historical, main_cost_running[3]) 
+    axs_cost[1,1].plot(date_historical, total_cost_running[3], label="total")
+    axs_cost[1,1].plot(date_historical, solar_cost_running[3], label="solar")
+    axs_cost[1,1].plot(date_historical, micro_cost_running[3], label="micro")
+    axs_cost[1,1].plot(date_historical, main_cost_running[3], label="main") 
     axs_cost[1,1].set_xlabel('Date Time')
     axs_cost[1,1].set_ylabel('Energy Cost $')
+    axs_cost[1,1].set_title('House 4')
+    axs_cost[1,1].legend()
 
     # Plot
     plt.show()
