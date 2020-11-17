@@ -2,6 +2,7 @@
 ############################
 ### IMPORTS ###
 import datetime
+import random
 import time
 import csv
 import pandas as pd
@@ -148,6 +149,7 @@ battery_avg_historical = [0] * interval_count
 # SIMMULATION LOOP
 ####################################################################
 print("Starting main loop")
+house_list = [0, 1, 2, 3]
 while interval_count != 0:
 
     ##################################
@@ -202,9 +204,10 @@ while interval_count != 0:
 
     # Get solar produced per house
     solar_profit = [0] * NUM_HOUSES
-    for i in range(NUM_HOUSES):
+    random.shuffle(house_list)
+    for i in house_list:
         if i_run != 0:
-            solar_produced_running[i][i_run] = solar_produced_running[i][(i_run - 1)] + solarProduced
+            solar_produced_running[i][i_run] = solar_produced_running[i][i_run-1] + solarProduced
         else:
             solar_produced_running[i][i_run] = solarProduced
         
@@ -216,8 +219,8 @@ while interval_count != 0:
                 print("mike")
             solar_used[i] = house_demand_total[i]
             if i_run != 0:
-                solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
-                solar_used_running[i][i_run] = solar_used_running[i][(i_run -1)] + solar_used[i]
+                solar_cost_running[i][i_run] = solar_cost_running[i][i_run-1] + solar_profit[i]
+                solar_used_running[i][i_run] = solar_used_running[i][i_run-1] + solar_used[i]
             else:
                 solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solar_used[i]
@@ -227,8 +230,8 @@ while interval_count != 0:
         else:
             solar_profit[i] = solarProduced * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
             if i_run != 0:
-                solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
-                solar_used_running[i][i_run] = solar_used_running[i][(i_run -1)] + solarProduced
+                solar_cost_running[i][i_run] = solar_cost_running[i][i_run-1] + solar_profit[i]
+                solar_used_running[i][i_run] = solar_used_running[i][i_run-1] + solarProduced
             else:
                 solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solarProduced
@@ -268,24 +271,32 @@ while interval_count != 0:
     # Power houses
     main_grid_used = [0] * NUM_HOUSES
     micro_grid_used = [0] * NUM_HOUSES
-    for i in range(NUM_HOUSES):
+    for i in house_list:
         # battery is cheaper, has enough charge, and is above min charge, and no risk of undercharge
         if (battery.average_cost < pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE) and (abs(battery.interval_continuous_power - (house_demand[i]/battery.DISCHARGE_EFF)) < MAX_INTERVAL_POWER):
+            micro_grid_used[i] = (house_demand[i] * (1/battery.DISCHARGE_EFF))
             if i_run != 0:
-                micro_cost_running[i][i_run] = micro_cost_running[i][(i_run-1)] + (battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF)))
-                main_cost_running[i][i_run] = main_cost_running[i][(i_run-1)]
+                micro_used_running[i][i_run] = micro_used_running[i][i_run-1] + micro_grid_used[i]
+                micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1] + (battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF)))
+                main_cost_running[i][i_run] = main_cost_running[i][i_run-1]
+                main_used_running[i][i_run] = main_used_running[i][i_run-1]
             else:
+                micro_used_running[i][i_run] = micro_grid_used[i]
                 micro_cost_running[i][i_run] = battery.discharge(house_demand[i] * (1/battery.DISCHARGE_EFF))
                 main_cost_running[i][i_run] = 0
-            micro_grid_used[i] = (house_demand[i] * (1/battery.DISCHARGE_EFF))
+                main_used_running[i][i_run] = 0
         else:
+            main_grid_used[i] = house_demand[i]
             if i_run != 0:
-                micro_cost_running[i][i_run] = micro_cost_running[i][(i_run-1)]
-                main_cost_running[i][i_run] = (house_demand[i] * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) + main_cost_running[i][(i_run-1)]
+                micro_used_running[i][i_run] = micro_used_running[i][i_run-1]
+                micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1]
+                main_cost_running[i][i_run] = (house_demand[i] * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) + main_cost_running[i][i_run-1]
+                main_used_running[i][i_run] = main_used_running[i][i_run-1] + main_grid_used[i]
             else:
+                micro_used_running[i][i_run] = 0
                 micro_cost_running[i][i_run] = 0
                 main_cost_running[i][i_run] = house_demand[i] * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])
-            main_grid_used[i] = house_demand[i]
+                main_used_running[i][i_run] = main_grid_used[i]
 
     # if battery less than min charge or (between 12am-5am and charge less than desired charge
     if (battery.current_charge < battery.MIN_CHARGE) or ((dt.hour < 5) & (battery.current_charge < battery.DESIRED_CHARGE)):
@@ -304,22 +315,22 @@ while interval_count != 0:
     if PRINTS:
         print("\nINTERVAL TOTALS:")
 
-        print("Solar Produced: {} kWh".format(solarProduced)) 
+        print("Solar     Produced: {} kWh".format(solarProduced)) 
     
         tmp_print = [round(num,2) for num in house_demand_total]
         print("Household demand: {} kWh".format(tmp_print))
  
         tmp_print = [round(num,2) for num in solar_used]
-        print("Solar used by house: {} kWh".format(tmp_print))
+        print("Solar     used: {} kWh".format(tmp_print))
     
         tmp_print = [round(num,2) for num in solar_energy_battery]
-        print("Solar stored in battery: {} kWh".format(tmp_print))
+        print("Solar     stored in battery: {} kWh".format(tmp_print))
 
         tmp_print = [round(num,2) for num in micro_grid_used]
-        print("Microgrid energy used: {} kWh".format(tmp_print))
+        print("Microgrid used: {} kWh".format(tmp_print))
 
         tmp_print = [round(num,2) for num in main_grid_used]
-        print("Maingrid energy used: {} kWh".format(tmp_print))
+        print("Maingrid  used: {} kWh".format(tmp_print))
 
         ##################################
         # Printing running totals
@@ -331,17 +342,17 @@ while interval_count != 0:
         for i in range(NUM_HOUSES):
             tmp_list[i] = main_used_running[i][i_run]
         tmp_print = [round(num,2) for num in tmp_list]
-        print("maingird running usage: {} kWh".format(tmp_print))
+        print("maingird  running used:  {} kWh".format(tmp_print))
     
         for i in range(NUM_HOUSES):
             tmp_list[i] = main_cost_running[i][i_run]
         tmp_print = [round(num,2) for num in tmp_list]
-        print("maingird running cost: ${}".format(tmp_print))
+        print("maingird  running cost: ${}".format(tmp_print))
    
         for i in range(NUM_HOUSES):
             tmp_list[i] = micro_used_running[i][i_run] 
         tmp_print = [round(num,2) for num in tmp_list]
-        print("microgird running usage: {} kWh".format(tmp_print))
+        print("microgird running used:  {} kWh".format(tmp_print))
     
         for i in range(NUM_HOUSES):
             tmp_list[i] = micro_cost_running[i][i_run]
@@ -351,12 +362,12 @@ while interval_count != 0:
         for i in range(NUM_HOUSES):
             tmp_list[i] = solar_used_running[i][i_run]
         tmp_print = [round(num,2) for num in tmp_list]
-        print("Solar running usage: {} kWh".format(tmp_print))
+        print("Solar     running used:  {} kWh".format(tmp_print))
     
         for i in range(NUM_HOUSES):
             tmp_list[i] = solar_cost_running[i][i_run]
         tmp_print = [round(num,2) for num in tmp_list]
-        print("solar running profit: ${}".format(tmp_print))
+        print("solar     running cost: ${}".format(tmp_print))
 
     ##################################
     # Recording some historical values
@@ -384,12 +395,15 @@ print('Simulated {} minutes in {} seconds\n'.format(total_minutes, timer_end-tim
 for i in range(NUM_HOUSES):
     for j in range(int(screen_len/2)):
         print('-', end='')
-    print("\nHOUSE {}".format(i))
-    print("total energy used: {}kWh".format(round(total_used_running[i][i_run-1], 2)))
-    print("maingrid cost: ${}".format(round(main_cost_running[i][i_run-1], 2)))
-    print("microgrid cost: ${}".format(round(micro_cost_running[i][i_run-1], 2)))
-    print("solar produced: {}kWh".format(round(solar_produced_running[i][i_run-1], 2)))
-    print("solar cost : ${}".format(round(solar_cost_running[i][i_run-1], 2)))
+    print("\nHOUSE {}".format(i+1))
+    print("total     energy used:  {}kWh".format(round(total_used_running[i][i_run-1], 2)))
+    print("maingrid  energy used:  {}kWh".format(round(main_used_running[i][i_run-1], 2)))
+    print("maingrid  energy cost: ${}".format(round(main_cost_running[i][i_run-1], 2)))
+    print("microgrid energy used:  {}kWh".format(round(micro_used_running[i][i_run-1], 2)))
+    print("microgrid energy cost: ${}".format(round(micro_cost_running[i][i_run-1], 2)))
+    print("solar     energy made:  {}kWh".format(round(solar_produced_running[i][i_run-1], 2)))
+    print("solar     energy used:  {}kWh".format(round(solar_used_running[i][i_run-1], 2)))
+    print("solar     energy cost: ${}".format(round(solar_cost_running[i][i_run-1], 2)))
 
 ####################################################################
 # CHARTS, GRAPHS, & PLOTS
