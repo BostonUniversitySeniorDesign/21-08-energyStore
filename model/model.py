@@ -20,7 +20,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 288
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -79,9 +79,6 @@ df_weather_cloudy = pd.read_excel(loc_weather, sheet_name="Cloudy",usecols=['Tim
 df_weather_showers = pd.read_excel(loc_weather, sheet_name="Showers",usecols=['Time', '5 Minute Energy (kWh)'])
 
 weather_condition_dfs = [df_weather_fine, df_weather_cloudy, df_weather_mostly_cloudy, df_weather_partly_cloudy, df_weather_showers]
-
-# keeps track of solar profit
-solar_profit = [0] * NUM_HOUSES
 
 # iterate through Dates in df_weatherdata and flip the dates to be strings
 for (columnName, columnData) in df_weatherdata.iteritems():
@@ -204,6 +201,7 @@ while interval_count != 0:
         print("ERROR")
 
     # Get solar produced per house
+    solar_profit = [0] * NUM_HOUSES
     for i in range(NUM_HOUSES):
         if i_run != 0:
             solar_produced_running[i][i_run] = solar_produced_running[i][(i_run - 1)] + solarProduced
@@ -213,22 +211,26 @@ while interval_count != 0:
         # have excess solar
         if solarProduced > house_demand_total[i]:
             excess_energy = solarProduced - house_demand_total[i]
-            solar_profit[i] += house_demand_total[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            solar_profit[i] = house_demand_total[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            if solar_profit[i] < 0:
+                print("mike")
             solar_used[i] = house_demand_total[i]
             if i_run != 0:
-                #solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
+                solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
                 solar_used_running[i][i_run] = solar_used_running[i][(i_run -1)] + solar_used[i]
             else:
-                #solar_cost_running[i][i_run] = solar_profit[i]
+                solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solar_used[i]
             house_demand[i] = 0
 
         # No excess solar
         else:
-            solar_profit[i] += solarProduced * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
+            solar_profit[i] = solarProduced * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
             if i_run != 0:
+                solar_cost_running[i][i_run] = solar_cost_running[i][(i_run -1)] + solar_profit[i]
                 solar_used_running[i][i_run] = solar_used_running[i][(i_run -1)] + solarProduced
             else:
+                solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solarProduced
             solar_used[i] = solarProduced
             house_demand[i] = house_demand_total[i] - solarProduced
@@ -294,7 +296,8 @@ while interval_count != 0:
     # get total running cost
     for i in range(NUM_HOUSES):
         total_cost_running[i][i_run] = solar_cost_running[i][i_run] + micro_cost_running[i][i_run] + main_cost_running[i][i_run]
-    
+        total_used_running[i][i_run] = solar_used_running[i][i_run] + micro_used_running[i][i_run] + main_used_running[i][i_run]
+
     ##################################
     # Printing for this interval
     tmp_list = [0] * NUM_HOUSES
@@ -382,7 +385,7 @@ for i in range(NUM_HOUSES):
     for j in range(int(screen_len/2)):
         print('-', end='')
     print("\nHOUSE {}".format(i))
-    print("total energy used: {}kWh".format(round(house_running_demand[i], 2)))
+    print("total energy used: {}kWh".format(round(total_used_running[i][i_run-1], 2)))
     print("maingrid cost: ${}".format(round(main_cost_running[i][i_run-1], 2)))
     print("microgrid cost: ${}".format(round(micro_cost_running[i][i_run-1], 2)))
     print("solar produced: {}kWh".format(round(solar_produced_running[i][i_run-1], 2)))
@@ -392,31 +395,6 @@ for i in range(NUM_HOUSES):
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################
 if GRAPHS:
-    ######################################
-    # Making pie charts
-    pie_labels = 'Solar', 'Maingrid', 'Microgrid'
-    fig_pie, axs_pie = plt.subplots(2,2)
-    pie_data = [0] * NUM_HOUSES
-    for i in range(NUM_HOUSES):
-        if i == 0:
-            r = 0
-            c = 0
-        elif i == 1:
-            r = 0
-            c = 1
-        elif i == 2:
-            r = 1
-            c = 0
-        elif i == 3:
-            r = 1
-            c = 1
-
-        pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
-        axs_pie[r,c].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
-        axs_pie[r,c].set_title('House {}'.format(i))
-
-    #axs_pie.set_title("MAIN TEST")
-
     ######################################
     # Plotting battery charge & avg cost 
     fig_bat, axs_bat = plt.subplots()
@@ -430,33 +408,12 @@ if GRAPHS:
     ######################################
     # Plotting home energy usage
     fig_eng, axs_eng = plt.subplots(2,2)
-
-    for i in range(NUM_HOUSES):
-        if i == 0:
-            r = 0
-            c = 0
-        elif i == 1:
-            r = 0
-            c = 1
-        elif i == 2:
-            r = 1
-            c = 0
-        elif i == 3:
-            r = 1
-            c = 1
-    
-        axs_eng[r,c].plot(date_historical, total_used_running[i], label="total")
-        axs_eng[r,c].plot(date_historical, solar_used_running[i], label="solar")
-        axs_eng[r,c].plot(date_historical, micro_used_running[i], label="micro")
-        axs_eng[r,c].plot(date_historical, main_used_running[i], label="main") 
-        axs_eng[r,c].set_xlabel('Date Time')
-        axs_eng[r,c].set_ylabel('Energy Used kWh')
-        axs_eng[r,c].set_title('House {}'.format(i))
-        axs_eng[r,c].legend()
-
-    ######################################
     # Plotting home energy cost 
     fig_cost, axs_cost = plt.subplots(2,2)
+    # Making pie charts
+    pie_labels = 'Solar', 'Maingrid', 'Microgrid'
+    fig_pie, axs_pie = plt.subplots(2,2)
+    pie_data = [0] * NUM_HOUSES
 
     for i in range(NUM_HOUSES):
         if i == 0:
@@ -472,14 +429,27 @@ if GRAPHS:
             r = 1
             c = 1
         
+        axs_eng[r,c].plot(date_historical, total_used_running[i], label="total")
+        axs_eng[r,c].plot(date_historical, solar_used_running[i], label="solar")
+        axs_eng[r,c].plot(date_historical, micro_used_running[i], label="micro")
+        axs_eng[r,c].plot(date_historical, main_used_running[i], label="main") 
+        axs_eng[r,c].set_xlabel('Date Time')
+        axs_eng[r,c].set_ylabel('Energy Used kWh')
+        axs_eng[r,c].set_title('House {}'.format(i+1))
+        axs_eng[r,c].legend()
+
         axs_cost[r,c].plot(date_historical, total_cost_running[i], label="total")
         axs_cost[r,c].plot(date_historical, solar_cost_running[i], label="solar")
         axs_cost[r,c].plot(date_historical, micro_cost_running[i], label="micro")
         axs_cost[r,c].plot(date_historical, main_cost_running[i], label="main") 
         axs_cost[r,c].set_xlabel('Date Time')
         axs_cost[r,c].set_ylabel('Energy Cost $')
-        axs_cost[r,c].set_title('House {}'.format(i))
+        axs_cost[r,c].set_title('House {}'.format(i+1))
         axs_cost[r,c].legend()
+
+        pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
+        axs_pie[r,c].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
+        axs_pie[r,c].set_title('House {}'.format(i+1))
 
     # Plot
     plt.show()

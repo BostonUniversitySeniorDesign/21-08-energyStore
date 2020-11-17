@@ -13,8 +13,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [1.0, 0.3, 1.03, 1.17] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 1.38 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -35,8 +35,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 2.75 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -57,8 +57,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 4.13 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -79,8 +79,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 5.51 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -101,8 +101,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 6.89 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -123,8 +123,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 8.26 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -145,8 +145,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 9.64 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -167,8 +167,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 11.02 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -189,8 +189,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 12.4 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -211,8 +211,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 13.77 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -233,8 +233,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 15.15 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -255,8 +255,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 16.53 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.21, 0.06, 0.21, 0.24]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -277,8 +277,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.75, 0.34, 0.68, 0.23] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 17.91 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -299,8 +299,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -321,8 +321,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -343,8 +343,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -365,8 +365,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -387,8 +387,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -409,8 +409,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -431,8 +431,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -453,8 +453,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -475,8 +475,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -497,8 +497,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -519,8 +519,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.37, 0.13, 0.36, 0.29]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -541,8 +541,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.55, 0.22, 0.68, 0.21] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -563,8 +563,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -585,8 +585,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -607,8 +607,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -629,8 +629,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -651,8 +651,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -673,8 +673,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -695,8 +695,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -717,8 +717,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -739,8 +739,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -761,8 +761,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -783,8 +783,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.48, 0.18, 0.5, 0.34]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -805,8 +805,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.49, 0.23, 0.67, 0.2] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -827,8 +827,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -849,8 +849,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -871,8 +871,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -893,8 +893,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -915,8 +915,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -937,8 +937,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -959,8 +959,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -981,8 +981,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1003,8 +1003,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1025,8 +1025,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1047,8 +1047,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.58, 0.23, 0.64, 0.38]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1069,8 +1069,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.55, 0.25, 0.44, 0.18] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1091,8 +1091,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1113,8 +1113,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1135,8 +1135,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1157,8 +1157,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1179,8 +1179,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1201,8 +1201,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1223,8 +1223,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1245,8 +1245,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1267,8 +1267,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1289,8 +1289,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1311,8 +1311,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.7, 0.28, 0.73, 0.42]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1333,8 +1333,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.54, 0.26, 0.38, 0.18] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1355,8 +1355,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1377,8 +1377,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1399,8 +1399,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1421,8 +1421,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1443,8 +1443,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1465,8 +1465,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1487,8 +1487,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1509,8 +1509,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1531,8 +1531,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1553,8 +1553,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1575,8 +1575,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.81, 0.34, 0.81, 0.45]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1597,8 +1597,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.44, 0.39, 0.38, 0.16] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1619,8 +1619,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1641,8 +1641,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1663,8 +1663,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1685,8 +1685,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1707,8 +1707,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1729,8 +1729,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.29 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1751,14 +1751,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.01 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.3 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.0, 0.0, 0.0, 0.0] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 208
@@ -1773,14 +1773,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.03 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.31 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.0, 0.0, 0.0, 0.0] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 207
@@ -1795,14 +1795,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.04 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.33 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.0, 0.0, 0.0, 0.0] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 206
@@ -1817,14 +1817,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.07 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.36 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.0, 0.0, 0.0, 0.0] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 205
@@ -1839,14 +1839,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.11 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.39 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[0.91, 0.42, 0.89, 0.49]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.0, 0.0, 0.0, 0.0] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 204
@@ -1861,8 +1861,8 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0.48, 0.32, 0.34, 0.15] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.11 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.39 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
@@ -1883,14 +1883,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.44 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 202
@@ -1905,14 +1905,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.23 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.51 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 201
@@ -1927,14 +1927,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.3 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.59 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 200
@@ -1949,14 +1949,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.4 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.68 kWh
+Battery average cost: 0.22 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 199
@@ -1971,14 +1971,14 @@ Microgrid energy used: [0, 0, 0, 0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.79 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
 microgird running cost: $[0, 0, 0, 0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 198
@@ -1989,18 +1989,18 @@ Solar Produced: 0.0335 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.03, 0.03, 0.03, 0.03] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.64 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.92 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 197
@@ -2011,18 +2011,18 @@ Solar Produced: 0.03908333333333333 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.04, 0.04, 0.04, 0.04] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.79 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.07 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 196
@@ -2033,18 +2033,18 @@ Solar Produced: 0.04541666666666667 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.05, 0.05, 0.05, 0.05] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 0.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.24 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 195
@@ -2055,18 +2055,18 @@ Solar Produced: 0.051416666666666666 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.05, 0.05, 0.05, 0.05] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 1.15 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.44 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 194
@@ -2077,18 +2077,18 @@ Solar Produced: 0.057333333333333326 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.06, 0.06, 0.06, 0.06] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 1.37 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.66 kWh
+Battery average cost: 0.21 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 193
@@ -2099,18 +2099,18 @@ Solar Produced: 0.06408333333333333 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.06, 0.06, 0.06, 0.06] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 1.61 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.9 kWh
+Battery average cost: 0.2 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
 maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.0, 0.0, 0.0, 0.0]
 Solar running usage: [0.01, 0.01, 0.01, 0.01] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 192
@@ -2121,16 +2121,16 @@ Solar Produced: 0.07125 kWh
 Household demand: [0.55, 0.3, 0.38, 0.33] kWh
 Solar used by house: [0.07, 0.07, 0.07, 0.07] kWh
 Solar stored in battery: [0, 0, 0, 0] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
-Maingrid energy used: [0.48, 0.23, 0.31, 0.26] kWh
+Microgrid energy used: [0.5, 0.24, 0.33, 0.27] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 1.61 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.56 kWh
+Battery average cost: 0.2 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -2143,18 +2143,18 @@ Solar Produced: 0.0795 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.08, 0.08, 0.08, 0.08] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 1.92 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 19.86 kWh
+Battery average cost: 0.2 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 190
@@ -2165,18 +2165,18 @@ Solar Produced: 0.08825 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.09, 0.09, 0.09, 0.09] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 2.25 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.19 kWh
+Battery average cost: 0.2 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 189
@@ -2187,18 +2187,18 @@ Solar Produced: 0.09741666666666665 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.1, 0.1, 0.1, 0.1] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 2.62 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.56 kWh
+Battery average cost: 0.19 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 188
@@ -2209,18 +2209,18 @@ Solar Produced: 0.10533333333333333 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.11, 0.11, 0.11, 0.11] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 3.02 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 20.97 kWh
+Battery average cost: 0.19 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 187
@@ -2231,18 +2231,18 @@ Solar Produced: 0.11366666666666665 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.11, 0.11, 0.11, 0.11] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 3.45 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 21.4 kWh
+Battery average cost: 0.19 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 186
@@ -2253,18 +2253,18 @@ Solar Produced: 0.12208333333333334 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.12, 0.12, 0.12, 0.12] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 3.92 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 21.86 kWh
+Battery average cost: 0.18 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 185
@@ -2275,18 +2275,18 @@ Solar Produced: 0.13125 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.13, 0.13, 0.13, 0.13] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 4.42 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 22.36 kWh
+Battery average cost: 0.18 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 184
@@ -2297,18 +2297,18 @@ Solar Produced: 0.1400833333333333 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.14, 0.14, 0.14, 0.14] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 4.95 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 22.89 kWh
+Battery average cost: 0.17 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 183
@@ -2319,18 +2319,18 @@ Solar Produced: 0.14875 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.15, 0.15, 0.15, 0.15] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 5.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 23.46 kWh
+Battery average cost: 0.17 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 182
@@ -2341,18 +2341,18 @@ Solar Produced: 0.15683333333333332 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.16, 0.16, 0.16, 0.16] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 6.11 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 24.05 kWh
+Battery average cost: 0.16 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 181
@@ -2363,18 +2363,18 @@ Solar Produced: 0.16416666666666666 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.16, 0.16, 0.16, 0.16] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 6.73 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 24.68 kWh
+Battery average cost: 0.16 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.11, 0.54, 1.03, 0.57]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.1, 0.05, 0.07, 0.06]
 Solar running usage: [0.08, 0.08, 0.08, 0.08] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 180
@@ -2385,16 +2385,16 @@ Solar Produced: 0.17225 kWh
 Household demand: [0.53, 0.36, 0.36, 0.62] kWh
 Solar used by house: [0.17, 0.17, 0.17, 0.17] kWh
 Solar stored in battery: [0, 0, 0, 0] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
-Maingrid energy used: [0.36, 0.19, 0.19, 0.45] kWh
+Microgrid energy used: [0.38, 0.2, 0.2, 0.47] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 6.73 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 23.43 kWh
+Battery average cost: 0.16 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -2407,18 +2407,18 @@ Solar Produced: 0.181 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.18, 0.18, 0.18, 0.18] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 7.42 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 24.12 kWh
+Battery average cost: 0.16 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 178
@@ -2429,18 +2429,18 @@ Solar Produced: 0.18883333333333333 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.19, 0.19, 0.19, 0.19] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 8.14 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 24.84 kWh
+Battery average cost: 0.15 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 177
@@ -2451,18 +2451,18 @@ Solar Produced: 0.1955 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
 Solar stored in battery: [0.2, 0.2, 0.2, 0.2] kWh
-Microgrid energy used: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 8.88 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 25.58 kWh
+Battery average cost: 0.15 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0, 0, 0, 0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 176
@@ -2477,14 +2477,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 9.66 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 26.36 kWh
+Battery average cost: 0.14 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 175
@@ -2499,14 +2499,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 10.46 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 27.16 kWh
+Battery average cost: 0.14 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 174
@@ -2521,14 +2521,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 11.3 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 28.0 kWh
+Battery average cost: 0.13 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 173
@@ -2543,14 +2543,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 12.15 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 28.85 kWh
+Battery average cost: 0.13 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 172
@@ -2565,14 +2565,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 13.05 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 29.75 kWh
+Battery average cost: 0.13 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 171
@@ -2587,14 +2587,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 13.98 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 30.68 kWh
+Battery average cost: 0.12 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 170
@@ -2609,14 +2609,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 14.94 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 31.64 kWh
+Battery average cost: 0.12 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 169
@@ -2631,14 +2631,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 15.93 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 32.63 kWh
+Battery average cost: 0.12 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.16, 0.08, 0.1, 0.13]
 Solar running usage: [0.25, 0.25, 0.25, 0.25] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 168
@@ -2653,14 +2653,14 @@ Microgrid energy used: [0.23, 0.0, 0.22, 0.18] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 15.36 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 32.06 kWh
+Battery average cost: 0.12 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0, 0.03, 0, 0]
 
 ------------------------------
 Running interval: 167
@@ -2675,14 +2675,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 16.41 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 33.11 kWh
+Battery average cost: 0.11 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 166
@@ -2697,14 +2697,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 17.46 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 34.16 kWh
+Battery average cost: 0.11 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 165
@@ -2719,14 +2719,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 18.53 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 35.23 kWh
+Battery average cost: 0.1 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 164
@@ -2741,14 +2741,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 19.63 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 36.33 kWh
+Battery average cost: 0.1 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 163
@@ -2763,14 +2763,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 20.75 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 37.45 kWh
+Battery average cost: 0.1 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 162
@@ -2785,14 +2785,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 21.9 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 38.6 kWh
+Battery average cost: 0.1 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 161
@@ -2807,14 +2807,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 23.07 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.77 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 160
@@ -2829,14 +2829,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 24.25 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.66 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 159
@@ -2851,14 +2851,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 25.46 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.66 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 158
@@ -2873,14 +2873,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 26.68 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.66 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 157
@@ -2895,14 +2895,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 27.93 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.66 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.19, 0.08, 0.12, 0.15]
 Solar running usage: [0.52, 0.44, 0.52, 0.52] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.03, 0.0, 0.0]
 
 ------------------------------
 Running interval: 156
@@ -2917,12 +2917,12 @@ Microgrid energy used: [0.18, 0.07, 0.36, 0.11] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 27.2 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.93 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -2939,14 +2939,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 28.49 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 154
@@ -2961,14 +2961,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 29.79 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 153
@@ -2983,14 +2983,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 31.11 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 152
@@ -3005,14 +3005,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 32.45 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 151
@@ -3027,14 +3027,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 33.8 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 150
@@ -3049,14 +3049,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 35.15 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 149
@@ -3071,14 +3071,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 36.49 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 148
@@ -3093,14 +3093,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 37.84 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 147
@@ -3115,14 +3115,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.21 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 146
@@ -3132,19 +3132,19 @@ INTERVAL TOTALS:
 Solar Produced: 0.36333333333333334 kWh
 Household demand: [0, 0, 0, 0] kWh
 Solar used by house: [0, 0, 0, 0] kWh
-Solar stored in battery: [0.36, 0.36, 0.36, 0] kWh
+Solar stored in battery: [0.36, 0.36, 0.36, 0.36] kWh
 Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.25 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 145
@@ -3159,14 +3159,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.67]
+maingird running cost: $[1.01, 0.49, 0.97, 0.52]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.21, 0.09, 0.16, 0.16]
 Solar running usage: [0.86, 0.78, 0.86, 0.86] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 144
@@ -3181,14 +3181,14 @@ Microgrid energy used: [0.29, 0.0, 1.02, 0] kWh
 Maingrid energy used: [0, 0, 0, 0.42] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.28 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.26 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0, 0.06, 0, 0]
 
 ------------------------------
 Running interval: 143
@@ -3203,14 +3203,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.34 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.32 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 142
@@ -3225,14 +3225,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 141
@@ -3247,14 +3247,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 140
@@ -3269,14 +3269,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 139
@@ -3291,14 +3291,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 138
@@ -3313,14 +3313,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 137
@@ -3335,14 +3335,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 136
@@ -3357,14 +3357,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 135
@@ -3379,14 +3379,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 134
@@ -3401,14 +3401,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 133
@@ -3423,14 +3423,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.07, 0.76]
+maingird running cost: $[1.01, 0.49, 0.97, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.23, 0.09, 0.25, 0.16]
 Solar running usage: [1.22, 1.12, 1.22, 1.22] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.06, 0.0, 0.0]
 
 ------------------------------
 Running interval: 132
@@ -3445,14 +3445,14 @@ Microgrid energy used: [0.31, 0.0, 0, 0.0] kWh
 Maingrid energy used: [0, 0, 2.81, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.38 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.36 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0, 0.12, 0, 0.03]
 
 ------------------------------
 Running interval: 131
@@ -3467,14 +3467,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 130
@@ -3489,14 +3489,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 129
@@ -3511,14 +3511,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 128
@@ -3533,14 +3533,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 127
@@ -3555,14 +3555,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 126
@@ -3577,14 +3577,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 125
@@ -3599,14 +3599,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 124
@@ -3621,14 +3621,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 123
@@ -3643,14 +3643,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 122
@@ -3665,14 +3665,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 121
@@ -3687,14 +3687,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.74 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.73 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.66, 0.76]
+maingird running cost: $[1.01, 0.49, 1.55, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.26, 0.09, 0.25, 0.16]
 Solar running usage: [1.61, 1.47, 1.61, 1.41] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.12, 0.0, 0.03]
 
 ------------------------------
 Running interval: 120
@@ -3709,14 +3709,14 @@ Microgrid energy used: [0.24, 0.15, 0, 0.0] kWh
 Maingrid energy used: [0, 0, 1.57, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.36 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.34 kWh
+Battery average cost: 0.09 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0, 0, 0, 0.06]
 
 ------------------------------
 Running interval: 119
@@ -3731,14 +3731,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 118
@@ -3753,14 +3753,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 117
@@ -3775,14 +3775,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 116
@@ -3797,14 +3797,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 115
@@ -3819,14 +3819,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 114
@@ -3841,14 +3841,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 113
@@ -3863,14 +3863,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 112
@@ -3885,14 +3885,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 111
@@ -3907,14 +3907,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 110
@@ -3929,14 +3929,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 109
@@ -3951,14 +3951,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.69 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.67 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 1.98, 0.76]
+maingird running cost: $[1.01, 0.49, 1.88, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.28, 0.1, 0.25, 0.16]
 Solar running usage: [1.98, 1.84, 1.98, 1.58] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.06]
 
 ------------------------------
 Running interval: 108
@@ -3973,14 +3973,14 @@ Microgrid energy used: [0.49, 0.34, 0, 0.0] kWh
 Maingrid energy used: [0, 0, 0.79, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.87 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.85 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0, 0, 0, 0.09]
 
 ------------------------------
 Running interval: 107
@@ -3995,14 +3995,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 106
@@ -4017,14 +4017,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 105
@@ -4039,14 +4039,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 104
@@ -4061,14 +4061,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 103
@@ -4083,14 +4083,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 102
@@ -4105,14 +4105,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 101
@@ -4127,14 +4127,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 100
@@ -4149,14 +4149,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 99
@@ -4171,14 +4171,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 98
@@ -4193,14 +4193,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 97
@@ -4215,14 +4215,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.67 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.65 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.15, 0.76]
+maingird running cost: $[1.01, 0.49, 2.04, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.32, 0.13, 0.25, 0.16]
 Solar running usage: [2.24, 2.1, 2.24, 1.75] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.09]
 
 ------------------------------
 Running interval: 96
@@ -4237,12 +4237,12 @@ Microgrid energy used: [0.55, 0.25, 0, 0.05] kWh
 Maingrid energy used: [0, 0, 1.39, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.81 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.8 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -4259,14 +4259,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.24 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 94
@@ -4281,14 +4281,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 93
@@ -4303,14 +4303,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 92
@@ -4325,14 +4325,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 91
@@ -4347,14 +4347,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 90
@@ -4369,14 +4369,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 89
@@ -4391,14 +4391,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 88
@@ -4413,14 +4413,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 87
@@ -4435,14 +4435,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 86
@@ -4457,14 +4457,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 85
@@ -4479,14 +4479,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.59 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.57 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.58, 2.44, 0.76]
+maingird running cost: $[1.01, 0.49, 2.33, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.37, 0.15, 0.25, 0.17]
 Solar running usage: [2.36, 2.22, 2.36, 1.87] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 84
@@ -4501,12 +4501,12 @@ Microgrid energy used: [0.61, 0, 0, 0.32] kWh
 Maingrid energy used: [0, 1.44, 1.94, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.66 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.64 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -4523,14 +4523,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.9 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.88 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 82
@@ -4545,14 +4545,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.34 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.33 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 81
@@ -4567,14 +4567,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 80
@@ -4589,14 +4589,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 79
@@ -4611,14 +4611,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 78
@@ -4633,14 +4633,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 77
@@ -4655,14 +4655,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 76
@@ -4677,14 +4677,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 75
@@ -4699,14 +4699,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 74
@@ -4721,14 +4721,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 73
@@ -4743,14 +4743,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 0.87, 2.84, 0.76]
+maingird running cost: $[1.01, 0.79, 2.74, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.42, 0.15, 0.25, 0.19]
 Solar running usage: [2.42, 2.28, 2.42, 1.94] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 72
@@ -4765,12 +4765,12 @@ Microgrid energy used: [0.64, 0, 0, 0.36] kWh
 Maingrid energy used: [0, 1.93, 2.12, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.51 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.55 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -4787,14 +4787,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.72 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.76 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 70
@@ -4809,14 +4809,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 39.87 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 39.91 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 69
@@ -4831,14 +4831,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.0 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.04 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 68
@@ -4853,14 +4853,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.12 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.16 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 67
@@ -4875,14 +4875,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.22 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.26 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 66
@@ -4897,14 +4897,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.31 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.35 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 65
@@ -4919,14 +4919,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.39 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.43 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 64
@@ -4941,14 +4941,14 @@ Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
 Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
-Battery charge: 40.46 kWh
-Battery average cost: 0.0 $/kWh
+Battery charge: 40.5 kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 63
@@ -4964,13 +4964,13 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 40.5 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 62
@@ -4986,13 +4986,13 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 40.5 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 61
@@ -5008,13 +5008,13 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 40.5 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.28, 3.29, 0.76]
+maingird running cost: $[1.01, 1.19, 3.18, 0.61]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.47, 0.15, 0.25, 0.22]
 Solar running usage: [2.46, 2.32, 2.46, 1.98] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 60
@@ -5030,11 +5030,11 @@ Maingrid energy used: [0, 1.7, 2.07, 0.41] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.21 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5052,13 +5052,13 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.24 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 58
@@ -5074,13 +5074,13 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
-solar running profit: $[0, 0, 0, 0]
+solar running profit: $[0.0, 0.0, 0.0, 0.0]
 
 ------------------------------
 Running interval: 57
@@ -5096,11 +5096,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5118,11 +5118,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5140,11 +5140,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5162,11 +5162,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5184,11 +5184,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5206,11 +5206,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5228,11 +5228,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5250,11 +5250,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5272,11 +5272,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 39.26 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.63, 3.72, 0.84]
+maingird running cost: $[1.01, 1.54, 3.61, 0.69]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.57, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5294,11 +5294,11 @@ Maingrid energy used: [0, 1.66, 2.11, 0.44] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5316,11 +5316,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5338,11 +5338,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5360,11 +5360,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5382,11 +5382,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5404,11 +5404,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5426,11 +5426,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5448,11 +5448,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5470,11 +5470,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5492,11 +5492,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5514,11 +5514,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5536,11 +5536,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 38.1 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 1.98, 4.16, 0.94]
+maingird running cost: $[1.01, 1.89, 4.05, 0.78]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.66, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5558,11 +5558,11 @@ Maingrid energy used: [0, 1.21, 2.18, 0.53] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5580,11 +5580,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5602,11 +5602,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5624,11 +5624,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5646,11 +5646,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5668,11 +5668,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5690,11 +5690,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5712,11 +5712,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5734,11 +5734,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5756,11 +5756,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5778,11 +5778,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5800,11 +5800,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 37.16 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 4.61, 1.05]
+maingird running cost: $[1.01, 2.14, 4.51, 0.9]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.73, 0.15, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5822,11 +5822,11 @@ Maingrid energy used: [0, 0, 2.22, 0.35] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5844,11 +5844,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5866,11 +5866,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5888,11 +5888,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5910,11 +5910,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5932,11 +5932,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5954,11 +5954,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5976,11 +5976,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -5998,11 +5998,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6020,11 +6020,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6042,11 +6042,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6064,11 +6064,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 35.96 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.08, 1.12]
+maingird running cost: $[1.01, 2.14, 4.97, 0.97]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.8, 0.17, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6086,11 +6086,11 @@ Maingrid energy used: [0, 0, 1.79, 0.34] kWh
 
 RUNNING TOTALS:
 Battery charge: 34.71 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.45, 1.19]
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6108,11 +6108,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 34.71 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.45, 1.19]
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6130,11 +6130,11 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 34.71 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.45, 1.19]
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
 solar running profit: $[0, 0, 0, 0]
 
@@ -6152,9 +6152,191 @@ Maingrid energy used: [0, 0, 0, 0] kWh
 
 RUNNING TOTALS:
 Battery charge: 34.71 kWh
-Battery average cost: 0.0 $/kWh
+Battery average cost: 0.08 $/kWh
 maingird running usage: [0, 0, 0, 0] kWh
-maingird running cost: $[1.19, 2.23, 5.45, 1.19]
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
 microgird running usage: [0, 0, 0, 0] kWh
-microgird running cost: $[0.0, 0.0, 0.0, 0.0]
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
 Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 8
+date: 2020-01-01 23:20:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 7
+date: 2020-01-01 23:25:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 6
+date: 2020-01-01 23:30:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 5
+date: 2020-01-01 23:35:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 4
+date: 2020-01-01 23:40:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 3
+date: 2020-01-01 23:45:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 2
+date: 2020-01-01 23:50:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+------------------------------
+Running interval: 1
+date: 2020-01-01 23:55:00
+
+INTERVAL TOTALS:
+Solar Produced: 0.0 kWh
+Household demand: [0, 0, 0, 0] kWh
+Solar used by house: [0.0, 0.0, 0.0, 0.0] kWh
+Solar stored in battery: [0, 0, 0, 0] kWh
+Microgrid energy used: [0.0, 0.0, 0.0, 0.0] kWh
+Maingrid energy used: [0, 0, 0, 0] kWh
+
+RUNNING TOTALS:
+Battery charge: 34.71 kWh
+Battery average cost: 0.08 $/kWh
+maingird running usage: [0, 0, 0, 0] kWh
+maingird running cost: $[1.01, 2.14, 5.34, 1.04]
+microgird running usage: [0, 0, 0, 0] kWh
+microgird running cost: $[0.87, 0.2, 0.25, 0.22]
+Solar running usage: [2.47, 2.33, 2.47, 1.99] kWh
+solar running profit: $[0, 0, 0, 0]
+
+
+
+************************************************************
+Simulated 1440 minutes in 2.0485973358154297 seconds
