@@ -11,7 +11,7 @@ class Battery_obj:
         # Static
         self.CHARGE_EFF = 0.95  # (percentage expressed as a decimal)
         self.DISCHARGE_EFF = 0.95  # (percentage expressed as a decimal)
-        self.MAX_CAPACITY = 30.5  # (kWh) 40.5
+        self.MAX_CAPACITY = 40.5  # (kWh) 40.5
         self.DESIRED_CHARGE = 18.0 # (kWh) TODO figure out a way to calc this
         self.MIN_CHARGE = 9.0  # (kWh)
         self.MAX_CONTINUOUS_POWER = 17.4 # (kW) 17.4

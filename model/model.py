@@ -21,7 +21,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 8640
+interval_count = 288
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -413,17 +413,26 @@ if GRAPHS:
     # Plotting battery charge & avg cost 
     fig_bat, axs_bat = plt.subplots()
     axs_bat2 = axs_bat.twinx()
-    axs_bat.plot(date_historical, battery_avg_historical, 'g-')
-    axs_bat2.plot(date_historical, battery_charge_historical, 'b-')
+    lns1 = axs_bat.plot(date_historical, battery_avg_historical, 'g-', label='Battery Avg Cost ($)')
+    lns2 = axs_bat2.plot(date_historical, battery_charge_historical, 'b-', label='Battery Charge (kW)')
+
+    lns = lns1+lns2
+    labs = [l.get_label() for l in lns]
+    axs_bat.legend(lns, labs, loc='lower right', bbox_to_anchor=(1.05,1), borderaxespad=0.)
+
     axs_bat.set_xlabel('Date Time')
     axs_bat.set_ylabel('Cost of energy $/kWh')
     axs_bat2.set_ylabel('Charge kWh')
+    axs_bat.set_title('Battery Charge and Cost vs. Time')
+
 
     ######################################
     # Plotting home energy usage
     fig_eng, axs_eng = plt.subplots(2,2)
+    
     # Plotting home energy cost 
     fig_cost, axs_cost = plt.subplots(2,2)
+    
     # Making pie charts
     pie_labels = 'Solar', 'Maingrid', 'Microgrid'
     fig_pie, axs_pie = plt.subplots(2,2)
@@ -464,6 +473,10 @@ if GRAPHS:
         pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
         axs_pie[r,c].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
         axs_pie[r,c].set_title('House {}'.format(i+1))
+
+        fig_cost.suptitle('Energy Cost ($) per House vs. Time')
+        fig_eng.suptitle('Energy Usage (kWh) per House vs. Time')
+        fig_pie.suptitle('Energy Cost Distribution per House')
 
     # Plot
     plt.show()
