@@ -1,14 +1,38 @@
 ####################################################################
 # FUNCTIONS
 ####################################################################
-# return the cost of power from the maingrid (dollars/kWh)
+# Utility function for getting the index for the pandas df
+def get_Date_Time_solarTime(dt):
+    day_t = dt.day
+    month_t = dt.month
+
+    if month_t < 10:
+        month_t = '0' + str(dt.month)
+    else:
+        month_t = str(dt.month)
+
+    if day_t < 10:
+        day_t = '0' + str(dt.day)
+    else:
+        day_t = str(dt.day)
+
+    date = month_t + '/' + day_t
+    # dataframes store time two different ways so we need both of these
+    time = str(dt.time()).split()[0]
+    solar_time = dt.time()
+    return (date, time, solar_time)
+
+
+
+
+
+
+# Returns the cost of power from the maingrid (dollars/kWh)
 # using this as refrence https://www.sdge.com/whenmatters
 
 # takes the current date as a datetime object,
 # along with the usage so far for the current month
 # to determine the tier: tier 1 under 130%
-
-
 def get_maingrid_cost(dt, monthly_usage):
 
     # get current month and day
