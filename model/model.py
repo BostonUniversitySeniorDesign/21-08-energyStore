@@ -19,9 +19,10 @@ import pricing
 dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=2020)
 
+
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 8640
+interval_count = 105120
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -473,11 +474,11 @@ if GRAPHS:
         axs_cost[r,c].legend()
 
         pie_data1[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
-        axs_pie1[r,c].pie(pie_data1[0], labels=pie_labels, autopct='%.1f')
+        axs_pie1[r,c].pie(pie_data1[i], labels=pie_labels, autopct='%.1f')
         axs_pie1[r,c].set_title('House {}'.format(i+1))
 
         pie_data2[i] = [solar_used_running[i][i_run-1], main_used_running[i][i_run-1], micro_used_running[i][i_run-1]] # TODO make this a percent
-        axs_pie2[r,c].pie(pie_data2[0], labels=pie_labels, autopct='%.1f')
+        axs_pie2[r,c].pie(pie_data2[i], labels=pie_labels, autopct='%.1f')
         axs_pie2[r,c].set_title('House {}'.format(i+1))
 
         fig_cost.suptitle('Energy Cost ($) per House vs. Time')
