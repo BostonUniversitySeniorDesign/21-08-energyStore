@@ -20,7 +20,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 4 
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
