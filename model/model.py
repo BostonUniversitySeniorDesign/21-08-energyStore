@@ -21,7 +21,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 288
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -435,8 +435,10 @@ if GRAPHS:
     
     # Making pie charts
     pie_labels = 'Solar', 'Maingrid', 'Microgrid'
-    fig_pie, axs_pie = plt.subplots(2,2)
-    pie_data = [0] * NUM_HOUSES
+    fig_pie1, axs_pie1 = plt.subplots(2,2)
+    fig_pie2, axs_pie2 = plt.subplots(2,2)
+    pie_data1 = [0] * NUM_HOUSES
+    pie_data2 = [0] * NUM_HOUSES
 
     for i in range(NUM_HOUSES):
         if i == 0:
@@ -470,13 +472,18 @@ if GRAPHS:
         axs_cost[r,c].set_title('House {}'.format(i+1))
         axs_cost[r,c].legend()
 
-        pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
-        axs_pie[r,c].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
-        axs_pie[r,c].set_title('House {}'.format(i+1))
+        pie_data1[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
+        axs_pie1[r,c].pie(pie_data1[0], labels=pie_labels, autopct='%.1f')
+        axs_pie1[r,c].set_title('House {}'.format(i+1))
+
+        pie_data2[i] = [solar_used_running[i][i_run-1], main_used_running[i][i_run-1], micro_used_running[i][i_run-1]] # TODO make this a percent
+        axs_pie2[r,c].pie(pie_data2[0], labels=pie_labels, autopct='%.1f')
+        axs_pie2[r,c].set_title('House {}'.format(i+1))
 
         fig_cost.suptitle('Energy Cost ($) per House vs. Time')
         fig_eng.suptitle('Energy Usage (kWh) per House vs. Time')
-        fig_pie.suptitle('Energy Cost Distribution per House')
+        fig_pie1.suptitle('Energy Cost Distribution per House')
+        fig_pie2.suptitle('Energy Usage Distribution per House')
 
     # Plot
     plt.show()
