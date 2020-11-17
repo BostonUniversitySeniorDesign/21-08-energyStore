@@ -398,15 +398,23 @@ if GRAPHS:
     fig_pie, axs_pie = plt.subplots(2,2)
     pie_data = [0] * NUM_HOUSES
     for i in range(NUM_HOUSES):
+        if i == 0:
+            r = 0
+            c = 0
+        elif i == 1:
+            r = 0
+            c = 1
+        elif i == 2:
+            r = 1
+            c = 0
+        elif i == 3:
+            r = 1
+            c = 1
+
         pie_data[i] = [solar_cost_running[i][i_run-1], main_cost_running[i][i_run-1], micro_cost_running[i][i_run-1]] # TODO make this a percent
-    axs_pie[0,0].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
-    axs_pie[0,0].set_title('House 1')
-    axs_pie[0,1].pie(pie_data[1], labels=pie_labels, autopct='%.1f')
-    axs_pie[0,1].set_title('House 2')
-    axs_pie[1,0].pie(pie_data[2], labels=pie_labels, autopct='%.1f')
-    axs_pie[1,0].set_title('House 3')
-    axs_pie[1,1].pie(pie_data[3], labels=pie_labels, autopct='%.1f')
-    axs_pie[1,1].set_title('House 4')
+        axs_pie[r,c].pie(pie_data[0], labels=pie_labels, autopct='%.1f')
+        axs_pie[r,c].set_title('House {}'.format(i))
+
     #axs_pie.set_title("MAIN TEST")
 
     ######################################
@@ -422,82 +430,56 @@ if GRAPHS:
     ######################################
     # Plotting home energy usage
     fig_eng, axs_eng = plt.subplots(2,2)
-    #House1
-    e1 = axs_eng[0,0].plot(date_historical, total_used_running[0], label="total")
-    e2 = axs_eng[0,0].plot(date_historical, solar_used_running[0], label="solar")
-    e3 = axs_eng[0,0].plot(date_historical, micro_used_running[0], label="micro")
-    e4 = axs_eng[0,0].plot(date_historical, main_used_running[0], label="main") 
-    axs_eng[0,0].set_xlabel('Date Time')
-    axs_eng[0,0].set_ylabel('Energy Used kWh')
-    axs_eng[0,0].set_title('House 1')
-    axs_eng[0,0].legend()
-    #House2
-    axs_eng[0,1].plot(date_historical, total_used_running[1], label="total")
-    axs_eng[0,1].plot(date_historical, solar_used_running[1], label="solar")
-    axs_eng[0,1].plot(date_historical, micro_used_running[1], label="micro")
-    axs_eng[0,1].plot(date_historical, main_used_running[1], label="main") 
-    axs_eng[0,1].set_xlabel('Date Time')
-    axs_eng[0,1].set_ylabel('Energy Used kWh')
-    axs_eng[0,1].set_title('House 2')
-    axs_eng[0,1].legend()
-    #House3
-    axs_eng[1,0].plot(date_historical, total_used_running[2], label="total")
-    axs_eng[1,0].plot(date_historical, solar_used_running[2], label="solar")
-    axs_eng[1,0].plot(date_historical, micro_used_running[2], label="micro")
-    axs_eng[1,0].plot(date_historical, main_used_running[2], label="main") 
-    axs_eng[1,0].set_xlabel('Date Time')
-    axs_eng[1,0].set_ylabel('Energy Used kWh')
-    axs_eng[1,0].set_title('House 3')
-    axs_eng[1,0].legend()
-    #House4
-    axs_eng[1,1].plot(date_historical, total_used_running[3], label="total")
-    axs_eng[1,1].plot(date_historical, solar_used_running[3], label="solar")
-    axs_eng[1,1].plot(date_historical, micro_used_running[3], label="micro")
-    axs_eng[1,1].plot(date_historical, main_used_running[3], label="main") 
-    axs_eng[1,1].set_xlabel('Date Time')
-    axs_eng[1,1].set_ylabel('Energy Used kWh')
-    axs_eng[1,1].set_title('House 4')
-    axs_eng[1,1].legend()
+
+    for i in range(NUM_HOUSES):
+        if i == 0:
+            r = 0
+            c = 0
+        elif i == 1:
+            r = 0
+            c = 1
+        elif i == 2:
+            r = 1
+            c = 0
+        elif i == 3:
+            r = 1
+            c = 1
+    
+        axs_eng[r,c].plot(date_historical, total_used_running[i], label="total")
+        axs_eng[r,c].plot(date_historical, solar_used_running[i], label="solar")
+        axs_eng[r,c].plot(date_historical, micro_used_running[i], label="micro")
+        axs_eng[r,c].plot(date_historical, main_used_running[i], label="main") 
+        axs_eng[r,c].set_xlabel('Date Time')
+        axs_eng[r,c].set_ylabel('Energy Used kWh')
+        axs_eng[r,c].set_title('House {}'.format(i))
+        axs_eng[r,c].legend()
 
     ######################################
     # Plotting home energy cost 
     fig_cost, axs_cost = plt.subplots(2,2)
-    #House1
-    axs_cost[0,0].plot(date_historical, total_cost_running[0], label="total")
-    axs_cost[0,0].plot(date_historical, solar_cost_running[0], label="solar")
-    axs_cost[0,0].plot(date_historical, micro_cost_running[0], label="micro")
-    axs_cost[0,0].plot(date_historical, main_cost_running[0], label="main") 
-    axs_cost[0,0].set_xlabel('Date Time')
-    axs_cost[0,0].set_ylabel('Energy Cost $')
-    axs_cost[0,0].set_title('House 1')
-    axs_cost[0,0].legend()
-    #House2
-    axs_cost[0,1].plot(date_historical, total_cost_running[1], label="total")
-    axs_cost[0,1].plot(date_historical, solar_cost_running[1], label="solar")
-    axs_cost[0,1].plot(date_historical, micro_cost_running[1], label="micro")
-    axs_cost[0,1].plot(date_historical, main_cost_running[1], label="main") 
-    axs_cost[0,1].set_xlabel('Date Time')
-    axs_cost[0,1].set_ylabel('Energy Cost $')
-    axs_cost[0,1].set_title('House 2')
-    axs_cost[0,1].legend()
-    #House3
-    axs_cost[1,0].plot(date_historical, total_cost_running[2], label="total")
-    axs_cost[1,0].plot(date_historical, solar_cost_running[2], label="solar")
-    axs_cost[1,0].plot(date_historical, micro_cost_running[2], label="micro")
-    axs_cost[1,0].plot(date_historical, main_cost_running[2], label="main") 
-    axs_cost[1,0].set_xlabel('Date Time')
-    axs_cost[1,0].set_ylabel('Energy Cost $')
-    axs_cost[1,0].set_title('House 3')
-    axs_cost[1,0].legend()
-    #House4
-    axs_cost[1,1].plot(date_historical, total_cost_running[3], label="total")
-    axs_cost[1,1].plot(date_historical, solar_cost_running[3], label="solar")
-    axs_cost[1,1].plot(date_historical, micro_cost_running[3], label="micro")
-    axs_cost[1,1].plot(date_historical, main_cost_running[3], label="main") 
-    axs_cost[1,1].set_xlabel('Date Time')
-    axs_cost[1,1].set_ylabel('Energy Cost $')
-    axs_cost[1,1].set_title('House 4')
-    axs_cost[1,1].legend()
+
+    for i in range(NUM_HOUSES):
+        if i == 0:
+            r = 0
+            c = 0
+        elif i == 1:
+            r = 0
+            c = 1
+        elif i == 2:
+            r = 1
+            c = 0
+        elif i == 3:
+            r = 1
+            c = 1
+        
+        axs_cost[r,c].plot(date_historical, total_cost_running[i], label="total")
+        axs_cost[r,c].plot(date_historical, solar_cost_running[i], label="solar")
+        axs_cost[r,c].plot(date_historical, micro_cost_running[i], label="micro")
+        axs_cost[r,c].plot(date_historical, main_cost_running[i], label="main") 
+        axs_cost[r,c].set_xlabel('Date Time')
+        axs_cost[r,c].set_ylabel('Energy Cost $')
+        axs_cost[r,c].set_title('House {}'.format(i))
+        axs_cost[r,c].legend()
 
     # Plot
     plt.show()
