@@ -22,7 +22,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 8640
+interval_count = 105120
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -145,6 +145,8 @@ solar_dumped = [0] * NUM_HOUSES
 # For battery
 battery_charge_historical = [0] * interval_count
 battery_avg_historical = [0] * interval_count
+# For distributing hourly energy into 5 min periods
+hourEnergy = [0] * NUM_HOUSES
 
 
 ####################################################################
@@ -174,10 +176,17 @@ while interval_count != 0:
 
     # Every hour we do something with house energy
     if (dt.minute % 60) == 0:
+        hourEnergy = [0] * NUM_HOUSES
         for i in range(NUM_HOUSES):
             curr_house = house_usage_dfs[i]
-            house_demand_total[i] += float(curr_house.loc[(curr_house['Date'] == date) & (curr_house['Time'] == time_i)]['Usage'].item()) #kWh
-            house_running_demand_monthly[i] += float(curr_house.loc[(curr_house['Date'] == date) & (curr_house['Time'] == time_i)]['Usage'].item()) #kWh
+            # house usage for an hour
+            hourEnergy[i] = float(curr_house.loc[(curr_house['Date'] == date) & (curr_house['Time'] == time_i)]['Usage'].item()) #kWh
+
+    # set housedemand total for current 5 min period
+    for i in range(NUM_HOUSES):
+        house_demand_total[i] += (hourEnergy[i] / 12)
+        house_running_demand_monthly[i] += (hourEnergy[i] / 12)
+
 
     ##################################
     # Get solar production per-household
