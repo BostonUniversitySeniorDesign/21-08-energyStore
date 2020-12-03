@@ -148,6 +148,8 @@ battery_avg_historical = [0] * interval_count
 # For distributing hourly energy into 5 min periods
 hourEnergy = [0] * NUM_HOUSES
 
+battery_maingrid_usage = 0.0
+
 
 ####################################################################
 # SIMMULATION LOOP
@@ -316,6 +318,10 @@ while interval_count != 0:
         house_running_demand_monthly[4] += amount
         battery.charge(amount, pricing.get_maingrid_cost(dt, house_running_demand_monthly[4]))  
 
+        # keeping track of main grid energy added to the battery (not where it fufills house usage)
+        battery_maingrid_usage += amount
+
+
     # get total running cost
     for i in range(NUM_HOUSES):
         total_cost_running[i][i_run] = solar_cost_running[i][i_run] + micro_cost_running[i][i_run] + main_cost_running[i][i_run]
@@ -421,6 +427,7 @@ for i in range(NUM_HOUSES):
     print("Solar     energy dump:  {}kWh".format(round(solar_dumped[i],2)))
     print("solar     energy cost: ${}".format(round(solar_cost_running[i][i_run-1], 2)))
 
+print("Maingrid     energy used by the Battery {}kWh".format(round(battery_maingrid_usage)))
 ####################################################################
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################
