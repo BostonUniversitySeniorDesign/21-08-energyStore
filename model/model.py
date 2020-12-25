@@ -22,7 +22,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0, hour=0, day=1, month=1, year=
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 105120
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -149,6 +149,7 @@ battery_avg_historical = [0] * interval_count
 hourEnergy = [0] * NUM_HOUSES
 
 battery_maingrid_usage = 0.0
+battery_solar_energy = 0.0
 
 
 ####################################################################
@@ -167,9 +168,12 @@ while interval_count != 0:
     print("date: {}".format(dt))
     interval_count -= 1
 
-    ##################################
-    # TODO For tracking battery charging & discharging
-    battery.interval_continuous_power = 0
+
+    # TODO: What is this "todo" for ???
+
+        ##################################
+        # TODO For tracking battery charging & discharging
+        battery.interval_continuous_power = 0
 
     ##################################
     # Get demand for energy per-household
@@ -200,20 +204,35 @@ while interval_count != 0:
     solarProduced=0 #kWh
     if daily_weather == "Fine":
         solarProduced = float(df_weather_fine[(df_weather_fine['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+        # solarProduced = 0.0
 
     elif daily_weather == "Partly Cloudy":
         solarProduced = float(df_weather_partly_cloudy[(df_weather_partly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+        # solarProduced = 0.0
 
     elif daily_weather == "Mostly Cloudy":
         solarProduced = float(df_weather_mostly_cloudy[(df_weather_mostly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+        # solarProduced = 0.0
 
     elif daily_weather == "Cloudy":
         solarProduced = float(df_weather_cloudy[(df_weather_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+        # solarProduced = 0.0
 
     elif daily_weather == "Showers":
         solarProduced = float(df_weather_showers[(df_weather_showers['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+        # solarProduced = 0.0
     else:
         print("ERROR")
+
+    # TODO: Add all the solar produced from each house to the first energy bus
+
+
+
+
+    # TODO: run this energy from bus 1 through inverter and onto bus 2
+
+
+
 
     # Get solar produced per house
     solar_profit = [0] * NUM_HOUSES
@@ -227,9 +246,12 @@ while interval_count != 0:
         # have excess solar
         if solarProduced > house_demand_total[i]:
             excess_energy = solarProduced - house_demand_total[i]
+
+            battery_solar_energy += excess_energy # to keep track of how much excess is saved
+
             solar_profit[i] = house_demand_total[i] * (SOLAR_COST_COEFFICIENT * pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
-            if solar_profit[i] < 0:
-                print("mike")
+            # if solar_profit[i] < 0:
+            #     print("mike")
             solar_used[i] = house_demand_total[i]
             if i_run != 0:
                 solar_cost_running[i][i_run] = solar_cost_running[i][i_run-1] + solar_profit[i]
@@ -256,7 +278,9 @@ while interval_count != 0:
         if (battery.interval_continuous_power + excess_energy) > MAX_INTERVAL_POWER:
             solar_dumped[i] += excess_energy
             excess_energy = 0
-            #TODO sell back to grid?
+            #TODO sell back to grid
+
+
         # charge battery
         battery.charge(excess_energy, 0)
         solar_energy_battery[i] = excess_energy
@@ -319,7 +343,8 @@ while interval_count != 0:
         battery.charge(amount, pricing.get_maingrid_cost(dt, house_running_demand_monthly[4]))  
 
         # keeping track of main grid energy added to the battery (not where it fufills house usage)
-        battery_maingrid_usage += amount
+        if battery.MAX_CAPACITY > 0:
+            battery_maingrid_usage += amount
 
 
     # get total running cost
@@ -427,7 +452,8 @@ for i in range(NUM_HOUSES):
     print("Solar     energy dump:  {}kWh".format(round(solar_dumped[i],2)))
     print("solar     energy cost: ${}".format(round(solar_cost_running[i][i_run-1], 2)))
 
-print("Maingrid     energy used by the Battery {}kWh".format(round(battery_maingrid_usage)))
+print("Maingrid   energy used by the Battery {}kWh".format(round(battery_maingrid_usage)))
+print("Solar Excess saved by the Battery {}kWh".format(round(battery_solar_energy)))
 ####################################################################
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################
