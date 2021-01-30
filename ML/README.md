@@ -3,8 +3,8 @@ This ML model uses a virtul enviroment to store all the packages to better manag
 - Install the most recent version of python (https://www.python.org/downloads/) along with pip 
 - Install the venv package `pip install venv`
 - To enter the virtual enviroment type the following:
-    Mac OSX: source ML-env/bin/activate 
-    Windows: ML-env\Scripts\activate.bat 
+    - Mac OSX: source ML-env/bin/activate 
+    - Windows: ML-env\Scripts\activate.bat 
 - Once in the environment, install the required packages: `python -m pip install -r requirements.txt`
 - To leave the virtual environment, type `deactivate`
 
