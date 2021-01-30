@@ -11,3 +11,4 @@ This ML model uses a virtul enviroment to store all the packages to better manag
 ### References
 - https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d
 - https://towardsdatascience.com/radial-basis-function-rbf-kernel-the-go-to-kernel-acf0d22c798a
+- https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html
