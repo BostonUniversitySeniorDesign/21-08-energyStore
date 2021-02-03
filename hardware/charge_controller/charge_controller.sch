@@ -1,0 +1,552 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 601B1295
+P 2600 2950
+F 0 "R?" H 2670 2996 50  0000 L CNN
+F 1 "10k" V 2600 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2530 2950 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 2600 2950 50  0001 C CNN
+F 4 "Digi-Key" H 2600 2950 50  0001 C CNN "Supplier"
+F 5 "2019-RK73H2ATTD1002FCT-ND" H 2600 2950 50  0001 C CNN "Supplier P/N"
+F 6 "0.10" H 2600 2950 50  0001 C CNN "Item Cost"
+F 7 "RK73H2ATTD1002F" H 2600 2950 50  0001 C CNN "MFN"
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 601B17AF
+P 3400 2950
+F 0 "C?" H 3492 2996 50  0000 L CNN
+F 1 ".1u" H 3492 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3400 2950 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3400 2950 50  0001 C CNN
+F 4 "0.20" H 3400 2950 50  0001 C CNN "Item Cost"
+F 5 "C0805C104J5RAC7025" H 3400 2950 50  0001 C CNN "MFN"
+F 6 "Digi-Key" H 3400 2950 50  0001 C CNN "Supplier"
+F 7 "399-C0805C104J5RAC7025CT-ND" H 3400 2950 50  0001 C CNN "Supplier P/N"
+	1    3400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 601B1DE4
+P 5150 2400
+F 0 "D?" H 5150 2300 50  0000 C CNN
+F 1 "Green" H 4850 2350 50  0000 C CNN
+F 2 "" H 5150 2400 50  0001 C CNN
+F 3 "~" H 5150 2400 50  0001 C CNN
+	1    5150 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 601B36A4
+P 4000 3600
+F 0 "Q?" H 4200 3700 50  0000 L CNN
+F 1 "2N3904" H 3800 3450 50  0000 L CNN
+F 2 "" H 4200 3700 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 601B1854
+P 2000 2700
+F 0 "J?" H 1918 2917 50  0000 C CNN
+F 1 "Conn_01x02" H 1918 2826 50  0000 C CNN
+F 2 "" H 2000 2700 50  0001 C CNN
+F 3 "~" H 2000 2700 50  0001 C CNN
+	1    2000 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 601B1E98
+P 6800 2700
+F 0 "J?" H 6880 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 6880 2601 50  0000 L CNN
+F 2 "" H 6800 2700 50  0001 C CNN
+F 3 "~" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D?
+U 1 1 601B28E5
+P 4650 4700
+F 0 "D?" H 4650 4600 50  0000 C CNN
+F 1 "1N4148" H 4650 4800 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4650 4700 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/bhc41r7lwc/ONSM-S-A0003539415-1.pdf?t.download=true&u=5oefqw" V 4650 4700 50  0001 C CNN
+F 4 "0.10" H 4650 4700 50  0001 C CNN "Item Cost"
+F 5 "1N4148" H 4650 4700 50  0001 C CNN "MFN"
+F 6 "Digi-Key" H 4650 4700 50  0001 C CNN "Supplier"
+F 7 "1N4148FS-ND" H 4650 4700 50  0001 C CNN "Supplier P/N"
+	1    4650 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 601B31DF
+P 5850 3600
+F 0 "RV?" H 5780 3646 50  0000 R CNN
+F 1 "10k" V 5850 3650 50  0000 R CNN
+F 2 "" H 5850 3600 50  0001 C CNN
+F 3 "~" H 5850 3600 50  0001 C CNN
+	1    5850 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601B57AD
+P 2300 2900
+F 0 "#PWR?" H 2300 2650 50  0001 C CNN
+F 1 "GND" H 2305 2727 50  0000 C CNN
+F 2 "" H 2300 2900 50  0001 C CNN
+F 3 "" H 2300 2900 50  0001 C CNN
+	1    2300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2800 2300 2800
+Wire Wire Line
+	2300 2800 2300 2900
+$Comp
+L power:GND #PWR?
+U 1 1 601B72A3
+P 6500 2900
+F 0 "#PWR?" H 6500 2650 50  0001 C CNN
+F 1 "GND" H 6505 2727 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "" H 6500 2900 50  0001 C CNN
+	1    6500 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2800 6500 2800
+Wire Wire Line
+	6500 2800 6500 2900
+Text Notes 1300 2000 0    50   ~ 0
+https://www.electroschematics.com/12v-ldo-solar-charge-control/
+$Comp
+L Device:LED D?
+U 1 1 601B81F9
+P 2600 3250
+F 0 "D?" H 2593 3467 50  0000 C CNN
+F 1 "LED" H 2593 3376 50  0000 C CNN
+F 2 "" H 2600 3250 50  0001 C CNN
+F 3 "~" H 2600 3250 50  0001 C CNN
+	1    2600 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601B8D99
+P 2600 3400
+F 0 "#PWR?" H 2600 3150 50  0001 C CNN
+F 1 "GND" H 2605 3227 50  0000 C CNN
+F 2 "" H 2600 3400 50  0001 C CNN
+F 3 "" H 2600 3400 50  0001 C CNN
+	1    2600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2700 2600 2700
+Wire Wire Line
+	2600 2800 2600 2700
+Connection ~ 2600 2700
+$Comp
+L power:GND #PWR?
+U 1 1 601B96DC
+P 3050 4050
+F 0 "#PWR?" H 3050 3800 50  0001 C CNN
+F 1 "GND" H 3055 3877 50  0000 C CNN
+F 2 "" H 3050 4050 50  0001 C CNN
+F 3 "" H 3050 4050 50  0001 C CNN
+	1    3050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601B9C39
+P 3050 3000
+F 0 "R?" H 3120 3046 50  0000 L CNN
+F 1 "4.7k" V 3050 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2980 3000 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73B.pdf" H 3050 3000 50  0001 C CNN
+F 4 "Digi-Key" H 3050 3000 50  0001 C CNN "Supplier"
+F 5 "0.10" H 3050 3000 50  0001 C CNN "Item Cost"
+F 6 "RK73B2ATTD472J" H 3050 3000 50  0001 C CNN "MFN"
+F 7 "2019-RK73B2ATTD472JCT-ND" H 3050 3000 50  0001 C CNN "Supplier P/N"
+	1    3050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601BA108
+P 3400 3600
+F 0 "R?" V 3500 3550 50  0000 L CNN
+F 1 "5.2k" V 3400 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3330 3600 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 3400 3600 50  0001 C CNN
+F 4 "Digi-Key" H 3400 3600 50  0001 C CNN "Supplier"
+F 5 "0.10" H 3400 3600 50  0001 C CNN "Item Cost"
+F 6 "RK73H2ATTD5231F" H 3400 3600 50  0001 C CNN "MFN"
+F 7 "2019-RK73H2ATTD5231FCT-ND" H 3400 3600 50  0001 C CNN "Supplier P/N"
+	1    3400 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 601BAE94
+P 3050 3900
+F 0 "D?" V 3000 4000 50  0000 L CNN
+F 1 "1N4735A" V 3100 3950 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3050 3900 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/7qfz7dzkx8/ONSM-S-A0003585147-1.pdf?t.download=true&u=5oefqw" H 3050 3900 50  0001 C CNN
+F 4 "0.27" H 3050 3900 50  0001 C CNN "Item Cost"
+F 5 "1N4735A" H 3050 3900 50  0001 C CNN "MFN"
+F 6 "Digi-Key" H 3050 3900 50  0001 C CNN "Supplier"
+F 7 "1N4735AFS-ND" H 3050 3900 50  0001 C CNN "Supplier P/N"
+	1    3050 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 601BCAC5
+P 4700 3600
+F 0 "Q?" H 4600 3800 50  0000 L CNN
+F 1 "2N3904" H 4400 3450 50  0000 L CNN
+F 2 "" H 4900 3700 50  0001 C CNN
+F 3 "~" H 4700 3600 50  0001 C CNN
+	1    4700 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601BCF24
+P 5050 3600
+F 0 "R?" V 4950 3550 50  0000 L CNN
+F 1 "10.2k" V 5050 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4980 3600 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 5050 3600 50  0001 C CNN
+F 4 "Digi-Key" H 5050 3600 50  0001 C CNN "Supplier"
+F 5 "0.10" H 5050 3600 50  0001 C CNN "Item Cost"
+F 6 "RK73H2ATTD1022F" H 5050 3600 50  0001 C CNN "MFN"
+F 7 "2019-RK73H2ATTD1022FCT-ND" H 5050 3600 50  0001 C CNN "Supplier P/N"
+	1    5050 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601C1562
+P 4100 3000
+F 0 "R?" H 4170 3046 50  0000 L CNN
+F 1 "20k" V 4100 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4030 3000 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73B.pdf" H 4100 3000 50  0001 C CNN
+F 4 "Digi-Key" H 4100 3000 50  0001 C CNN "Supplier"
+F 5 "0.10" H 4100 3000 50  0001 C CNN "Item Cost"
+F 6 "RK73B2ATTD203J" H 4100 3000 50  0001 C CNN "MFN"
+F 7 "2019-RK73B2ATTD203JCT-ND" H 4100 3000 50  0001 C CNN "Supplier P/N"
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601C1C6E
+P 4600 3000
+F 0 "R?" H 4670 3046 50  0000 L CNN
+F 1 "10k" V 4600 2950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4530 3000 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 4600 3000 50  0001 C CNN
+F 4 "Digi-Key" H 4600 3000 50  0001 C CNN "Supplier"
+F 5 "2019-RK73H2ATTD1002FCT-ND" H 4600 3000 50  0001 C CNN "Supplier P/N"
+F 6 "0.10" H 4600 3000 50  0001 C CNN "Item Cost"
+F 7 "RK73H2ATTD1002F" H 4600 3000 50  0001 C CNN "MFN"
+	1    4600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601C25F6
+P 3400 3050
+F 0 "#PWR?" H 3400 2800 50  0001 C CNN
+F 1 "GND" H 3405 2877 50  0000 C CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2700 3050 2700
+Wire Wire Line
+	3050 2700 3050 2850
+Connection ~ 3050 2700
+Wire Wire Line
+	3050 2700 3400 2700
+Wire Wire Line
+	3050 3750 3050 3600
+Wire Wire Line
+	3250 3600 3050 3600
+Connection ~ 3050 3600
+Wire Wire Line
+	3400 2850 3400 2700
+Connection ~ 3400 2700
+$Comp
+L Device:Q_NMOS_SGD Q?
+U 1 1 601CBBA5
+P 5150 2950
+F 0 "Q?" V 5100 3100 50  0000 C CNN
+F 1 "FQP12P20" V 5401 2950 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5350 3050 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FQP12P20-D.pdf" H 5150 2950 50  0001 C CNN
+F 4 "1.50" H 5150 2950 50  0001 C CNN "Item Cost"
+F 5 "FQP12P20" H 5150 2950 50  0001 C CNN "MFN"
+F 6 "Digi-Key" H 5150 2950 50  0001 C CNN "Supplier"
+F 7 "FQP12P20-ND" H 5150 2950 50  0001 C CNN "Supplier P/N"
+	1    5150 2950
+	0    1    -1   0   
+$EndComp
+Text Notes 3950 2150 0    50   ~ 0
+check pins on npn and fet
+Wire Wire Line
+	3050 3150 3050 3600
+Wire Wire Line
+	3550 3600 3700 3600
+Wire Wire Line
+	4100 3400 4100 3250
+Wire Wire Line
+	4100 2850 4100 2700
+Wire Wire Line
+	3400 2700 4100 2700
+Wire Wire Line
+	4100 2700 4600 2700
+Wire Wire Line
+	4600 2700 4600 2850
+Connection ~ 4100 2700
+$Comp
+L Device:C_Small C?
+U 1 1 601D3325
+P 3900 3250
+F 0 "C?" H 3992 3296 50  0000 L CNN
+F 1 ".1u" H 3992 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3900 3250 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3900 3250 50  0001 C CNN
+F 4 "0.20" H 3900 3250 50  0001 C CNN "Item Cost"
+F 5 "C0805C104J5RAC7025" H 3900 3250 50  0001 C CNN "MFN"
+F 6 "Digi-Key" H 3900 3250 50  0001 C CNN "Supplier"
+F 7 "399-C0805C104J5RAC7025CT-ND" H 3900 3250 50  0001 C CNN "Supplier P/N"
+	1    3900 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 3250 4000 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	4100 3250 4100 3150
+Wire Wire Line
+	3800 3250 3700 3250
+Wire Wire Line
+	3700 3250 3700 3600
+Connection ~ 3700 3600
+Wire Wire Line
+	3700 3600 3800 3600
+Wire Wire Line
+	4600 3400 4600 3150
+Wire Wire Line
+	4100 3800 4100 3900
+Wire Wire Line
+	4100 3900 4350 3900
+Wire Wire Line
+	4600 3900 4600 3800
+$Comp
+L Device:R R?
+U 1 1 601D6332
+P 4350 4150
+F 0 "R?" H 4420 4196 50  0000 L CNN
+F 1 "10k" V 4350 4100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4280 4150 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 4350 4150 50  0001 C CNN
+F 4 "Digi-Key" H 4350 4150 50  0001 C CNN "Supplier"
+F 5 "2019-RK73H2ATTD1002FCT-ND" H 4350 4150 50  0001 C CNN "Supplier P/N"
+F 6 "0.10" H 4350 4150 50  0001 C CNN "Item Cost"
+F 7 "RK73H2ATTD1002F" H 4350 4150 50  0001 C CNN "MFN"
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4000 4350 3900
+Connection ~ 4350 3900
+Wire Wire Line
+	4350 3900 4600 3900
+$Comp
+L power:GND #PWR?
+U 1 1 601D6D3B
+P 4350 4300
+F 0 "#PWR?" H 4350 4050 50  0001 C CNN
+F 1 "GND" H 4355 4127 50  0000 C CNN
+F 2 "" H 4350 4300 50  0001 C CNN
+F 3 "" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 601D719C
+P 3600 4100
+F 0 "Q?" H 3791 4146 50  0000 L CNN
+F 1 "2N3904" H 3791 4055 50  0000 L CNN
+F 2 "" H 3800 4200 50  0001 C CNN
+F 3 "~" H 3600 4100 50  0001 C CNN
+	1    3600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3600 3700 3900
+$Comp
+L power:GND #PWR?
+U 1 1 601D8143
+P 3350 4150
+F 0 "#PWR?" H 3350 3900 50  0001 C CNN
+F 1 "GND" H 3355 3977 50  0000 C CNN
+F 2 "" H 3350 4150 50  0001 C CNN
+F 3 "" H 3350 4150 50  0001 C CNN
+	1    3350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4100 3350 4100
+Wire Wire Line
+	3350 4100 3350 4150
+Wire Wire Line
+	4600 2700 4950 2700
+Wire Wire Line
+	4950 2700 4950 2850
+Connection ~ 4600 2700
+Wire Wire Line
+	5150 3150 5150 3250
+Wire Wire Line
+	5150 3250 4100 3250
+$Comp
+L Device:D_Small D?
+U 1 1 601DB663
+P 5600 2700
+F 0 "D?" H 5550 2800 50  0000 C CNN
+F 1 "8oSQo45N" H 5450 2600 50  0000 C CNN
+F 2 "" V 5600 2700 50  0001 C CNN
+F 3 "~" V 5600 2700 50  0001 C CNN
+	1    5600 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2850 5350 2700
+Wire Wire Line
+	5350 2700 5450 2700
+$Comp
+L Device:R R?
+U 1 1 601DC9E1
+P 5850 3900
+F 0 "R?" H 5920 3946 50  0000 L CNN
+F 1 "3.9k" V 5850 3800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5780 3900 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73B.pdf" H 5850 3900 50  0001 C CNN
+F 4 "Digi-Key" H 5850 3900 50  0001 C CNN "Supplier"
+F 5 "0.10" H 5850 3900 50  0001 C CNN "Item Cost"
+F 6 "RK73B2ATTD392J" H 5850 3900 50  0001 C CNN "MFN"
+F 7 "2019-RK73B2ATTD392JCT-ND" H 5850 3900 50  0001 C CNN "Supplier P/N"
+	1    5850 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601DD17D
+P 5850 4050
+F 0 "#PWR?" H 5850 3800 50  0001 C CNN
+F 1 "GND" H 5855 3877 50  0000 C CNN
+F 2 "" H 5850 4050 50  0001 C CNN
+F 3 "" H 5850 4050 50  0001 C CNN
+	1    5850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 3450
+Wire Wire Line
+	5700 3600 5200 3600
+Wire Wire Line
+	5850 2700 6250 2700
+Connection ~ 5850 2700
+$Comp
+L Device:R R?
+U 1 1 601E1D19
+P 5250 4700
+F 0 "R?" V 5150 4650 50  0000 L CNN
+F 1 "11.1k" V 5250 4600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5180 4700 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 5250 4700 50  0001 C CNN
+F 4 "Digi-Key" H 5250 4700 50  0001 C CNN "Supplier"
+F 5 "0.10" H 5250 4700 50  0001 C CNN "Item Cost"
+F 6 "KOA Speer Electronics, Inc." H 5250 4700 50  0001 C CNN "MFN"
+F 7 "2019-RK73H2ATTD1102FCT-ND" H 5250 4700 50  0001 C CNN "Supplier P/N"
+	1    5250 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2700 6250 4700
+Wire Wire Line
+	6250 4700 5400 4700
+Connection ~ 6250 2700
+Wire Wire Line
+	6250 2700 6600 2700
+Wire Wire Line
+	5100 4700 4750 4700
+Wire Wire Line
+	4550 4700 3700 4700
+Wire Wire Line
+	3700 4700 3700 4300
+$Comp
+L Device:R R?
+U 1 1 601E5372
+P 4850 2400
+F 0 "R?" V 4750 2350 50  0000 L CNN
+F 1 "9.4k" V 4850 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4780 2400 50  0001 C CNN
+F 3 "https://www.koaspeer.com/pdfs/RK73H.pdf" H 4850 2400 50  0001 C CNN
+F 4 "Digi-Key" H 4850 2400 50  0001 C CNN "Supplier"
+F 5 "0.10" H 4850 2400 50  0001 C CNN "Item Cost"
+F 6 "RK73H2ATTD9311F" H 4850 2400 50  0001 C CNN "MFN"
+F 7 "2019-RK73H2ATTD9311FCT-ND" H 4850 2400 50  0001 C CNN "Supplier P/N"
+	1    4850 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2400 4600 2400
+Wire Wire Line
+	4600 2400 4600 2700
+Wire Wire Line
+	5300 2400 5450 2400
+Wire Wire Line
+	5450 2400 5450 2700
+Connection ~ 5450 2700
+Wire Wire Line
+	5450 2700 5500 2700
+$EndSCHEMATC
