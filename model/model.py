@@ -170,7 +170,7 @@ while interval_count != 0:
 
 
     # TODO: What is this "todo" for ???
-
+xq
         ##################################
         # TODO For tracking battery charging & discharging
         battery.interval_continuous_power = 0
@@ -224,28 +224,32 @@ while interval_count != 0:
     else:
         print("ERROR")
 
-    # TODO: Add all the solar produced from each house to the first energy bus
 
+    # ratio for each house to simulate different sized panels
+    solarRatios = [1 1 1 1]
+    solarPool = 0.0
 
-
-
-    # TODO: run this energy from bus 1 through inverter and onto bus 2
-
-
+    # loop through houses and add up total solar energy - save in solarPool
+    for i in house_list:
+        solarPool += (solarProduced * solarRatios[i])
 
 
     # Get solar produced per house
     solar_profit = [0] * NUM_HOUSES
     random.shuffle(house_list)
     for i in house_list:
+
         if i_run != 0:
-            solar_produced_running[i][i_run] = solar_produced_running[i][i_run-1] + solarProduced
+            solar_produced_running[i][i_run] = solar_produced_running[i][i_run-1] + (solarProduced * solarRatios[i])
         else:
-            solar_produced_running[i][i_run] = solarProduced
-        
+            solar_produced_running[i][i_run] = (solarProduced * solaRatios[i])
+
         # have excess solar
-        if solarProduced > house_demand_total[i]:
-            excess_energy = solarProduced - house_demand_total[i]
+        if solarPool > house_demand_total[i]:
+            excess_energy = solarPool - house_demand_total[i]
+
+            # TODO: THIS IS WHERE YOU LEFT OFF
+            solarPool -=
 
             battery_solar_energy += excess_energy # to keep track of how much excess is saved
 
