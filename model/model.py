@@ -31,12 +31,12 @@ import pricing
 # set the starting date and time
 dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0,
-                hour=0, day=1, month=1, year=2020)
+                hour=0, day=1, month=6, year=2020)
 
 
 # set interval parameters
-interval_length = 5  # (minutes)
-interval_count = 51840
+interval_length = 1  # (minutes)
+interval_count = 43200
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -219,49 +219,51 @@ while interval_count != 0:
             hourEnergy[i] = float(curr_house.loc[(curr_house['Date'] == date) & (
                 curr_house['Time'] == time_i)]['Usage'].item())  # kWh
 
-    # set housedemand total for current 5 min period
-    for i in range(NUM_HOUSES):
-        house_demand_total[i] += (hourEnergy[i] / 12)
-        house_running_demand_monthly[i] += (hourEnergy[i] / 12)
-
     ##################################
     # Get solar production per-household
     solar_energy_battery = [0] * NUM_HOUSES
     solar_used = [0] * NUM_HOUSES
     house_demand = [0] * NUM_HOUSES
 
-    # use current weather to index into solar to get every 5 minutes
-    solarProduced = 0  # kWh
-    if daily_weather == "Fine":
-        solarProduced = float(df_weather_fine[(
-            df_weather_fine['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
-        # solarProduced = 0.0
+    # every 5 mintues get the solar array data
+    if (dt.minute % 5) == 0:
+        # use current weather to index into solar to get every 5 minutes
+        solarProduced = 0  # kWh
+        if daily_weather == "Fine":
+            solarProduced = float(df_weather_fine[(
+                df_weather_fine['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+            # solarProduced = 0.0
 
-    elif daily_weather == "Partly Cloudy":
-        solarProduced = float(df_weather_partly_cloudy[(
-            df_weather_partly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
-        # solarProduced = 0.0
+        elif daily_weather == "Partly Cloudy":
+            solarProduced = float(df_weather_partly_cloudy[(
+                df_weather_partly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+            # solarProduced = 0.0
 
-    elif daily_weather == "Mostly Cloudy":
-        solarProduced = float(df_weather_mostly_cloudy[(
-            df_weather_mostly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
-        # solarProduced = 0.0
+        elif daily_weather == "Mostly Cloudy":
+            solarProduced = float(df_weather_mostly_cloudy[(
+                df_weather_mostly_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+            # solarProduced = 0.0
 
-    elif daily_weather == "Cloudy":
-        solarProduced = float(df_weather_cloudy[(
-            df_weather_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
-        # solarProduced = 0.0
+        elif daily_weather == "Cloudy":
+            solarProduced = float(df_weather_cloudy[(
+                df_weather_cloudy['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+            # solarProduced = 0.0
 
-    elif daily_weather == "Showers":
-        solarProduced = float(df_weather_showers[(
-            df_weather_showers['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
-        # solarProduced = 0.0
-    else:
-        print("ERROR")
+        elif daily_weather == "Showers":
+            solarProduced = float(df_weather_showers[(
+                df_weather_showers['Time'] == solar_time)]['5 Minute Energy (kWh)'].item())
+            # solarProduced = 0.0
+        else:
+            print("ERROR")
 
-    # ratio for each house to simulate different sized panels
-    # solarRatios = [1 1 1 1]
-    solarPool = solarProduced * 2.5
+    # set housedemand total and solar produced for ONE minute intervals
+    for i in range(NUM_HOUSES):
+        house_demand_total[i] += (hourEnergy[i] / (60 / interval_length))
+        house_running_demand_monthly[i] += (hourEnergy[i] /
+                                            (60 / interval_length))
+
+    # adjust solar pool for scale and for intervals
+    solarPool = (solarProduced) * 2.5
 
     # Get solar produced per house
     solar_profit = [0] * NUM_HOUSES
@@ -390,7 +392,7 @@ while interval_count != 0:
     current_month = dt.month
 
     # increment date time every 5 minutes
-    dt += datetime.timedelta(minutes=5)
+    dt += datetime.timedelta(minutes=interval_length)
 
     # get current date time and solar time to index into pandas df with
     (date, time_i, solar_time) = pricing.get_Date_Time_solarTime(dt)
