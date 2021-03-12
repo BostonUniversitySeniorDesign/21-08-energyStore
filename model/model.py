@@ -2,16 +2,13 @@
 ########################################
 ### NOTES ####
 '''
-- Change solar arrays to be 2.5x  solar array instead of 4x (which we are currently doing)
-- Make sure all solar energy is being put into a pool and houses are taking from it randomly
-
-
+- DONE || Change solar arrays to be 2.5x  solar array instead of 4x (which we are currently doing)
+- DONE || Make sure all solar energy is being put into a pool and houses are taking from it randomly
 
 Potential Idea
 - make it so the step size is 1 minute, would be accurate for house consumption / usage and the randomization
     - adjust solar value used per interval
     - adjust house usage per interval
-
 
 '''
 
@@ -39,7 +36,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 5  # (minutes)
-interval_count = 105120
+interval_count = 51840
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -273,15 +270,15 @@ while interval_count != 0:
 
         if i_run != 0:
             solar_produced_running[i][i_run] = solar_produced_running[i][i_run-1] + (
-                solarProduced / 4)
+                solarPool / 4)
         else:
-            solar_produced_running[i][i_run] = (solarProduced / 4)
+            solar_produced_running[i][i_run] = (solarPool / 4)
 
         # still have solar energy to meet full house demand in the pool for the given period
         if solarPool > house_demand_total[i]:
             # excess_energy = solarPool - house_demand_total[i]
 
-            # TODO: THIS IS WHERE YOU LEFT OFF
+            # Take
             solarPool -= house_demand_total[i]
 
             # battery_solar_energy += excess_energy # to keep track of how much excess is saved
@@ -300,6 +297,10 @@ while interval_count != 0:
                 solar_cost_running[i][i_run] = solar_profit[i]
                 solar_used_running[i][i_run] = solar_used[i]
             house_demand[i] = 0
+
+            # if any extra solar from the 5 min period thats not in use, add it to the battery
+            if i == (NUM_HOUSES - 1):
+                excess_energy = solarPool
 
         # Not enough solar energy to meet full house demand
         else:
