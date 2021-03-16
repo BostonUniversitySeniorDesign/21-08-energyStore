@@ -1,3 +1,21 @@
+'''
+States of Batteries
+- Running (being discharged)
+- Blocked (being charged)
+- Ready (Fully charged, ready to go)
+
+
+
+
+battery 1: night charging -> 
+
+battery 2
+
+battery 3
+
+'''
+
+
 # Assuming this is a 3 tesla powerwall
 class Battery_obj:
 
@@ -15,14 +33,20 @@ class Battery_obj:
 
         #  instead of desired charge or minimum charge - use Depth of Discharge
         #   go from max down to depth of discharge, then back to the top
-        # self.DEPTH_OF_DISCHARGE = 0.0 TODO:
 
         self.DESIRED_CHARGE = 18.0  # (kWh) TODO figure out a way to calc this
-        self.MIN_CHARGE = 9.0  # (kWh)
+
+        self.DEPTH_OF_DISCHARGE = 0.9
+        self.MIN_CHARGE = self.MAX_CAPACITY - \
+            (self.MAX_CAPACITY * self.DEPTH_OF_DISCHARGE)
 
         self.MAX_CONTINUOUS_POWER = 17.4  # (kW) 17.4
 
+    # TODO: what is the smallest amount that we can charge
+    # TODO: what is the smallest amount we can discharge
+
     # cost (dollars), 0 if from battery, otherwise get_maingrid_cost
+
     def charge(self, amount, cost):
         if self.current_charge < self.MAX_CAPACITY:
             current_total_cost = self.current_charge * self.average_cost

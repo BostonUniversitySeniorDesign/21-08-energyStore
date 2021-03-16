@@ -31,12 +31,12 @@ import pricing
 # set the starting date and time
 dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0,
-                hour=0, day=1, month=6, year=2020)
+                hour=0, day=1, month=1, year=2020)
 
 
 # set interval parameters
 interval_length = 1  # (minutes)
-interval_count = 43200
+interval_count = 8640
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -263,7 +263,7 @@ while interval_count != 0:
                                             (60 / interval_length))
 
     # adjust solar pool for scale and for intervals
-    solarPool = (solarProduced) * 2.5
+    solarPool = (solarProduced / 5) * 2.5
 
     # Get solar produced per house
     solar_profit = [0] * NUM_HOUSES
@@ -519,8 +519,8 @@ for i in range(NUM_HOUSES):
 
 print("Maingrid   energy used by the Battery {}kWh".format(
     round(battery_maingrid_usage)))
-print("Solar Excess saved by the Battery {}kWh".format(
-    round(battery_solar_energy)))
+# print("Solar Excess saved by the Battery {}kWh".format(
+#     round(battery_solar_energy)))
 ####################################################################
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################
