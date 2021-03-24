@@ -1,17 +1,10 @@
 '''
-States of Batteries
-- Running (being discharged)
-- Blocked (being charged)
-- Ready (Fully charged, ready to go)
+
+Both batteries start at 0 charge
+
+day 0: 
 
 
-
-
-battery 1: night charging -> 
-
-battery 2
-
-battery 3
 
 '''
 

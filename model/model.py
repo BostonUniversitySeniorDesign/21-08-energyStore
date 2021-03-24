@@ -1,16 +1,7 @@
 #!/usr/bin/env python3
 ########################################
 ### NOTES ####
-'''
-- DONE || Change solar arrays to be 2.5x  solar array instead of 4x (which we are currently doing)
-- DONE || Make sure all solar energy is being put into a pool and houses are taking from it randomly
 
-Potential Idea
-- make it so the step size is 1 minute, would be accurate for house consumption / usage and the randomization
-    - adjust solar value used per interval
-    - adjust house usage per interval
-
-'''
 
 ############################
 ### IMPORTS ###
@@ -37,7 +28,7 @@ dt = dt.replace(microsecond=0, second=0, minute=0,
 
 # set interval parameters
 interval_length = 1  # (minutes)
-interval_count = 1440
+interval_count = 525600
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -191,7 +182,7 @@ battery_solar_energy = 0.0
 print("Starting main loop")
 house_list = [0, 1, 2, 3]
 
-with open('testdata1.csv', mode='w') as datafile:
+with open('testdata_1year.csv', mode='w') as datafile:
 
     while interval_count != 0:
 
