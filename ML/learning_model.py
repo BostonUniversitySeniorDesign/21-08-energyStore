@@ -1,4 +1,5 @@
-# 1 Importing libraries
+#  1 Importing libraries
+import sklearn
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
 import numpy as np
@@ -7,17 +8,17 @@ import pandas as pd
 
 # 2 Importing the dataset
 # dataset = pd.read_csv('../model/testdata1.csv')
-# dataset = pd.read_csv('../model/testdata_30day.csv')
-dataset = pd.read_csv('../model/testdata_1year.csv')
+# dataset = pd.read_csv('../model/testdata_30day.csv')  # past simulation
+# dataset = pd.read_csv('../model/testdata_1month.csv') # new simulation
+dataset = pd.read_csv('../model/new_testdata_6month.csv')
 X = dataset.iloc[:, 1:].values.astype(float)
-# Y = dataset.iloc[:, 1].values.astype(float)
-
-(n, dims) = X.shape
 
 # randomize rows before splitting
 np.random.shuffle(X)
 # assign labels
 Y = X[:, 1]
+
+(n, dims) = X.shape
 
 # split it up into training and testing (TENTATIVE FOR TESTING PURPOSES)
 X_train = X[:int(np.floor(n*.8))]
@@ -27,6 +28,8 @@ Y_test = Y[int(np.floor(n*.8)):]
 
 (n_train, d_tr) = X_train.shape
 (n_test, d_tt) = X_test.shape
+
+print(X_train)
 
 # 3 Feature Scaling
 sc_X = StandardScaler()
@@ -54,7 +57,7 @@ for (i, prediction) in enumerate(Y_pred):
 
 print("\n\nThe percentage of predicted points that were less than")
 print("the actual price in {} test points was {:2.2%}\n".format(
-    n_test, float(ccr/n_train)))
+    n_test, float(ccr/n_test)))
 
 # # 6 Visualising the Support Vector Regression results
 # plt.scatter(, Y_labels, color='magenta')
@@ -65,3 +68,12 @@ plt.xlabel('time (s)')
 plt.ylabel('energy price ($)')
 plt.legend(['Predictions', 'Prices'])
 plt.show()
+
+
+'''
+    Next Steps:
+        
+
+
+
+'''

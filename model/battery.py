@@ -30,8 +30,7 @@ class Battery_obj:
         self.DESIRED_CHARGE = 18.0  # (kWh) TODO figure out a way to calc this
 
         self.DEPTH_OF_DISCHARGE = 0.9
-        self.MIN_CHARGE = self.MAX_CAPACITY - \
-            (self.MAX_CAPACITY * self.DEPTH_OF_DISCHARGE)
+        self.MIN_CHARGE = self.MAX_CAPACITY * .05  # 4% of maximum charge is min
 
         self.MAX_CONTINUOUS_POWER = 17.4  # (kW) 17.4
 
