@@ -36,14 +36,14 @@ import pricing
 # set the starting date and time
 dt = datetime.datetime.now()
 dt = dt.replace(microsecond=0, second=0, minute=0,
-                hour=0, day=13, month=10, year=2019)
+                hour=0, day=1, month=6, year=2020)
 
 pre_covid_count = 1440 * 189    # starting date: 10/13/2019
 covid_count = 1440 * 175        # starting date: 4/20/2020
 
 # set interval parameters
 interval_length = 1  # (minutes)
-interval_count = pre_covid_count
+interval_count = 1440 * 32
 # given interval_length == 5
 # 1 hour 60/interval_length = 12
 # 1 day 1440/interval_length = 288
@@ -65,7 +65,7 @@ BATTERY = False
 
 # Getting monthly pricing output
 MONTHLY = True
-monthly_name = "precovid_N.txt"
+monthly_name = "testing.txt"
 
 months = ["January", "February", "March",
           "April", "May", "June",
@@ -567,8 +567,8 @@ while interval_count != 0:
             s0 = "Month: {}\n".format(months[current_month - 1])
             s1 = "\tHouse1: ${:.2f}\n".format(total_monthly_cost[0])
             s2 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[1])
-            s3 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[2])
-            s4 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[3])
+            s3 = "\tHouse3: ${:.2f}\n".format(total_monthly_cost[2])
+            s4 = "\tHouse4: ${:.2f}\n".format(total_monthly_cost[3])
 
             to_write = s0 + s1 + s2 + s3 + s4
             fid.write(to_write)
@@ -655,8 +655,8 @@ if MONTHLY:
         s0 = "Month: {}\n".format(months[current_month - 1])
         s1 = "\tHouse1: ${:.2f}\n".format(total_monthly_cost[0])
         s2 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[1])
-        s3 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[2])
-        s4 = "\tHouse2: ${:.2f}\n".format(total_monthly_cost[3])
+        s3 = "\tHouse3: ${:.2f}\n".format(total_monthly_cost[2])
+        s4 = "\tHouse4: ${:.2f}\n".format(total_monthly_cost[3])
 
         to_write = s0 + s1 + s2 + s3 + s4
         fid.write(to_write)
