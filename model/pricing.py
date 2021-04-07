@@ -23,10 +23,6 @@ def get_Date_Time_solarTime(dt):
     return (date, time, solar_time)
 
 
-
-
-
-
 # Returns the cost of power from the maingrid (dollars/kWh)
 # using this as refrence https://www.sdge.com/whenmatters
 
@@ -39,14 +35,14 @@ def get_maingrid_cost(dt, monthly_usage):
     month = dt.month
     hour = dt.hour
 
-    # determine energy tier 
-    if (month >= 6) and (month <= 10): # Coastal, summer (June 1 - Oct 31), all electric
+    # determine energy tier
+    if (month >= 6) and (month <= 10):  # Coastal, summer (June 1 - Oct 31), all electric
         # 130% of Baseline is 234 kWh monthly
         if monthly_usage > 234:
             tier = 2
         else:
             tier = 1
-    else:                             #   Coastal, winter (Nov 1 - May 31), all electric
+    else:  # Coastal, winter (Nov 1 - May 31), all electric
         # 130% of Baseline is 343 kWh monthly
         if monthly_usage > 343:
             tier = 2
@@ -63,7 +59,7 @@ def get_maingrid_cost(dt, monthly_usage):
     if (month == 1) or (month == 2):    # january and february
         if peak:                            # peak
             if tier == 1:
-                return .21262               
+                return .21262
             else:
                 return .37274
         else:                               # off peak
@@ -83,7 +79,7 @@ def get_maingrid_cost(dt, monthly_usage):
                 return .20376
             else:
                 return .35721
-        
+
     elif (month == 5):                  # may
         if peak:
             if tier == 1:

@@ -14,21 +14,27 @@
 
 
 '''
-
-
 ############################
 ### IMPORTS ###
-import datetime
-import random
-import time
-import csv
-import pandas as pd
-import numpy as np
-import os
+
 import matplotlib.pyplot as plt
+import os
+import numpy as np
+import pandas as pd
+import csv
+import time
+import random
+import datetime
+
+# used for importing user defined in other directories
+import sys
+sys.path.insert(len(sys.path),
+                '/Users/brianmacomber/Documents/GitHub/energyStore/ML')
+
 # user defined
-import battery
+import learning_model
 import pricing
+import battery
 
 ####################################################################
 # GENERICS FOR SIMMULATION
@@ -64,7 +70,7 @@ SOLAR = False
 BATTERY = False
 
 # Getting monthly pricing output
-MONTHLY = True
+MONTHLY = False
 monthly_name = "testing.txt"
 
 months = ["January", "February", "March",
@@ -208,6 +214,22 @@ battery_solar_energy = 0.0
 
 # used for writing to the monthly cost file
 total_monthly_cost = [0] * NUM_HOUSES
+
+
+# used for 20 min interval data training and testing
+MODEL = False
+MODEL_INTERVAL = 60
+model_minute = 0
+
+column_titles = [
+    'datetime', 'energy_price',
+    'battery_charge', 'household_demand',
+    'solar_produced']
+
+model_df1 = pd.DataFrame([], columns=column_titles)
+# model_df2 = pd.DataFrame([], columns=column_titles)
+# model_df3 = pd.DataFrame([], columns=column_titles)
+# model_df4 = pd.DataFrame([], columns=column_titles)
 
 
 if MONTHLY:
@@ -462,49 +484,6 @@ while interval_count != 0:
                             dt, house_running_demand_monthly[i])
                     main_used_running[i][i_run] = main_grid_used[i]
 
-    # ##################################
-    # # Power houses
-    # main_grid_used = [0] * NUM_HOUSES
-    # micro_grid_used = [0] * NUM_HOUSES
-    # for i in house_list:
-    #     # battery is cheaper, has enough charge, and is above min charge, and no risk of undercharge
-    #     if (battery.average_cost < pricing.get_maingrid_cost(dt, house_running_demand_monthly[i])) and (battery.current_charge > (house_demand[i] * (1/battery.DISCHARGE_EFF))) and (battery.current_charge > battery.MIN_CHARGE) and (abs(battery.interval_continuous_power - (house_demand[i]/battery.DISCHARGE_EFF)) < MAX_INTERVAL_POWER):
-
-    #     # # charge the battery from 9am to 3:30pm from the grid, power hours from solar and grid
-    #     # if (dt.hour => 9 and (dt.hour <= 16 and dt.minute < 30 )):
-
-    #         micro_grid_used[i] = (
-    #             house_demand[i] * (1/battery.DISCHARGE_EFF))
-    #         if i_run != 0:
-    #             micro_used_running[i][i_run] = micro_used_running[i][i_run -
-    #                                                                  1] + micro_grid_used[i]
-    #             micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1] + \
-    #                 (battery.discharge(
-    #                     house_demand[i] * (1/battery.DISCHARGE_EFF)))
-    #             main_cost_running[i][i_run] = main_cost_running[i][i_run-1]
-    #             main_used_running[i][i_run] = main_used_running[i][i_run-1]
-    #         else:
-    #             micro_used_running[i][i_run] = micro_grid_used[i]
-    #             micro_cost_running[i][i_run] = battery.discharge(
-    #                 house_demand[i] * (1/battery.DISCHARGE_EFF))
-    #             main_cost_running[i][i_run] = 0
-    #             main_used_running[i][i_run] = 0
-    #     else:
-    #         main_grid_used[i] = house_demand[i]
-    #         if i_run != 0:
-    #             micro_used_running[i][i_run] = micro_used_running[i][i_run-1]
-    #             micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1]
-    #             main_cost_running[i][i_run] = (house_demand[i] * pricing.get_maingrid_cost(
-    #                 dt, house_running_demand_monthly[i])) + main_cost_running[i][i_run-1]
-    #             main_used_running[i][i_run] = main_used_running[i][i_run -
-    #                                                                1] + main_grid_used[i]
-    #         else:
-    #             micro_used_running[i][i_run] = 0
-    #             micro_cost_running[i][i_run] = 0
-    #             main_cost_running[i][i_run] = house_demand[i] * \
-    #                 pricing.get_maingrid_cost(
-    #                     dt, house_running_demand_monthly[i])
-    #             main_used_running[i][i_run] = main_grid_used[i]
 
     # get total running cost
     for i in range(NUM_HOUSES):
@@ -517,20 +496,71 @@ while interval_count != 0:
         total_monthly_cost[i] += (total_cost_running[i][i_run] -
                                   total_cost_running[i][i_run - 1])
 
-        ##################################
-    # Writing data to csv to use with model
-    # features
-    #  - current battery charge
-    #  - solar array production
-    #  - energy price
-    # - household energy consumption
+    ##################################
+    # Grabbing data to use with ML model
+    
     # data_writer = csv.writer(
     #     datafile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     # if i_run != 0:
     #     # arr = [solar_produced_running[0][i_run], solar_produced_running[1][i_run],
     #     #        solar_produced_running[2][i_run], solar_produced_running[3][i_run]]
-    #     rowToWrite = [dt, pricing.get_maingrid_cost(
-    #         dt, 0), battery.current_charge, house_demand_total[0], solarCheck]
+   
+
+    if MODEL:
+
+        # every 20 minutes we run the model and then clear the dataframes
+        if (model_minute % MODEL_INTERVAL == 0):
+            # run model on all houses
+            # print(model_df1)
+
+            # run_model(model_data_house1)
+            # run_model(model_data_house1)
+            # run_model(model_data_house1)
+            # run_model(model_data_house1)
+
+            # reset minute & clear dataframes
+            model_minute = 0
+            
+            model_df1 = model_df1.iloc[0:0]
+            model_df2 = model_df1.iloc[0:0]
+            model_df3 = model_df1.iloc[0:0]
+            model_df4 = model_df1.iloc[0:0]
+
+        # data to be added to ML dataframes
+        dict1_towrite = {column_titles[0]: dt, 
+                        column_titles[1]: pricing.get_maingrid_cost(dt, 0),
+                        column_titles[2]: battery.current_charge,
+                        column_titles[3]: house_demand_total[0],
+                        column_titles[4]: solarCheck
+                        }
+        dict2_towrite = {column_titles[0]: dt, 
+                        column_titles[1]: pricing.get_maingrid_cost(dt, 0),
+                        column_titles[2]: battery.current_charge,
+                        column_titles[3]: house_demand_total[1],
+                        column_titles[4]: solarCheck
+                        }
+        dict3_towrite = {column_titles[0]: dt, 
+                        column_titles[1]: pricing.get_maingrid_cost(dt, 0),
+                        column_titles[2]: battery.current_charge,
+                        column_titles[3]: house_demand_total[2],
+                        column_titles[4]: solarCheck
+                        }
+        dict4_towrite = {column_titles[0]: dt, 
+                        column_titles[1]: pricing.get_maingrid_cost(dt, 0),
+                        column_titles[2]: battery.current_charge,
+                        column_titles[3]: house_demand_total[3],
+                        column_titles[4]: solarCheck
+                        }
+
+        # add data to dataframes
+        model_df1 = model_df1.append(dict1_towrite, ignore_index=True)
+        # model_df2 = model_df2.append(dict2_towrite, ignore_index=True)
+        # model_df3 = model_df3.append(dict3_towrite, ignore_index=True)
+        # model_df4 = model_df4.append(dict4_towrite, ignore_index=True)
+        
+
+        model_minute += 1
+
     # else:
     #     rowToWrite = ['datetime', 'energy_price', 'battery_charge',
     #                     'household_demand', 'solar_produced']
@@ -800,3 +830,6 @@ if GRAPHS:
 
     # Plot
     plt.show()
+
+
+print(model_df1)

@@ -1,0 +1,10 @@
+Month: June
+	House1: $225.76
+	House2: $57.97
+	House3: $311.24
+	House4: $77.84
+Month: July
+	House1: $11.13
+	House2: $2.40
+	House3: $14.86
+	House4: $4.06
