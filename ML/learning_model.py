@@ -26,12 +26,12 @@ features = [
 # dataset = pd.read_csv('../model/testdata1.csv')
 # dataset = pd.read_csv('../model/testdata_30day.csv')  # past simulation
 # dataset = pd.read_csv('../model/testdata_1month.csv')  # new simulation
-filename = '../model/house1_pre_covid.csv'
+filename = '../model/house4_pre_covid.csv'
 
 dataset = pd.read_csv(filename)
 X = dataset.iloc[:, 1:].values.astype(float)
 
-print(dataset)
+# print(dataset)
 
 
 
@@ -74,7 +74,7 @@ for train, test in kfold.split(X):
 
     yy = Y_test
 
-    print(yy)
+    # print(yy)
 
 
     # (n, dims) = X.shape
@@ -161,7 +161,7 @@ new_data = [x / 100 for x in output_optimized_prices]
 # dataset = dataset.drop(["energy_price"], axis=1)
 dataset["energy_price"] = new_data
 
-dataset.to_csv('house1_pre_covid_OPT.csv', columns=features)
+dataset.to_csv('house4_pre_covid_OPT.csv', columns=features)
 
 # print(dataset)
 

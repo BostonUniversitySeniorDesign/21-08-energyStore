@@ -1,0 +1,35 @@
+Month: October
+	House1: $63.68
+	House2: $28.46
+	House3: $84.59
+	House4: $59.98
+Month: November
+	House1: $106.33
+	House2: $52.73
+	House3: $154.20
+	House4: $82.50
+Month: December
+	House1: $115.74
+	House2: $81.90
+	House3: $145.40
+	House4: $79.01
+Month: January
+	House1: $89.56
+	House2: $58.90
+	House3: $114.38
+	House4: $57.93
+Month: February
+	House1: $81.55
+	House2: $34.67
+	House3: $97.24
+	House4: $53.92
+Month: March
+	House1: $82.19
+	House2: $41.85
+	House3: $90.13
+	House4: $49.29
+Month: April
+	House1: $64.45
+	House2: $36.19
+	House3: $82.89
+	House4: $40.77

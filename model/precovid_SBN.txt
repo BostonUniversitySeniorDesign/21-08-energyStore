@@ -33,3 +33,10 @@ Month: April
 	House2: $30.85
 	House3: $71.26
 	House4: $34.77
+
+
+(Normal Pricing) 
+House1 Total: $682.91
+House2 Total: $351.92
+House3 Total: $898.18
+House4 Total: $464.78

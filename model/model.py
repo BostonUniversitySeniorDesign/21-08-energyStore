@@ -66,12 +66,12 @@ PRINTS = False
 GRAPHS = False
 
 # For running the simulation without solar or battery
-SOLAR = True
-BATTERY = True
+SOLAR = False
+BATTERY = False
 
 # Getting monthly pricing output
 MONTHLY = True
-monthly_name = "precovid_SBO.txt"
+monthly_name = "precovid_O_FINAL.txt"
 
 months = ["January", "February", "March",
           "April", "May", "June",
@@ -214,6 +214,7 @@ battery_solar_energy = 0.0
 
 # used for writing to the monthly cost file
 total_monthly_cost = [0] * NUM_HOUSES
+total_monthly_cost_TOTAL = [0] * NUM_HOUSES
 
 
 # used for 1 day interval data training and testing
@@ -227,7 +228,10 @@ OPT_PRICING = True
 pricing_idx = 0
 
 if OPT_PRICING:
-    pricing_df = pd.read_csv('../ML/house1_pre_covid_OPT.csv')
+    pricing_df1 = pd.read_csv('../ML/house1_pre_covid_OPT.csv')
+    pricing_df2 = pd.read_csv('../ML/house2_pre_covid_OPT.csv')
+    pricing_df3 = pd.read_csv('../ML/house3_pre_covid_OPT.csv')
+    pricing_df4 = pd.read_csv('../ML/house4_pre_covid_OPT.csv')
 
     # print(pricing_df["energy_price"].iloc[pricing_idx])
 
@@ -255,14 +259,17 @@ if MONTHLY:
 print("Starting main loop")
 house_list = [0, 1, 2, 3]
 
-with open('yonk.csv', mode='w') as datafile:
+with open('yonk_final.csv', mode='w') as datafile:
 
     while interval_count != 0:
 
         if OPT_PRICING:
-            if interval_count == 1:
-                print(pricing_idx)
-            opt_price = pricing_df["energy_price"].iloc[pricing_idx]
+            opt_price1 = pricing_df1["energy_price"].iloc[pricing_idx]
+            opt_price2 = pricing_df2["energy_price"].iloc[pricing_idx]
+            opt_price3 = pricing_df3["energy_price"].iloc[pricing_idx]
+            opt_price4 = pricing_df4["energy_price"].iloc[pricing_idx]
+
+            opt_pricing = [opt_price1, opt_price2, opt_price3, opt_price4]
            
 
         ##################################
@@ -358,7 +365,7 @@ with open('yonk.csv', mode='w') as datafile:
                 # battery_solar_energy += excess_energy # to keep track of how much excess is saved
                 if OPT_PRICING:
                     solar_profit[i] = house_demand_total[i] * (
-                        SOLAR_COST_COEFFICIENT * opt_price)
+                        SOLAR_COST_COEFFICIENT * opt_pricing[i])
 
                 else:
                     solar_profit[i] = house_demand_total[i] * (
@@ -386,7 +393,7 @@ with open('yonk.csv', mode='w') as datafile:
             else:
                 if OPT_PRICING:
                      solar_profit[i] = solarPool * (SOLAR_COST_COEFFICIENT *
-                                                opt_price)
+                                                opt_pricing[i])
                 else:
                     solar_profit[i] = solarPool * (SOLAR_COST_COEFFICIENT *
                                                 pricing.get_maingrid_cost(dt, house_running_demand_monthly[i]))
@@ -439,11 +446,11 @@ with open('yonk.csv', mode='w') as datafile:
             if BATTERY is False:
                 amount = 0
 
-            if OPT_PRICING:
-                battery.charge(amount, opt_price)
-            else:
-                battery.charge(amount, pricing.get_maingrid_cost(
-                    dt, house_running_demand_monthly[4]))
+            # if OPT_PRICING:
+            #     battery.charge(amount, opt_price)
+            # else:
+            battery.charge(amount, pricing.get_maingrid_cost(
+                dt, house_running_demand_monthly[4]))
 
             # keeping track of main grid energy added to the battery
             battery_maingrid_usage += amount
@@ -457,7 +464,7 @@ with open('yonk.csv', mode='w') as datafile:
                     micro_used_running[i][i_run] = micro_used_running[i][i_run-1]
                     micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1]
                     if OPT_PRICING:
-                        main_cost_running[i][i_run] = (house_demand[i] * opt_price) + main_cost_running[i][i_run-1]
+                        main_cost_running[i][i_run] = (house_demand[i] * opt_pricing[i]) + main_cost_running[i][i_run-1]
                     else:
                         main_cost_running[i][i_run] = (house_demand[i] * pricing.get_maingrid_cost(
                             dt, house_running_demand_monthly[i])) + main_cost_running[i][i_run-1]
@@ -468,7 +475,7 @@ with open('yonk.csv', mode='w') as datafile:
                     micro_cost_running[i][i_run] = 0
                     if OPT_PRICING:
                         main_cost_running[i][i_run] = house_demand[i] * \
-                            opt_price
+                            opt_pricing[i]
                     else:
                         main_cost_running[i][i_run] = house_demand[i] * \
                             pricing.get_maingrid_cost(
@@ -509,7 +516,7 @@ with open('yonk.csv', mode='w') as datafile:
                         micro_used_running[i][i_run] = micro_used_running[i][i_run-1]
                         micro_cost_running[i][i_run] = micro_cost_running[i][i_run-1]
                         if OPT_PRICING:
-                            main_cost_running[i][i_run] = (house_demand[i] * opt_price) + main_cost_running[i][i_run-1]
+                            main_cost_running[i][i_run] = (house_demand[i] * opt_pricing[i]) + main_cost_running[i][i_run-1]
                         else:
                             main_cost_running[i][i_run] = (house_demand[i] * pricing.get_maingrid_cost(
                                 dt, house_running_demand_monthly[i])) + main_cost_running[i][i_run-1]
@@ -520,7 +527,7 @@ with open('yonk.csv', mode='w') as datafile:
                         micro_cost_running[i][i_run] = 0
                         if OPT_PRICING:
                             main_cost_running[i][i_run] = house_demand[i] * \
-                                                        opt_price
+                                                        opt_pricing[i]
                         else:
                             main_cost_running[i][i_run] = house_demand[i] * \
                                 pricing.get_maingrid_cost(
@@ -557,7 +564,7 @@ with open('yonk.csv', mode='w') as datafile:
             #     price_to_write = pricing.get_maingrid_cost(dt,0)
 
 
-            rowToWrite = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[0],solarCheck]
+            rowToWrite = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[3],solarCheck]
         else:
             rowToWrite = ['datetime', 'energy_price', 'battery_charge',
                             'household_demand', 'solar_produced']
@@ -570,7 +577,7 @@ with open('yonk.csv', mode='w') as datafile:
             # every 1440 minutes we run the model and then clear the dataframes
             if (model_minute % MODEL_INTERVAL == 0):
                 # run model on all houses
-                print(model_df1)
+                # print(model_df1)
 
                 # run_model(model_data_house1)
                 # run_model(model_data_house1)
@@ -616,7 +623,7 @@ with open('yonk.csv', mode='w') as datafile:
             row4_towrite = [dt,price_to_write,battery.current_charge,house_demand_total[3],solarCheck]
 
             # add data to dataframes
-            model_df1.iloc[model_minute] = row1_towrite
+            # model_df1.iloc[model_minute] = row1_towrite
             # model_df2.iloc[model_minute] = row2_towrite
             # model_df3.iloc[model_minute] = row3_towrite
             # model_df4.iloc[model_minute] = row4_towrite
@@ -667,6 +674,7 @@ with open('yonk.csv', mode='w') as datafile:
                 fid.write(to_write)
 
             for k in range(NUM_HOUSES):
+                total_monthly_cost_TOTAL[k] += total_monthly_cost[k]
                 total_monthly_cost[k] = 0
 
         if (curr_day != dt.day):
@@ -756,6 +764,11 @@ if MONTHLY:
         to_write = s0 + s1 + s2 + s3 + s4
         fid.write(to_write)
 
+    s5 = "\n\nTOTALS\n"
+    for k in range(NUM_HOUSES):
+        s5 += "House{}: ${:.2f}\n".format((k+1),total_monthly_cost_TOTAL[k])
+
+    fid.write(s5)
     fid.close()
 
 ####################################################################
