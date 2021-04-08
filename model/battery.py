@@ -1,12 +1,4 @@
-'''
 
-Both batteries start at 0 charge
-
-day 0: 
-
-
-
-'''
 
 
 # Assuming this is a 3 tesla powerwall
