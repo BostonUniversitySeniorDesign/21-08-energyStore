@@ -6,7 +6,9 @@ This ML model uses a virtul enviroment to store all the packages to better manag
     - MacOS/Linux: source ML-env/bin/activate 
     - Windows: ML-env\Scripts\activate.bat 
 - Once in the environment, install the required packages: `python -m pip install -r requirements.txt`
-- To leave the virtual environment, type `deactivate`
+- To leave the virtual environment at any point, type `deactivate`
+
+
 
 ### References
 - https://medium.com/pursuitnotes/support-vector-regression-in-6-steps-with-python-c4569acd062d

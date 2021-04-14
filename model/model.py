@@ -16,27 +16,27 @@ BATTERY = True
 MONTHLY = True
 
 # desired name of the monthly output file 
-monthly_out_filename = "estttttt.txt"
+monthly_out_filename = "estttttt.txt"   # this should have .txt as the extension!
 
 ###############################################
 # For running simulation with optimized pricing scheme 
 # These files are the OUTPUT of the ML model
 OPT_PRICING = True
 
-opt_pricing_house1 = 'house1_data_OPT.csv'
-opt_pricing_house2 = 'house2_data_OPT.csv'
-opt_pricing_house3 = 'house3_data_OPT.csv'
-opt_pricing_house4 = 'house4_data_OPT.csv'
+opt_pricing_house1 = 'house1_data_OPT.csv'  # this should have .csv as the extension!
+opt_pricing_house2 = 'house2_data_OPT.csv'  # this should have .csv as the extension!
+opt_pricing_house3 = 'house3_data_OPT.csv'  # this should have .csv as the extension!
+opt_pricing_house4 = 'house4_data_OPT.csv'  # this should have .csv as the extension!
 
 ###############################################
 # For enabling data output for 4 houses separately
 # These files will be used as INPUT in the ML model
 HOUSE_OUT = False
 
-house_out_1 = "house1_data.csv"
-house_out_2 = "house2_data.csv"
-house_out_3 = "house3_data.csv"
-house_out_4 = "house4_data.csv"
+house_out_1 = "house1_data.csv"     # this should have .csv as the extension!
+house_out_2 = "house2_data.csv"     # this should have .csv as the extension!
+house_out_3 = "house3_data.csv"     # this should have .csv as the extension!
+house_out_4 = "house4_data.csv"     # this should have .csv as the extension!   
 
 ##### start date
 # month hould be between 1 and 12
