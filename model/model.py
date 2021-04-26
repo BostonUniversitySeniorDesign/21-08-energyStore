@@ -16,7 +16,7 @@ BATTERY = True
 MONTHLY = True
 
 # desired name of the monthly output file 
-monthly_out_filename = "estttttt.txt"   # this should have .txt as the extension!
+monthly_out_filename = "monthly_prices_O.txt"   # this should have .txt as the extension!
 
 ###############################################
 # For running simulation with optimized pricing scheme 
@@ -51,7 +51,7 @@ pre_covid_count = 1440 * 189    # starting date: 10/13/2019, ending date: 4/19/2
 covid_count = 1440 * 175        # starting date: 4/20/2020, ending date: 10/12/2020
 
 # Length of the simulation (in minutes)
-number_of_intervals = 1440 * 7
+number_of_intervals = pre_covid_count
 
 ####################################################################
 # END OF USER DEFINITIONS FOR OUTPUT
@@ -69,13 +69,7 @@ import time
 import random
 import datetime
 
-# used for importing user defined in other directories
-import sys
-# sys.path.insert(len(sys.path),
-#                 '/Users/brianmacomber/Documents/GitHub/energyStore/ML')
-
 # user defined
-# import learning_model
 import pricing
 import battery
 
@@ -188,13 +182,13 @@ for (columnName, columnData) in df_weatherdata.iteritems():
                 date_new = month_ + '/' + day_
                 dates_new[i] = date_new
                 i += 1
-                # print("datetime: {} \t {}".format(date, date_new))
+
             elif (isinstance(date, str)):
                 date_list = date.split('/')
                 date_new = date_list[1] + '/' + date_list[0]
                 dates_new[i] = date_new
                 i += 1
-                # print("string: {}\t new: {}".format(date, date_new))
+
 df_weatherdata = df_weatherdata.drop(['Date'], axis=1)
 df_weatherdata['Date'] = dates_new
 
@@ -279,8 +273,6 @@ if HOUSE_OUT:
 ####################################################################
 print("Starting main loop")
 house_list = [0, 1, 2, 3]
-
-# with open('yonk_final.csv', mode='w') as datafile:
 
 while interval_count != 0:
 
@@ -379,7 +371,6 @@ while interval_count != 0:
 
         # still have solar energy to meet full house demand in the pool for the given period
         if solarPool > house_demand_total[i]:
-            # excess_energy = solarPool - house_demand_total[i]
 
             # Take
             solarPool -= house_demand_total[i]
@@ -570,9 +561,7 @@ while interval_count != 0:
 
     ##################################
     # Grabbing data to use with ML model
-    
-    # data_writer = csv.writer(
-    #     datafile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
     if HOUSE_OUT:
         row = 'datetime,energy_price,battery_charge,household_demand,solar_produced\n'
         if i_run != 0:
@@ -588,21 +577,15 @@ while interval_count != 0:
             str_house4 = str(house_demand_total[3]) + ','
             str_solar = str(solarCheck) + '\n'
 
-            # row_house_1 = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[0],solarCheck]
             row_house_1 = str_timestamp + str_price + str_battery_charge + str_house1 + str_solar
-            # row_house_2 = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[1],solarCheck]
             row_house_2 = str_timestamp + str_price + str_battery_charge + str_house2 + str_solar
-            # row_house_3 = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[2],solarCheck]
             row_house_3 = str_timestamp + str_price + str_battery_charge + str_house3 + str_solar
-            # row_house_4 = [timestamp,pricing.get_maingrid_cost(dt,0),battery.current_charge,house_demand_total[3],solarCheck]
             row_house_4 = str_timestamp + str_price + str_battery_charge + str_house4 + str_solar
         else:
             row_house_1 = row
             row_house_2 = row
             row_house_3 = row
             row_house_4 = row
-
-        # data_writer.writerow(row_house_1)
 
         house_fid1.write(row_house_1)
         house_fid2.write(row_house_2)
@@ -736,6 +719,12 @@ if MONTHLY:
         to_write = s0 + s1 + s2 + s3 + s4
         fid.write(to_write)
 
+    if total_monthly_cost_TOTAL[0] == 0 and total_monthly_cost_TOTAL[1] == 0 and \
+        total_monthly_cost_TOTAL[2] == 0 and total_monthly_cost_TOTAL[3] == 0:
+        for k in range(NUM_HOUSES):
+            total_monthly_cost_TOTAL[k] = total_monthly_cost[k]
+
+
     s5 = "\n\nTOTALS\n"
     for k in range(NUM_HOUSES):
         s5 += "House{}: ${:.2f}\n".format((k+1),total_monthly_cost_TOTAL[k])
@@ -785,8 +774,7 @@ print("\n\nMaingrid energy used by the Battery {}kWh".format(
 print("Solar energy dump: {}kWh".format(round(np.sum(solar_dumped), 2)))
 print("Total Solar energy made: {}kWh".format(
     round(totalSolar, 2)))
-# print("Solar Excess saved by the Battery {}kWh".format(
-#     round(battery_solar_energy)))
+
 ####################################################################
 # CHARTS, GRAPHS, & PLOTS
 ####################################################################

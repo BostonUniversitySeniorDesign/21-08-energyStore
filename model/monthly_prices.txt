@@ -1,0 +1,12 @@
+Month: October
+	House1: $3.55
+	House2: $1.83
+	House3: $5.46
+	House4: $1.74
+
+
+TOTALS
+House1: $3.55
+House2: $1.83
+House3: $5.46
+House4: $1.74
