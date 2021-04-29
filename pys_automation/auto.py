@@ -63,7 +63,8 @@ while True:
         # write to file
         file_.write("{},{},{},{},{},{},{},{},{},{}\n".format(date_,time_,rx_dict['M0'],rx_dict['M1'],rx_dict['M2'],rx_dict['M3'],rx_dict['M4'],rx_dict['M5'],rx_dict['M6'],rx_dict['M7']))
         #m7
-        
+
+
         # Make a table for the state of relays
         relay_table = [['BATTERY', rx_dict['BATTERY']],['GRID', rx_dict['GRID']]]
         print(tabulate(relay_table, headers=['Relay', 'State'], tablefmt='orgtbl'))
